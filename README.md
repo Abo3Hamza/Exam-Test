@@ -46,7 +46,7 @@ This repository is a **flexible platform and ready-to-use template** for creatin
 
 ## 📁 هيكل المشروع | Project Structure
 
-- `quiz_app.html`: المحرك الرئيسي للكويز (HTML/JS/CSS).
+- `index.html`: المحرك الرئيسي للكويز (HTML/JS/CSS).
 - `questions.json`: قاعدة بيانات الأسئلة (المحتوى المتغير).
 - `README.md`: دليل الاستخدام (هذا الملف).
 
