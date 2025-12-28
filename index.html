@@ -790,7 +790,6 @@
         function updateButtonStates() {
             const lectureQuestions = questions.filter(q => q.lecture === currentLecture);
             document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
-            document.getElementById('nextBtn').disabled =  currentQuestionIndex !== lectureQuestions.length - 1 && !submitted[currentQuestionIndex];
             updateSubmitButton();
         }
 
