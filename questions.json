@@ -1,0 +1,2674 @@
+[
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Artificial Intelligence (AI) is best defined as:",
+        "options": {
+            "A": "A technology that replaces humans completely",
+            "B": "A system that stores large amounts of data only",
+            "C": "A technology that enables machines to perform tasks requiring human intelligence",
+            "D": "A programming language for computers"
+        },
+        "answer": "C",
+        "explanation": "الإجابة C صحيحة لأن الذكاء الاصطناعي هو تقنية تمكن الآلات من أداء مهام تتطلب ذكاءً بشرياً مثل التعلم والتفكير واتخاذ القرار، وليس مجرد تخزين بيانات أو استبدال البشر بالكامل."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "One of the main abilities of AI systems is to:",
+        "options": {
+            "A": "Only store data",
+            "B": "Learn from data and recognize patterns",
+            "C": "Eliminate the need for data",
+            "D": "Work without algorithms"
+        },
+        "answer": "B",
+        "explanation": "الذكاء الاصطناعي يعتمد على تعلم الأنماط من البيانات لتحسين أدائه واتخاذ القرارات، وليس مجرد تخزين البيانات أو العمل بدون خوارزميات."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Which of the following is NOT mentioned as a real-world application of AI?",
+        "options": {
+            "A": "Healthcare",
+            "B": "Education policy making",
+            "C": "Finance",
+            "D": "E-commerce"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأنها لم تُذكر في النص كأحد تطبيقات الذكاء الاصطناعي الحقيقية، بينما الخيارات الأخرى (الرعاية الصحية، المالية، والتجارة الإلكترونية) تم ذكرها بوضوح."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "Machine Learning (ML) is considered a:",
+        "options": {
+            "A": "Replacement for AI",
+            "B": "Subset of Artificial Intelligence",
+            "C": "Type of database system",
+            "D": "Hardware component"
+        },
+        "answer": "B",
+        "explanation": "التعلم الآلي هو فرع من فروع الذكاء الاصطناعي يركز على تطوير خوارزميات تسمح للأجهزة بالتعلم من البيانات وتحسين أدائها تلقائيًا، لذا هو جزء (subset) من الذكاء الاصطناعي."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "In Machine Learning, systems improve performance by:",
+        "options": {
+            "A": "Manual reprogramming",
+            "B": "Using predefined rules only",
+            "C": "Identifying patterns in data",
+            "D": "Avoiding historical data"
+        },
+        "answer": "C",
+        "explanation": "لأن تعلم الآلة يعتمد على تحليل واستخراج الأنماط من البيانات لتحسين الأداء تلقائيًا، وليس على البرمجة اليدوية أو قواعد ثابتة فقط."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "Which type of Machine Learning uses labeled data?",
+        "options": {
+            "A": "Unsupervised Learning",
+            "B": "Reinforcement Learning",
+            "C": "Generative Learning",
+            "D": "Supervised Learning"
+        },
+        "answer": "D",
+        "explanation": "التعلم الموجه (Supervised Learning) يعتمد على بيانات مُوسمة (مُعَلَّمة) حيث تكون المخرجات المعروفة متاحة لتعليم النموذج كيفية التنبؤ أو التصنيف بدقة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "Supervised Learning is commonly used for:",
+        "options": {
+            "A": "Clustering only",
+            "B": "Classification and regression",
+            "C": "Association rules",
+            "D": "Trial and error tasks"
+        },
+        "answer": "B",
+        "explanation": "التعلم الموجه (Supervised Learning) يعتمد على بيانات معروفة النتائج لتعليم النموذج، ويستخدم بشكل رئيسي في مهام التصنيف (Classification) والتنبؤ بالقيم المستمرة (Regression)."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "In supervised learning, each input has:",
+        "options": {
+            "A": "No output",
+            "B": "Random output",
+            "C": "A known correct output",
+            "D": "Multiple unknown labels"
+        },
+        "answer": "C",
+        "explanation": "في التعلم الموجه، يتم تدريب النموذج باستخدام بيانات تحتوي على مدخلات وأهداف معروفة مسبقًا، لذا كل مدخل مرتبط بإخراج صحيح معروف يساعد النموذج على التعلم."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Unsupervised Learning works with data that is:",
+        "options": {
+            "A": "Fully labeled",
+            "B": "Partially labeled",
+            "C": "Unlabeled",
+            "D": "Incorrectly labeled"
+        },
+        "answer": "C",
+        "explanation": "التعلم غير الموجه يعمل على بيانات غير معنونة، حيث لا توجد تسميات أو تصنيفات مسبقة، ويهدف لاكتشاف أنماط أو هياكل داخل البيانات بنفسه."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "Which task is commonly associated with Unsupervised Learning?",
+        "options": {
+            "A": "Regression",
+            "B": "Classification",
+            "C": "Clustering",
+            "D": "Prediction with feedback"
+        },
+        "answer": "C",
+        "explanation": "التعلم غير الموجه يهدف إلى اكتشاف الأنماط أو التجمعات في البيانات دون وجود تسميات مسبقة، والتجميع (Clustering) هو المهمة الأساسية التي تقوم بذلك. لذلك، الخيار C هو الصحيح."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "Reinforcement Learning is based on:",
+        "options": {
+            "A": "Labeled datasets",
+            "B": "Trial and error with rewards and penalties",
+            "C": "Statistical reports",
+            "D": "Predefined classifications"
+        },
+        "answer": "B",
+        "explanation": "التعلم التعزيزي يعتمد على مبدأ التجربة والخطأ حيث يتعلم النموذج من خلال المكافآت والعقوبات لتحديد أفضل الإجراءات، وليس على بيانات معنونة أو تصنيفات مسبقة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Reinforcement Learning is most suitable for problems involving:",
+        "options": {
+            "A": "Static decision making",
+            "B": "Sequential decision making",
+            "C": "Data labeling",
+            "D": "Text classification"
+        },
+        "answer": "B",
+        "explanation": "التعلم المعزز مناسب لاتخاذ قرارات متسلسلة حيث يتعلم الوكيل من تفاعله مع البيئة عبر الزمن لتحقيق هدف معين، وليس لاتخاذ قرارات ثابتة أو مهام تصنيف بيانات."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Which example best describes Reinforcement Learning?",
+        "options": {
+            "A": "Grouping customers by age",
+            "B": "Translating text between languages",
+            "C": "Learning through feedback after wrong predictions",
+            "D": "Diagnosing diseases using rules"
+        },
+        "answer": "C",
+        "explanation": "التعلم المعزز يقوم على تحسين الأداء من خلال تلقي تغذية راجعة بعد اتخاذ قرارات صحيحة أو خاطئة، مما يتناسب مع الخيار C الذي يصف التعلم عبر الملاحظات بعد التنبؤات الخاطئة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "14",
+        "question": "Generative AI is mainly designed to:",
+        "options": {
+            "A": "Classify data",
+            "B": "Analyze historical records",
+            "C": "Create new original content",
+            "D": "Store multimedia files"
+        },
+        "answer": "C",
+        "explanation": "الذكاء الاصطناعي التوليدي يهدف إلى إنتاج محتوى جديد وأصلي مثل النصوص والصور، وليس فقط تصنيف البيانات أو تحليلها أو تخزينها."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "15",
+        "question": "Unlike traditional AI, Generative AI focuses on:",
+        "options": {
+            "A": "Recognition only",
+            "B": "Rule-based decisions",
+            "C": "Content creation",
+            "D": "Data storage"
+        },
+        "answer": "C",
+        "explanation": "الذكاء الاصطناعي التوليدي يهدف إلى إنشاء محتوى جديد مثل النصوص والصور بدلاً من مجرد التعرف على الأنماط أو اتخاذ قرارات مبنية على قواعد ثابتة، لذا التركيز يكون على إنشاء المحتوى."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "16",
+        "question": "Which of the following is NOT generated by Generative AI according to the lecture?",
+        "options": {
+            "A": "Text",
+            "B": "Images",
+            "C": "Music",
+            "D": "Network protocols"
+        },
+        "answer": "D",
+        "explanation": "الإجابة صحيحة لأن الذكاء الاصطناعي التوليدي يختص بإنشاء محتوى مثل النصوص والصور والموسيقى، أما بروتوكولات الشبكة فهي قواعد وتقنيات تقنية وليست محتوى يتم توليده بواسطة هذا النوع من الذكاء الاصطناعي."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "17",
+        "question": "Natural Language Processing (NLP) allows machines to:",
+        "options": {
+            "A": "Perform numerical calculations only",
+            "B": "Understand and interact with human language",
+            "C": "Store speech signals",
+            "D": "Detect hardware failures"
+        },
+        "answer": "B",
+        "explanation": "معالجة اللغة الطبيعية (NLP) تهدف إلى تمكين الحواسيب من فهم وتفسير والتفاعل مع اللغة البشرية، وليس فقط إجراء عمليات حسابية أو تخزين إشارات صوتية أو كشف أعطال الأجهزة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "18",
+        "question": "NLP combines computer science with:",
+        "options": {
+            "A": "Mathematics only",
+            "B": "Physics",
+            "C": "Linguistics",
+            "D": "Electronics"
+        },
+        "answer": "C",
+        "explanation": "لأن معالجة اللغة الطبيعية (NLP) تهتم بفهم وتحليل اللغة البشرية، فهي تجمع بين علوم الحاسوب وعلم اللغويات لفهم قواعد وبنية اللغة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "19",
+        "question": "Which is an example of NLP application mentioned in the lecture?",
+        "options": {
+            "A": "Inventory control",
+            "B": "Fraud detection",
+            "C": "Speech recognition systems",
+            "D": "Image classification"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن معالجة اللغة الطبيعية (NLP) تركز على فهم ومعالجة اللغة البشرية، ونظم التعرف على الكلام هي أحد تطبيقاتها المباشرة التي تحول الصوت إلى نص. أما الخيارات الأخرى فهي تخص مجالات مختلفة غير متعلقة بـ NLP مباشرة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "20",
+        "question": "Expert Systems are designed to simulate the decision-making ability of:",
+        "options": {
+            "A": "Machines",
+            "B": "Databases",
+            "C": "Human experts",
+            "D": "Neural networks"
+        },
+        "answer": "C",
+        "explanation": "الأنظمة الخبيرة تهدف إلى تقليد قدرة الخبراء البشريين على اتخاذ القرارات وحل المشكلات المعقدة باستخدام المعرفة والخبرة المتخصصة. لذلك، فهي تحاكي سلوك الخبراء البشر وليس الآلات أو قواعد البيانات أو الشبكات العصبية."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "21",
+        "question": "Expert Systems mainly rely on:",
+        "options": {
+            "A": "Random guesses",
+            "B": "Machine learning models only",
+            "C": "If-then rules and expert knowledge",
+            "D": "Big data analytics"
+        },
+        "answer": "C",
+        "explanation": "تعتمد الأنظمة الخبيرة بشكل رئيسي على قواعد \"إذا-ثم\" والمعرفة المتخصصة لتقديم الاستنتاجات والحلول، لأنها تحاكي خبرة الخبراء في مجال معين بدلاً من التعلم من البيانات فقط."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "22",
+        "question": "Which of the following is NOT a step in the working of AI?",
+        "options": {
+            "A": "Data Collection",
+            "B": "Model Training",
+            "C": "Decision Making",
+            "D": "Data Deletion"
+        },
+        "answer": "D",
+        "explanation": "الخطوة \"حذف البيانات\" ليست جزءًا من عملية عمل الذكاء الاصطناعي، حيث تركز العملية على جمع البيانات، تدريب النموذج، واتخاذ القرارات بناءً على ذلك. حذف البيانات لا يدخل ضمن الخطوات الأساسية لتشغيل النظام الذكي."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "23",
+        "question": "In the AI working process, decision making occurs:",
+        "options": {
+            "A": "Before data collection",
+            "B": "After model training",
+            "C": "Before learning",
+            "D": "Before processing"
+        },
+        "answer": "B",
+        "explanation": "يحدث اتخاذ القرار بعد تدريب النموذج لأن النموذج يكون قد تعلّم من البيانات ويصبح قادرًا على تحليل المعلومات واتخاذ قرارات بناءً على المعرفة المكتسبة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "24",
+        "question": "One advantage of AI mentioned in the lecture is:",
+        "options": {
+            "A": "Eliminating ethical issues",
+            "B": "Reducing data size",
+            "C": "24/7 availability",
+            "D": "Replacing creativity"
+        },
+        "answer": "C",
+        "explanation": "الإجابة C صحيحة لأن الذكاء الاصطناعي يعمل بشكل مستمر دون توقف، مما يتيح توفره على مدار الساعة وطوال أيام الأسبوع. هذا يمنحه ميزة في تقديم الخدمات بشكل دائم مقارنة بالبشر."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "MCQ",
+        "id": "25",
+        "question": "Which challenge of AI refers to unfair outcomes due to biased data?",
+        "options": {
+            "A": "Job displacement",
+            "B": "Ethical concerns",
+            "C": "Lack of transparency",
+            "D": "Bias and fairness"
+        },
+        "answer": "D",
+        "explanation": "الإجابة D صحيحة لأن \"التحيز والعدالة\" يشيران إلى النتائج غير العادلة التي تنتج عن بيانات متحيزة تؤثر على قرارات الذكاء الاصطناعي. هذه المشكلة تؤدي إلى معاملة غير منصفة لبعض المجموعات أو الأفراد."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Artificial Intelligence helps systems recognize patterns and make decisions.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "الذكاء الاصطناعي يستخدم خوارزميات لتحليل البيانات واستخلاص الأنماط منها، مما يمكّن الأنظمة من اتخاذ قرارات مبنية على تلك الأنماط بشكل تلقائي وفعال."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "Machine Learning models require explicit programming for every task.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "النماذج في التعلم الآلي تتعلم من البيانات وتستخلص الأنماط دون الحاجة إلى برمجة صريحة لكل مهمة. هي تعتمد على التدريب بدلاً من تعليمات محددة لكل حالة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "Supervised learning uses unlabeled data.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "التعلم المراقب يعتمد على بيانات معنونة لتدريب النموذج، أما البيانات غير المعنونة فتستخدم في التعلم غير المراقب."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Unsupervised learning is useful when data labeling is difficult or impossible.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن التعلم غير الموجه لا يعتمد على وجود تصنيفات أو تسميات مسبقة للبيانات، فهو مناسب لتحليل البيانات التي يصعب أو يستحيل تصنيفها يدوياً. بذلك يمكن اكتشاف أنماط أو مجموعات داخل البيانات دون الحاجة إلى معلومات مصنفة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "5",
+        "question": "Reinforcement learning depends on rewards and penalties.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تعلم التعزيز يقوم على مبدأ تعزيز السلوكيات التي تؤدي إلى نتائج إيجابية عن طريق مكافأتها، وتقليل السلوكيات غير المرغوبة عبر معاقبتها، مما يساعد النظام على تحسين أدائه تدريجياً."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "6",
+        "question": "Generative AI only analyzes data and does not create new content.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "الذكاء الاصطناعي التوليدي لا يقتصر على تحليل البيانات فقط، بل يُنتج محتوى جديد بناءً على الأنماط والمعلومات التي تعلمها. لذا فهو قادر على الإبداع وإنشاء نصوص أو صور أو أصوات جديدة."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "7",
+        "question": "NLP enables language translation and sentiment analysis.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تعتمد تقنيات معالجة اللغة الطبيعية على فهم النصوص وتحليلها آلياً، مما يسمح بتحويل النص من لغة إلى أخرى واكتشاف المشاعر المعبر عنها فيها."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "8",
+        "question": "Expert Systems use predefined if-then rules.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تعتمد نظم الخبراء على قواعد محددة مسبقًا لتقييم المعلومات واتخاذ القرارات بطريقة تشبه تفكير الإنسان الخبير. هذه القواعد تسهل تحليل الحالات وحل المشكلات بشكل منطقي ومنظم."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "9",
+        "question": "Feedback and improvement is the final step in the working of AI.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن التغذية الراجعة تساعد على تقييم أداء النظام وتصحيح أخطائه، مما يساهم في تحسين دقته وكفاءته في المهام المستقبلية. هذه العملية ضرورية لجعل الذكاء الاصطناعي يتعلم ويتطور باستمرار."
+    },
+    {
+        "lecture": "Lec08 - Artificial Intelligence\nFirst",
+        "type": "TF",
+        "id": "10",
+        "question": "Lack of transparency in AI models is not considered a challenge.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "تعتبر قلة الشفافية في نماذج الذكاء الاصطناعي تحدياً كبيراً لأنها تعيق فهم كيفية اتخاذ القرارات، مما يؤثر على الثقة والمساءلة."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Information security mainly aims to protect information systems from:",
+        "options": {
+            "A": "Hardware failure only",
+            "B": "Unauthorized access, use, modification, or destruction",
+            "C": "Network delays",
+            "D": "Software updates"
+        },
+        "answer": "B",
+        "explanation": "تهدف أمن المعلومات إلى حماية أنظمة المعلومات من الوصول أو الاستخدام أو التعديل أو التدمير غير المصرح به، لضمان سرية وسلامة البيانات. أما الخيارات الأخرى فهي مشكلات تقنية لا تغطي الهدف الرئيسي لأمن المعلومات."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "A threat to an information resource is defined as:",
+        "options": {
+            "A": "Any authorized system activity",
+            "B": "Any danger that may cause loss or damage",
+            "C": "A software bug",
+            "D": "A network policy"
+        },
+        "answer": "B",
+        "explanation": "التهديد هو أي خطر محتمل قد يؤدي إلى فقدان أو تلف للمورد المعلوماتي، لذا الخيار B يعبر بدقة عن مفهوم التهديد. الخيارات الأخرى تصف أنشطة أو سياسات أو أخطاء، لكنها لا تعبر عن خطر يهدد الموارد."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Security is best described as the degree of protection against:",
+        "options": {
+            "A": "Only criminal activity",
+            "B": "Data processing errors",
+            "C": "Criminal activity, danger, damage, and loss",
+            "D": "System complexity"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن الأمن يشمل الحماية الشاملة من الأنشطة الإجرامية والمخاطر والأضرار والخسائر، وليس مقتصراً على جانب واحد فقط مثل النشاط الإجرامي أو الأخطاء أو تعقيد النظام."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "Which network is considered untrusted?",
+        "options": {
+            "A": "Internal company network",
+            "B": "Corporate intranet",
+            "C": "Any external network",
+            "D": "Local area network"
+        },
+        "answer": "C",
+        "explanation": "الشبكات الخارجية تُعتبر غير موثوقة لأنها خارج نطاق السيطرة المباشرة للمؤسسة، مما يزيد من مخاطر التهديدات والهجمات الأمنية. أما الشبكات الداخلية مثل الشبكة المحلية أو الإنترانت فهي تحت إدارة الشركة وتتمتع بحماية أفضل."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "One reason why protecting information resources is difficult is:",
+        "options": {
+            "A": "Lack of data",
+            "B": "Increasing hacker skill requirements",
+            "C": "Interconnected business environments",
+            "D": "Limited access to networks"
+        },
+        "answer": "C",
+        "explanation": "لأن بيئات الأعمال المترابطة تزيد من تعقيد حماية المعلومات نتيجة تداخل الأنظمة وتبادل البيانات بين عدة جهات، مما يوسع نقاط الضعف المحتملة."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "Threats to information systems are classified into:",
+        "options": {
+            "A": "Internal and external threats",
+            "B": "Logical and physical threats",
+            "C": "Human and technical threats",
+            "D": "Unintentional and deliberate threats"
+        },
+        "answer": "D",
+        "explanation": "الإجابة D صحيحة لأن تهديدات أنظمة المعلومات تصنف بناءً على نية الفاعل، فهي إما غير مقصودة (مثل الأخطاء البشرية) أو متعمدة (مثل الهجمات الخبيثة)، وهذا التصنيف يعكس طبيعة التهديد بشكل أدق من الخيارات الأخرى."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "Unintentional threats are best described as:",
+        "options": {
+            "A": "Acts performed with malicious intent",
+            "B": "Acts performed without intent to harm",
+            "C": "Software-based attacks",
+            "D": "External attacks only"
+        },
+        "answer": "B",
+        "explanation": "التهديدات غير المتعمدة هي أفعال تحدث دون نية التسبب في ضرر، أي بدون قصد أو تخطيط مسبق. لذلك، الخيار B هو الأنسب لأنه يصف هذه الأفعال بأنها تمت بدون نية الإضرار."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Which employees pose a greater threat to information security?",
+        "options": {
+            "A": "Temporary employees",
+            "B": "New employees",
+            "C": "Lower-level employees",
+            "D": "Higher-level employees"
+        },
+        "answer": "D",
+        "explanation": "الموظفون ذوو المستويات العليا يمتلكون وصولاً أوسع وأعمق إلى المعلومات الحساسة والأنظمة الحيوية، مما يجعلهم يشكلون تهديدًا أكبر في حال استغلالهم أو استهدافهم للاختراق."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Human errors often occur due to:",
+        "options": {
+            "A": "Advanced technology",
+            "B": "Strong security policies",
+            "C": "Laziness or lack of awareness",
+            "D": "Encryption techniques"
+        },
+        "answer": "C",
+        "explanation": "الأخطاء البشرية تحدث غالبًا بسبب الكسل أو نقص الوعي، حيث يؤدي عدم الانتباه أو عدم المعرفة الكافية إلى ارتكاب أخطاء. الخيارات الأخرى لا تتعلق مباشرة بأسباب الأخطاء لدى الإنسان."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "Social engineering attacks mainly rely on:",
+        "options": {
+            "A": "Technical vulnerabilities",
+            "B": "Hardware failure",
+            "C": "Human manipulation",
+            "D": "Network firewalls"
+        },
+        "answer": "C",
+        "explanation": "الهجمات الهندسية الاجتماعية تعتمد بشكل أساسي على التلاعب بالبشر لإقناعهم بالكشف عن معلومات حساسة، وليس على الثغرات التقنية أو الأجهزة."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "Which of the following is an example of human error?",
+        "options": {
+            "A": "Installing a firewall",
+            "B": "Choosing a strong password",
+            "C": "Opening emails from unknown senders",
+            "D": "Encrypting data"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن فتح رسائل إلكترونية من مرسلين غير معروفين يعد خطأً بشرياً قد يعرض النظام للفيروسات أو الهجمات، بينما الخيارات الأخرى تمثل إجراءات صحيحة أو أمان."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Deliberate threats are characterized by:",
+        "options": {
+            "A": "Accidental actions",
+            "B": "System malfunction",
+            "C": "Intentional harmful actions",
+            "D": "Environmental hazards"
+        },
+        "answer": "C",
+        "explanation": "التهديدات المتعمدة تتميز بأنها أفعال ضارة مقصودة يقوم بها شخص أو جهة بهدف إحداث ضرر. لذلك، الخيار C هو الصحيح لأنه يشير إلى الأفعال المتعمدة الضارة."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Espionage or trespass occurs when:",
+        "options": {
+            "A": "Data is accidentally deleted",
+            "B": "An authorized user accesses data",
+            "C": "An unauthorized person gains illegal access",
+            "D": "A virus replicates itself"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن التجسس أو التسلل يعني دخول شخص غير مصرح له بشكل غير قانوني إلى مكان أو بيانات محمية."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "14",
+        "question": "Information extortion involves:",
+        "options": {
+            "A": "Accidentally losing data",
+            "B": "Threatening to steal or disclose information for payment",
+            "C": "Unauthorized copying of software",
+            "D": "Monitoring employee activities"
+        },
+        "answer": "B",
+        "explanation": "الابتزاز المعلوماتي يعني تهديد شخص بسرقة أو كشف معلومات حساسة مقابل الحصول على مال أو فائدة، وهو ما يتطابق مع الخيار B."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "15",
+        "question": "Identity theft is defined as:",
+        "options": {
+            "A": "Loss of personal files",
+            "B": "Unauthorized software copying",
+            "C": "Assumption of another person’s identity",
+            "D": "Network intrusion"
+        },
+        "answer": "C",
+        "explanation": "الاحتيال على الهوية يعني استخدام شخص لهوية شخص آخر دون إذن، أي انتحال هوية شخص آخر. الخيارات الأخرى تتعلق بمشاكل مختلفة مثل فقدان الملفات أو القرصنة أو التسلل إلى الشبكات، لكنها لا تعبر عن هذا المفهوم."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "16",
+        "question": "Piracy is considered a violation of:",
+        "options": {
+            "A": "Network policy",
+            "B": "Intellectual property rights",
+            "C": "Physical security",
+            "D": "Access control rules"
+        },
+        "answer": "B",
+        "explanation": "القرصنة تنتهك حقوق الملكية الفكرية لأنها تتعلق باستخدام أو نسخ أو توزيع محتوى محمي دون إذن صاحب الحقوق. لذلك، تُعتبر خرقًا لحقوق الملكية الفكرية."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "17",
+        "question": "A worm differs from a virus because it:",
+        "options": {
+            "A": "Requires a host program",
+            "B": "Cannot replicate",
+            "C": "Replicates by itself",
+            "D": "Is harmless"
+        },
+        "answer": "C",
+        "explanation": "الديدان (Worms) قادرة على التكاثر والانتشار بنفسها دون الحاجة إلى برنامج مضيف، بينما الفيروسات تحتاج إلى برنامج مضيف لتتكاثر. لذلك الخيار C هو الصحيح."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "18",
+        "question": "A Trojan horse is best described as:",
+        "options": {
+            "A": "Self-replicating malware",
+            "B": "A hidden program activated later",
+            "C": "A hardware attack",
+            "D": "A firewall bypass tool"
+        },
+        "answer": "B",
+        "explanation": "الخيارة B صحيحة لأن حصان طروادة هو برنامج خبيث مخفي يبدو شرعياً لكنه يُفعّل لاحقًا لتنفيذ مهام ضارة، ولا يكرر نفسه مثل البرمجيات الخبيثة الأخرى."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "19",
+        "question": "Alien software usually:",
+        "options": {
+            "A": "Destroys system files",
+            "B": "Is more harmful than viruses",
+            "C": "Uses system resources and monitors behavior",
+            "D": "Prevents spam"
+        },
+        "answer": "C",
+        "explanation": "البرمجيات الغريبة (Alien software) غالبًا ما تستغل موارد النظام وتراقب سلوك المستخدم دون إذن، بدلاً من التسبب بأضرار مباشرة أو منع الرسائل المزعجة. لذلك، الخيار C هو الأنسب."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "20",
+        "question": "Which of the following is an example of alien software?",
+        "options": {
+            "A": "Firewall",
+            "B": "Encryption",
+            "C": "Spyware",
+            "D": "Authentication"
+        },
+        "answer": "C",
+        "explanation": "البرنامج الخبيث الذي يتسلل إلى النظام دون إذن المستخدم يُسمى برنامجًا غريبًا أو \"alien software\"، مثل برامج التجسس (Spyware) التي تجمع معلومات سرية بدون علم المستخدم، وهذا هو السبب في أن الخيار C صحيح."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "21",
+        "question": "Cyberterrorism is mainly carried out by:",
+        "options": {
+            "A": "Nation states",
+            "B": "Software vendors",
+            "C": "Individuals or groups",
+            "D": "System administrators"
+        },
+        "answer": "C",
+        "explanation": "الإرهاب الإلكتروني عادةً ينفذه أفراد أو مجموعات تهدف إلى إحداث ضرر أو نشر الخوف عبر الفضاء السيبراني، وليس الدول أو الشركات أو المسؤولين عن الأنظمة."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "22",
+        "question": "Risk is defined as:",
+        "options": {
+            "A": "The cost of security systems",
+            "B": "The probability that a threat will impact an information resource",
+            "C": "A deliberate attack",
+            "D": "An unauthorized access"
+        },
+        "answer": "B",
+        "explanation": "الإجابة صحيحة لأن المخاطر تعبر عن احتمال وقوع تهديد يؤثر على مورد معلوماتي، أي أنها تقيس فرصة حدوث ضرر وليس التكلفة أو الهجوم نفسه."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "23",
+        "question": "Physical controls aim to:",
+        "options": {
+            "A": "Encrypt data",
+            "B": "Restrict system privileges",
+            "C": "Prevent unauthorized physical access",
+            "D": "Monitor network traffic"
+        },
+        "answer": "C",
+        "explanation": "الضوابط الفيزيائية تهدف إلى حماية الأصول المادية من الدخول غير المصرح به، مثل تأمين المباني والأجهزة. لذلك، منع الوصول المادي غير المصرح به هو الهدف الأساسي لهذه الضوابط."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "24",
+        "question": "Authentication is the process of:",
+        "options": {
+            "A": "Assigning privileges",
+            "B": "Confirming user identity",
+            "C": "Encrypting messages",
+            "D": "Monitoring employees"
+        },
+        "answer": "B",
+        "explanation": "التحقق من هوية المستخدم يهدف إلى التأكد من أن الشخص الذي يحاول الوصول هو فعلاً من يدعي ذلك، وهذا هو جوهر عملية المصادقة (Authentication)."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "MCQ",
+        "id": "25",
+        "question": "The main objective of a business continuity plan is to:",
+        "options": {
+            "A": "Prevent all attacks",
+            "B": "Eliminate risks completely",
+            "C": "Restore business operations quickly after a disaster",
+            "D": "Monitor employee behavior"
+        },
+        "answer": "C",
+        "explanation": "الهدف الرئيسي لخطة استمرارية الأعمال هو استعادة العمليات التجارية بسرعة بعد حدوث كارثة لضمان استمرارية العمل وتقليل الخسائر، وليس منع كل الهجمات أو القضاء على المخاطر بالكامل."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Information security protects information systems from unauthorized access and destruction.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تحرص أمن المعلومات على حفظ سرية وسلامة البيانات والنظم، مما يمنع الأشخاص غير المصرح لهم من الاطلاع أو التلاعب أو الإضرار بها. بذلك تضمن استمرارية عمل الأنظمة وحماية المعلومات الحيوية."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "Unintentional threats are always harmless.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "التهديدات غير المقصودة قد تسبب ضررًا لأنها قد تؤدي إلى سوء فهم أو ردود فعل سلبية غير متوقعة. لذلك، ليس من الضروري أن تكون دائمًا دون أذى."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "Human error is a major source of unintentional threats.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "الأخطاء البشرية تؤدي إلى سوء التصرف أو الإهمال غير المقصود، مما يفتح المجال لحدوث مخاطر أو أضرار دون قصد. لذلك، تشكل هذه الأخطاء سببًا رئيسيًا في التهديدات التي لا تهدف إليها الأطراف."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Deliberate threats occur without malicious intent.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "التهديدات المتعمدة تصدر بقصد الإضرار أو إحداث ضرر، لذا فهي ترتبط بنية خبيثة. إذا لم يكن هناك نية خبيثة، فلا يمكن اعتبار التهديد متعمداً."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "5",
+        "question": "A worm requires another program to spread.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "العبارة خاطئة لأن الدودة البرمجية قادرة على الانتشار بنفسها دون الحاجة إلى برنامج آخر، حيث تستغل الثغرات في الأنظمة أو الشبكات لتنقل نفسها تلقائياً."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "6",
+        "question": "Spyware is a type of alien software.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "البرامج التجسسية تُدخل نفسها في جهاز المستخدم دون إذنه وتجمع معلومات سرية بشكل خفي، مما يجعلها غير مرغوب فيها وتشبه البرمجيات الغريبة التي تغزو النظام."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "7",
+        "question": "Firewalls are part of communications controls.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تقوم الجدران النارية بتنظيم حركة البيانات بين الشبكات ومنع الوصول غير المصرح به، مما يحمي الاتصالات ويضمن سلامتها. لهذا فهي تُعتبر من أدوات التحكم في الاتصالات."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "8",
+        "question": "Authentication determines what actions a user can perform.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "التحقق من الهوية يهدف فقط إلى التأكد من هوية المستخدم، أما تحديد الصلاحيات والقدرة على تنفيذ الإجراءات فهو مسؤولية التفويض (Authorization)."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "9",
+        "question": "Encryption converts messages into unreadable form for unauthorized users.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن التشفير يستخدم خوارزميات لتحويل البيانات الأصلية إلى شكل مشفر لا يمكن فهمه إلا من يمتلك مفتاح فك التشفير، مما يمنع غير المصرح لهم من قراءتها."
+    },
+    {
+        "lecture": "Lec07 - Information Security\nFirst",
+        "type": "TF",
+        "id": "10",
+        "question": "Business continuity planning ensures critical business functions continue after a disaster.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تخطيط استمرارية الأعمال يهدف إلى وضع استراتيجيات وإجراءات تحافظ على تشغيل العمليات الحيوية للشركة بشكل مستمر، حتى في حالات الطوارئ أو الكوارث. هذا يضمن تقليل الانقطاع والخسائر وتحقيق التعافي السريع."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Big Data is best described as data that:",
+        "options": {
+            "A": "Is small in size and easy to manage",
+            "B": "Grows exponentially and cannot be processed efficiently by traditional tools",
+            "C": "Is stored only in relational databases",
+            "D": "Is always structured"
+        },
+        "answer": "B",
+        "explanation": "البيانات الكبيرة (Big Data) تتميز بأنها تنمو بسرعة وبكميات هائلة تفوق قدرة الأدوات التقليدية على المعالجة. لهذا السبب، الخيار B هو الوصف الأنسب لها."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "Big Data refers to strategies and technologies used to:",
+        "options": {
+            "A": "Replace databases",
+            "B": "Eliminate data growth",
+            "C": "Capture, manage, process, and analyze large volumes of data",
+            "D": "Store data temporarily"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن البيانات الضخمة تهدف إلى التعامل مع كميات هائلة من البيانات من خلال التقاطها وإدارتها ومعالجتها وتحليلها لاستخلاص معلومات قيمة، وليس مجرد تخزينها أو استبدال قواعد البيانات."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Which of the following is NOT listed as a Big Data challenge?",
+        "options": {
+            "A": "Capturing data",
+            "B": "Transporting data",
+            "C": "Managing hardware and software",
+            "D": "Eliminating data redundancy completely"
+        },
+        "answer": "D",
+        "explanation": "الإجابة D غير مدرجة كأحد تحديات البيانات الضخمة لأن القضاء التام على تكرار البيانات غير ممكن ولا يُعتبر هدفًا عمليًا، بينما الخيارات الأخرى تمثل تحديات فعلية في التعامل مع البيانات الضخمة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "The New York Stock Exchange is considered an example of Big Data because it:",
+        "options": {
+            "A": "Uses relational databases",
+            "B": "Generates about one terabyte of data per day",
+            "C": "Stores only structured data",
+            "D": "Produces small volumes of data"
+        },
+        "answer": "B",
+        "explanation": "الإجابة الصحيحة هي B لأن حجم البيانات التي تولدها بورصة نيويورك يوميًا يصل إلى تيرابايت واحد، مما يعكس كمية هائلة من البيانات التي تُعتبر من خصائص \"البيانات الضخمة\"."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "Social media platforms generate Big Data mainly through:",
+        "options": {
+            "A": "System backups",
+            "B": "Software updates",
+            "C": "User activities such as photos, videos, and messages",
+            "D": "Hardware monitoring"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن منصات التواصل الاجتماعي تجمع كميات كبيرة من البيانات بشكل رئيسي من تفاعلات المستخدمين مثل رفع الصور والفيديوهات وإرسال الرسائل، وهذه الأنشطة تولد بيانات ضخمة ومتنوعة تُعرف بـ \"البيانات الضخمة\"."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "A single jet engine can generate more than:",
+        "options": {
+            "A": "1 terabyte per day",
+            "B": "10 terabytes in 30 minutes",
+            "C": "100 gigabytes per hour",
+            "D": "1 petabyte per flight"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن محركات الطائرات الحديثة تولد كمية هائلة من البيانات تصل إلى عشرات التيرابايت خلال فترة زمنية قصيرة، مثل 30 دقيقة، بسبب كثافة وأهمية المعلومات التي يتم جمعها لمراقبة الأداء والصيانة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "Which of the following represents the “Volume” characteristic of Big Data?",
+        "options": {
+            "A": "Speed of data generation",
+            "B": "Different data formats",
+            "C": "Huge amounts of data",
+            "D": "Data accuracy"
+        },
+        "answer": "C",
+        "explanation": "الإجابة C صحيحة لأن خاصية \"الحجم\" في البيانات الضخمة تشير إلى الكميات الهائلة والكبيرة جداً من البيانات التي يتم جمعها وتخزينها."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Variety in Big Data refers to:",
+        "options": {
+            "A": "Data processing speed",
+            "B": "Different data types and formats",
+            "C": "Data storage size",
+            "D": "Data security level"
+        },
+        "answer": "B",
+        "explanation": "التنوع في البيانات الكبيرة يعني وجود أنواع وصيغ مختلفة من البيانات مثل النصوص والصور والفيديوهات، وهذا ما يعبر عنه الخيار B."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Velocity in Big Data is related to:",
+        "options": {
+            "A": "Data quality",
+            "B": "Data storage methods",
+            "C": "Speed of data generation and processing",
+            "D": "Data structure"
+        },
+        "answer": "C",
+        "explanation": "السرعة (Velocity) في البيانات الضخمة تعني سرعة توليد البيانات ومعالجتها، أي مدى سرعة تدفق البيانات وتحديثها في الوقت الحقيقي. لذلك الخيار C هو الصحيح لأنه يصف هذا المفهوم بدقة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "Structured data is best described as data that:",
+        "options": {
+            "A": "Has unknown format",
+            "B": "Cannot be stored in databases",
+            "C": "Is stored in fixed formats such as relational tables",
+            "D": "Consists only of multimedia"
+        },
+        "answer": "C",
+        "explanation": "البيانات المنظمة (Structured data) تتميز بوجود تنسيق ثابت ومنظم، مثل الجداول العلائقية، مما يسهل تخزينها ومعالجتها في قواعد البيانات. لذا، الخيار C هو الأنسب لأنه يعبر عن هذا الخصائص بدقة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "Which of the following is an example of unstructured data?",
+        "options": {
+            "A": "Employee table in a database",
+            "B": "Financial transaction records",
+            "C": "Text files, images, and videos",
+            "D": "Spreadsheet data"
+        },
+        "answer": "C",
+        "explanation": "البيانات غير المهيكلة هي التي لا تتبع تنسيقًا معينًا أو جداول منظمة، مثل النصوص والصور والفيديوهات، لذا فإن الخيار C يمثل مثالًا على البيانات غير المهيكلة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Experts estimate that approximately what percentage of organizational data is unstructured?",
+        "options": {
+            "A": "20%",
+            "B": "40%",
+            "C": "60%",
+            "D": "80%"
+        },
+        "answer": "D",
+        "explanation": "الإجابة صحيحة لأن معظم بيانات المؤسسات تكون على شكل نصوص، صور، فيديوهات، ورسائل بريد إلكتروني، وهي بيانات غير منظمة يصعب تصنيفها باستخدام قواعد بيانات تقليدية، مما يجعل نسبة البيانات غير المنظمة تصل إلى حوالي 80%."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Organizations initially managed Big Data by:",
+        "options": {
+            "A": "Using Hadoop only",
+            "B": "Eliminating data warehouses",
+            "C": "Integrating data into databases and developing data warehouses",
+            "D": "Avoiding data integration"
+        },
+        "answer": "C",
+        "explanation": "في البداية، كانت المؤسسات تدير البيانات الضخمة عبر دمج البيانات داخل قواعد البيانات وتطوير مستودعات البيانات لتنظيمها وتحليلها بشكل فعال، مما يسهل الوصول إليها واستخدامها."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "14",
+        "question": "NoSQL databases are useful because they can:",
+        "options": {
+            "A": "Handle only structured data",
+            "B": "Replace all SQL databases",
+            "C": "Process structured and unstructured data",
+            "D": "Work only with missing data"
+        },
+        "answer": "C",
+        "explanation": "قواعد بيانات NoSQL قادرة على التعامل مع البيانات المنظمة وغير المنظمة بشكل مرن، مما يجعلها مناسبة لمجموعة واسعة من التطبيقات التي تتطلب تخزين أنواع مختلفة من البيانات. أما الخيارات الأخرى فهي غير دقيقة لأن NoSQL ليست مخصصة فقط للبيانات المنظمة أو المفقودة، ولا تحل محل جميع قواعد بيانات SQL."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "15",
+        "question": "Hadoop is best described as:",
+        "options": {
+            "A": "A proprietary database system",
+            "B": "An open-source framework for Big Data",
+            "C": "An OLAP processing tool",
+            "D": "A real-time processing engine"
+        },
+        "answer": "B",
+        "explanation": "Hadoop هو إطار عمل مفتوح المصدر مصمم لمعالجة وتخزين كميات هائلة من البيانات (Big Data) بشكل موزع وفعال، وليس نظام قاعدة بيانات مملوك أو أداة تحليل OLAP أو محرك معالجة في الوقت الحقيقي."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "16",
+        "question": "Hadoop is mainly used for:",
+        "options": {
+            "A": "Online transaction processing",
+            "B": "Real-time analytics",
+            "C": "Batch and offline processing",
+            "D": "Small file storage"
+        },
+        "answer": "C",
+        "explanation": "Hadoop مصمم لمعالجة كميات كبيرة من البيانات بطريقة دفعات غير متصلة بالزمن الحقيقي، لذلك يستخدم بشكل رئيسي في المعالجة الدفعاتية والغير مباشرة (batch and offline processing)."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "17",
+        "question": "HDFS stores data by:",
+        "options": {
+            "A": "Keeping files on a single machine",
+            "B": "Dividing files into blocks and distributing them across nodes",
+            "C": "Encrypting all files automatically",
+            "D": "Storing metadata and data in the same node"
+        },
+        "answer": "B",
+        "explanation": "لأن HDFS يقوم بتقسيم الملفات إلى كتل صغيرة ويوزعها عبر عدة عقد في النظام لتوفير التخزين الموزع وزيادة التحمل والكفاءة، وليس بتخزينها على جهاز واحد أو دمج البيانات والبيانات الوصفية في نفس العقدة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "18",
+        "question": "In HDFS architecture, which component stores metadata?",
+        "options": {
+            "A": "DataNode",
+            "B": "Cluster",
+            "C": "NameNode",
+            "D": "Rack"
+        },
+        "answer": "C",
+        "explanation": "NameNode هو المسؤول عن تخزين بيانات التعريف (metadata) في نظام HDFS، مثل معلومات ملفات النظام ومواقع كتل البيانات، بينما DataNode يخزن البيانات الفعلية."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "19",
+        "question": "The default replication factor in HDFS is:",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "answer": "C",
+        "explanation": "الإعداد الافتراضي لعامل التكرار في HDFS هو 3 لضمان توفر البيانات وتحمل الأعطال، حيث يتم تخزين كل ملف في ثلاث نسخ على عقد مختلفة. هذا يعزز موثوقية النظام ويقلل من فقدان البيانات."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "MCQ",
+        "id": "20",
+        "question": "HDFS is NOT suitable for:",
+        "options": {
+            "A": "Large files",
+            "B": "Batch processing",
+            "C": "Streaming reads",
+            "D": "Random access transactions"
+        },
+        "answer": "D",
+        "explanation": "HDFS مصمم لمعالجة ملفات كبيرة والقراءة المتتابعة (batch processing)، لكنه غير مناسب للمعاملات التي تتطلب وصولاً عشوائياً سريعاً للبيانات، لأن بنيته تعتمد على تخزين متسلسل لا يدعم تحديثات أو وصول عشوائي فعال."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Big Data cannot be efficiently processed using traditional data management tools.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن البيانات الضخمة تتميز بحجمها الكبير وتنوعها وسرعة توليدها، فإن الأدوات التقليدية تفتقر إلى القدرة على التعامل مع هذه الخصائص بكفاءة عالية، مما يتطلب تقنيات متقدمة لمعالجتها بشكل فعال."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "Velocity refers to the different formats of Big Data.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "السرعة (Velocity) تعني سرعة تدفق البيانات ومعالجتها، وليست أنواع أو صيغ البيانات المختلفة. تنتمي صيغ البيانات إلى خاصية أخرى تسمى التنوع (Variety)."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "Social media is a major source of Big Data.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تنتج منصات التواصل الاجتماعي كميات هائلة من المعلومات يومياً من خلال المنشورات والتعليقات والصور والفيديوهات، مما يساهم في توليد بيانات ضخمة ومتنوعة تستخدم لتحليل الاتجاهات والسلوكيات."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Structured data has an unknown and irregular format.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "البيانات المهيكلة تتميز بتنظيم معروف وثابت، مثل الجداول التي تحتوي على صفوف وأعمدة محددة. لذلك، ليست ذات تنسيق غير معروف أو غير منتظم."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "5",
+        "question": "Unstructured data is growing faster than structured data.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن البيانات غير المنظمة تشمل محتوى متنوعاً مثل الصور والفيديوهات والنصوص الحرة التي تُنتَج بكميات ضخمة يومياً، مما يجعل حجمها يتزايد بسرعة أكبر مقارنة بالبيانات المنظمة التي تكون محددة ومرتبة في قواعد بيانات."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "6",
+        "question": "Hadoop is written in Java.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن معظم مكونات نظام Hadoop الأساسية مثل HDFS و MapReduce تم تطويرها باستخدام لغة جافا، مما يسهل التكامل مع بيئات جافا ويوفر أداءً جيدًا عبر منصات متعددة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "7",
+        "question": "HDFS stores the entire file on a single DataNode.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "غير صحيح لأن HDFS تقسم الملفات إلى أجزاء صغيرة تُخزن على عدة DataNodes لتوفير التكرار وتحسين الأداء والموثوقية."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "8",
+        "question": "Replication in HDFS helps achieve fault tolerance.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تكرار البيانات في HDFS يضمن وجود نسخ متعددة من الملفات على عدة عقد، مما يسمح باستعادة البيانات تلقائيًا عند فشل أي عقدة دون فقدان المعلومات. هذا يقلل من تأثير الأعطال ويحافظ على استمرارية الخدمة."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "9",
+        "question": "NameNode stores the actual data blocks in HDFS.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "الـ NameNode لا يخزن بيانات الملفات نفسها، بل يحتفظ بمعلومات تنظيمية مثل مكان وجود كل كتلة بيانات على العقد المختلفة. تخزين البيانات الفعلية يتم في DataNodes وليس في NameNode."
+    },
+    {
+        "lecture": "Lec06 - Big Data Engineering\nFirst",
+        "type": "TF",
+        "id": "10",
+        "question": "HDFS is ideal for processing a large number of small files.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "HDFS مصمم للتعامل مع ملفات كبيرة الحجم لأنه يحتفظ بمعلومات الميتاداتا لكل ملف في الذاكرة، وعند وجود عدد كبير من الملفات الصغيرة يزداد استهلاك الذاكرة مما يؤثر على الأداء بشكل سلبي."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Social computing mainly focuses on:",
+        "options": {
+            "A": "Reducing hardware costs",
+            "B": "Improving collaboration and interaction among people",
+            "C": "Automating business processes",
+            "D": "Eliminating user participation"
+        },
+        "answer": "B",
+        "explanation": "تركز الحوسبة الاجتماعية على تعزيز التعاون والتفاعل بين الأفراد من خلال استخدام التكنولوجيا، مما يسهل تبادل المعرفة والعمل الجماعي بشكل فعال."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "Social computing is best defined as:",
+        "options": {
+            "A": "A traditional information system",
+            "B": "A type of IT that combines social behavior and information systems",
+            "C": "A database technology",
+            "D": "A network security tool"
+        },
+        "answer": "B",
+        "explanation": "الإجابة صحيحة لأن الحوسبة الاجتماعية تجمع بين السلوك الاجتماعي وتقنيات نظم المعلومات لتمكين التفاعل والتواصل بين المستخدمين، وليست مجرد نظام تقليدي أو أداة أمنية أو تقنية قاعدة بيانات فقط."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "In social computing, content is primarily produced and managed by:",
+        "options": {
+            "A": "Organizations",
+            "B": "System administrators",
+            "C": "Users",
+            "D": "Software vendors"
+        },
+        "answer": "C",
+        "explanation": "في الحوسبة الاجتماعية، المحتوى يتم إنشاؤه وإدارته بشكل أساسي من قبل المستخدمين أنفسهم، حيث يساهمون بمشاركة المعلومات والتفاعل، وليس من قبل المؤسسات أو المسؤولين النظاميين فقط."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "Web 2.0 differs from Web 1.0 because it emphasizes:",
+        "options": {
+            "A": "Static web pages",
+            "B": "Cost reduction",
+            "C": "User participation and collaboration",
+            "D": "Hardware performance"
+        },
+        "answer": "C",
+        "explanation": "الويب 2.0 يركز على تفاعل المستخدمين ومشاركتهم في إنشاء المحتوى والتعاون عبر الإنترنت، بخلاف الويب 1.0 الذي كان يعتمد على صفحات ثابتة ومحتوى من جهة واحدة فقط. لذا، الخيار C هو الصحيح."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "Web 2.0 is best described as:",
+        "options": {
+            "A": "A single programming language",
+            "B": "A collection of technologies, applications, and websites",
+            "C": "A database system",
+            "D": "A security framework"
+        },
+        "answer": "B",
+        "explanation": "Web 2.0 يشير إلى مجموعة من التقنيات والتطبيقات والمواقع التي تتيح تفاعل المستخدمين وتبادل المحتوى عبر الإنترنت، وليس مجرد لغة برمجة أو نظام قاعدة بيانات أو إطار أمني."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "AJAX is mainly used to:",
+        "options": {
+            "A": "Secure web applications",
+            "B": "Reload entire web pages",
+            "C": "Reload parts of web pages with fresh data",
+            "D": "Store multimedia content"
+        },
+        "answer": "C",
+        "explanation": "AJAX يُستخدم لتحديث أجزاء معينة من صفحة الويب دون الحاجة إلى إعادة تحميل الصفحة كاملة، مما يجعل التفاعل أسرع وأكثر سلاسة. لذلك، الخيار C هو الصحيح لأنه يعبر عن هذه الوظيفة بدقة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "The main benefit of using AJAX is:",
+        "options": {
+            "A": "Lower storage cost",
+            "B": "Increased response time",
+            "C": "Faster response time and higher user satisfaction",
+            "D": "Better data security"
+        },
+        "answer": "C",
+        "explanation": "AJAX يسمح بتحديث أجزاء من الصفحة بشكل غير متزامن دون إعادة تحميلها بالكامل، مما يؤدي إلى استجابة أسرع وتحسين تجربة المستخدم. لذلك، الفائدة الرئيسية هي تسريع الاستجابة وزيادة رضا المستخدم."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "A tag is defined as:",
+        "options": {
+            "A": "A system-generated label",
+            "B": "A keyword describing a piece of information",
+            "C": "A type of database index",
+            "D": "A social network profile"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن الوسم (tag) هو كلمة مفتاحية تُستخدم لوصف وتصنيف قطعة من المعلومات لتسهيل البحث والتنظيم. أما الخيارات الأخرى فتشير إلى مفاهيم مختلفة غير مرتبطة بتعريف الوسم."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Geotagging refers to:",
+        "options": {
+            "A": "Tagging videos only",
+            "B": "Tagging information on maps",
+            "C": "Securing location data",
+            "D": "Tracking users secretly"
+        },
+        "answer": "B",
+        "explanation": "الجيو تاجينج يعني إضافة معلومات الموقع الجغرافي إلى الصور أو الملفات أو البيانات، وبذلك يتم وضع علامة على الخرائط لتحديد مكان حدوث شيء معين. لذا الخيار B هو الصحيح لأنه يصف هذه العملية بدقة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "A blog is best described as:",
+        "options": {
+            "A": "A private database",
+            "B": "A personal website open to the public",
+            "C": "A collaborative encyclopedia",
+            "D": "A microblogging service"
+        },
+        "answer": "B",
+        "explanation": "المدونة هي موقع إلكتروني شخصي يُنشر فيه المحتوى بشكل متتابع ومتاح للجمهور، لذا فهي ليست قاعدة بيانات خاصة أو موسوعة تعاونية، ولا تقتصر على التدوين القصير فقط."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "Bloggers are people who:",
+        "options": {
+            "A": "Only read online content",
+            "B": "Create and maintain blogs",
+            "C": "Manage social networks",
+            "D": "Design websites"
+        },
+        "answer": "B",
+        "explanation": "المدونون هم الأشخاص الذين يكتبون وينشرون المحتوى على المدونات ويقومون بإدارتها باستمرار. لذلك، الخيار B هو الصحيح لأنه يشير إلى إنشاء وصيانة المدونات."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Microblogging differs from blogging mainly because it:",
+        "options": {
+            "A": "Allows longer messages",
+            "B": "Is used only by businesses",
+            "C": "Limits the length of messages",
+            "D": "Does not allow multimedia"
+        },
+        "answer": "C",
+        "explanation": "الميكروبلاجنغ يختلف عن التدوين التقليدي لأنه يفرض حدًا معينًا لطول الرسائل، مما يجعل المحتوى مختصرًا وسريع القراءة. لذا، الخيار \"يقتصر على طول الرسائل\" هو الصحيح."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "13",
+        "question": "The most popular microblogging service mentioned in the lecture is:",
+        "options": {
+            "A": "Facebook",
+            "B": "LinkedIn",
+            "C": "Instagram",
+            "D": "Twitter (X)"
+        },
+        "answer": "D",
+        "explanation": "الإجابة صحيحة لأن تويتر (X) هو أشهر خدمة تدوين مصغر، حيث يتيح للمستخدمين نشر رسائل قصيرة وفورية، وهو معروف بشعبيته الكبيرة مقارنة بالخدمات الأخرى المذكورة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "14",
+        "question": "A wiki is a website that:",
+        "options": {
+            "A": "Is controlled by a single author",
+            "B": "Contains only verified expert content",
+            "C": "Allows users to add, change, or delete content",
+            "D": "Does not allow collaboration"
+        },
+        "answer": "C",
+        "explanation": "الويكي هو موقع يسمح للمستخدمين بالتعاون عن طريق إضافة أو تعديل أو حذف المحتوى، مما يميزها عن المواقع التي يسيطر عليها مؤلف واحد أو لا تسمح بالتعاون."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "15",
+        "question": "Wikipedia is considered an example of:",
+        "options": {
+            "A": "A blog",
+            "B": "A mashup",
+            "C": "A wiki",
+            "D": "A social network"
+        },
+        "answer": "C",
+        "explanation": "ويكيبديا تُعد مثالاً على \"ويكي\" لأنها منصة تسمح للمستخدمين بتحرير المحتوى بشكل تعاوني ومباشر، مما يميزها عن المدونات أو الشبكات الاجتماعية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "16",
+        "question": "A social network is defined as:",
+        "options": {
+            "A": "A collection of databases",
+            "B": "A social structure linking individuals or groups",
+            "C": "A business-only platform",
+            "D": "A marketing tool"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأنها تصف الشبكة الاجتماعية كنظام يربط بين أفراد أو مجموعات، مما يعكس طبيعة الشبكات الاجتماعية التي تعتمد على العلاقات والتواصل بين الناس. الخيارات الأخرى تركز على جوانب محدودة أو غير دقيقة مقارنة بالتعريف الأساسي."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "17",
+        "question": "Social capital refers to:",
+        "options": {
+            "A": "Financial resources of a network",
+            "B": "The number of connections a person has",
+            "C": "Website popularity",
+            "D": "Advertising revenue"
+        },
+        "answer": "B",
+        "explanation": "رأس المال الاجتماعي يشير إلى شبكة العلاقات والاتصالات التي يمتلكها الفرد والتي تمكنه من الحصول على الدعم والمعلومات. لذلك، عدد الروابط أو الاتصالات هو ما يعبر بدقة عن هذا المفهوم."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "18",
+        "question": "An enterprise social network can be described as:",
+        "options": {
+            "A": "A public entertainment platform",
+            "B": "A government-owned network",
+            "C": "A business-oriented social network",
+            "D": "A personal blogging site"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن الشبكة الاجتماعية المؤسسية تهدف إلى تعزيز التواصل والتعاون بين موظفي الشركة، وهي مخصصة للأغراض التجارية والعملية داخل بيئة العمل."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "19",
+        "question": "A mashup is a website that:",
+        "options": {
+            "A": "Stores user profiles",
+            "B": "Mixes content from multiple websites",
+            "C": "Hosts only maps",
+            "D": "Provides social networking features"
+        },
+        "answer": "B",
+        "explanation": "الإجابة صحيحة لأن الماش أب (Mashup) هو موقع يجمع ويخلط محتوى من مصادر مختلفة على الإنترنت ليقدم خدمة أو معلومات موحدة. لذا، الخيار B يعبر بدقة عن هذه الخاصية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "20",
+        "question": "Google Maps is considered a classic example of:",
+        "options": {
+            "A": "A blog",
+            "B": "A wiki",
+            "C": "A mashup",
+            "D": "A microblog"
+        },
+        "answer": "C",
+        "explanation": "Google Maps تجمع بين خرائط من مصادر مختلفة وبيانات إضافية مثل مواقع الأعمال والمراجعات، مما يجعلها مثالاً على \"mashup\" أو دمج محتويات متعددة في خدمة واحدة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "21",
+        "question": "Social commerce refers to:",
+        "options": {
+            "A": "Online shopping without interaction",
+            "B": "Delivery of e-commerce activities through social computing",
+            "C": "Traditional e-commerce websites",
+            "D": "Internal business transactions"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن التجارة الاجتماعية تعتمد على استخدام منصات التواصل الاجتماعي لتسهيل وتنفيذ الأنشطة التجارية الإلكترونية، مما يجمع بين التجارة الإلكترونية والحوسبة الاجتماعية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "22",
+        "question": "One potential benefit of social commerce for customers is:",
+        "options": {
+            "A": "Reduced product variety",
+            "B": "Faster and more transparent responses to complaints",
+            "C": "Higher prices",
+            "D": "Limited communication"
+        },
+        "answer": "B",
+        "explanation": "الإجابة صحيحة لأن التجارة الاجتماعية تتيح للعملاء التفاعل المباشر مع البائعين والمجتمع، مما يؤدي إلى استجابة أسرع وأكثر شفافية للشكاوى والمشاكل مقارنة بالطرق التقليدية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "23",
+        "question": "A major risk of social computing is:",
+        "options": {
+            "A": "Increased collaboration",
+            "B": "Improved customer engagement",
+            "C": "Invasion of privacy",
+            "D": "Faster feedback"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن الحوسبة الاجتماعية تجمع وتشارك كمية كبيرة من البيانات الشخصية، مما يزيد من خطر انتهاك الخصوصية واختراق المعلومات الحساسة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "24",
+        "question": "Social shopping focuses on:",
+        "options": {
+            "A": "Price comparison only",
+            "B": "Using social network features to support shopping",
+            "C": "Traditional retail stores",
+            "D": "Internal company purchases"
+        },
+        "answer": "B",
+        "explanation": "الاجابة صحيحة لأن التسوق الاجتماعي يعتمد على استخدام ميزات الشبكات الاجتماعية مثل التفاعل والمراجعات لمساعدة المستهلكين في اتخاذ قرارات الشراء، وليس فقط مقارنة الأسعار أو الشراء من المتاجر التقليدية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "MCQ",
+        "id": "25",
+        "question": "In marketing research, social intelligence refers to:",
+        "options": {
+            "A": "Data encryption techniques",
+            "B": "Monitoring and analyzing socially generated data",
+            "C": "Training employees",
+            "D": "Managing customer complaints"
+        },
+        "answer": "B",
+        "explanation": "الذكاء الاجتماعي في أبحاث التسويق يعني متابعة وتحليل البيانات التي يتم توليدها عبر وسائل التواصل الاجتماعي لفهم سلوك وتفضيلات العملاء. لذلك، الخيار B هو الأنسب لأنه يشير إلى مراقبة وتحليل هذه البيانات الاجتماعية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Social computing encourages user-generated content and collaboration.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تشجع الحوسبة الاجتماعية الأفراد على المشاركة الفعّالة من خلال إنشاء المحتوى بأنفسهم والتفاعل مع الآخرين، مما يعزز التعاون وتبادل الأفكار بين المستخدمين."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "Web 2.0 websites discourage user participation.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "العبارة خاطئة لأن مواقع الويب 2.0 تشجع المستخدمين على التفاعل والمشاركة من خلال إنشاء المحتوى والتعليقات والتقييمات، مما يجعلها منصات تفاعلية أكثر من النسخة السابقة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "AJAX requires reloading the entire web page every time data changes.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "AJAX يسمح بتحديث جزء معين من الصفحة فقط بدون إعادة تحميلها كاملة، مما يحسن سرعة وتفاعل الموقع. لذلك، لا يحتاج إلى إعادة تحميل الصفحة بالكامل عند تغيير البيانات."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Tagging is a form of user-generated classification.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن المستخدمين يضيفون تسميات أو كلمات مفتاحية للمحتوى بأنفسهم، مما يساعد في تنظيم وتصنيف المعلومات بشكل يعبّر عن وجهات نظرهم الشخصية."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "5",
+        "question": "Microblogging allows unlimited message length.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "العبارة غير صحيحة لأن منصات التدوين المصغر تفرض عادة حدًا أقصى لطول الرسائل، مثل تويتر الذي يحدد عدد الأحرف المسموح بها في كل تغريدة. لذا، لا يمكن كتابة رسائل بطول غير محدود."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "6",
+        "question": "Wikis allow users to edit content collaboratively.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تُتيح الويكيات للعديد من المستخدمين تعديل المحتوى بشكل مشترك، مما يسهل تحديث المعلومات وتحسينها باستمرار من خلال مساهمات متعددة."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "7",
+        "question": "Social capital refers to the number of social connections a person has.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "رأس المال الاجتماعي يعبر عن شبكة العلاقات الاجتماعية التي يمتلكها الفرد والتي تساعده في الحصول على الدعم والمعلومات والفرص. كلما زادت هذه الروابط، زادت قيمة رأس المال الاجتماعي."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "8",
+        "question": "Social commerce allows users to purchase products without leaving social networks.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تتيح منصات التجارة الاجتماعية دمج عمليات الشراء داخل تطبيقات التواصل، مما يمكن المستخدمين من إتمام عمليات الشراء مباشرةً دون الحاجة للانتقال إلى مواقع خارجية. هذا يسهل تجربة التسوق ويوفر الوقت."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "9",
+        "question": "Social computing has no risks for organizations.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "الحوسبة الاجتماعية قد تعرض المؤسسات لمخاطر مثل تسرب المعلومات، فقدان الخصوصية، والهجمات الإلكترونية التي تؤثر على سمعة المؤسسة وأمان بياناتها."
+    },
+    {
+        "lecture": "Lec05 - Social Computing\nFirst",
+        "type": "TF",
+        "id": "10",
+        "question": "Human Resource departments use social computing mainly for recruiting and training.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تستخدم أقسام الموارد البشرية الحوسبة الاجتماعية لتسهيل التواصل مع المرشحين وتقديم برامج تدريبية تفاعلية، مما يحسن من فعالية التوظيف والتطوير المهني."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Electronic commerce (e-commerce) refers to:",
+        "options": {
+            "A": "Internal organizational transactions only",
+            "B": "Buying, selling, and exchanging products or information via the Internet",
+            "C": "Physical retail activities",
+            "D": "Marketing through traditional media"
+        },
+        "answer": "B",
+        "explanation": "التجارة الإلكترونية تعني عمليات الشراء والبيع وتبادل المنتجات أو المعلومات عبر الإنترنت، وليست مقتصرة على المعاملات الداخلية أو الأنشطة التقليدية مثل البيع بالتجزئة أو التسويق عبر الوسائل التقليدية."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "2",
+        "question": "One main reason organizations employ Web sites is to:",
+        "options": {
+            "A": "Increase hardware efficiency",
+            "B": "Eliminate competition",
+            "C": "Reduce operational and transaction costs",
+            "D": "Replace employees"
+        },
+        "answer": "C",
+        "explanation": "المنظمات تستخدم المواقع الإلكترونية بشكل رئيسي لتقليل التكاليف التشغيلية وتكاليف المعاملات من خلال تبسيط العمليات وزيادة سرعة الوصول إلى العملاء. هذا يساعد في تحسين الكفاءة وتقليل الحاجة للإجراءات اليدوية المكلفة."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Electronic business (e-business) differs from e-commerce because it also includes:",
+        "options": {
+            "A": "Only online advertising",
+            "B": "Servicing customers and collaborating with partners",
+            "C": "Physical delivery only",
+            "D": "Offline transactions"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن التجارة الإلكترونية تركز على عمليات الشراء والبيع عبر الإنترنت، بينما الأعمال الإلكترونية تشمل أيضاً تقديم الخدمات للعملاء والتعاون مع الشركاء، مما يغطي جوانب أوسع من النشاط التجاري الرقمي."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "4",
+        "question": "Brick-and-mortar organizations are best described as:",
+        "options": {
+            "A": "Fully digital organizations",
+            "B": "Virtual organizations",
+            "C": "Organizations that operate only physically",
+            "D": "Online marketplaces"
+        },
+        "answer": "C",
+        "explanation": "المنظمات التقليدية (brick-and-mortar) تعمل من خلال مواقع فعلية ومباني مادية فقط، ولا تعتمد على العمليات الرقمية أو الافتراضية بشكل أساسي، لذا الخيار C هو الأنسب."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "5",
+        "question": "A virtual (pure-EC) organization is one in which:",
+        "options": {
+            "A": "Only payment is digital",
+            "B": "All dimensions of commerce are digital",
+            "C": "Delivery is physical",
+            "D": "Only marketing is online"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن المنظمة الافتراضية (pure-EC) تعتمد بشكل كامل على العمليات الرقمية في جميع جوانب التجارة، مثل التسويق، البيع، الدفع، والتسليم الإلكتروني، دون وجود أي عناصر مادية."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "6",
+        "question": "Purchasing a physical book online and receiving it by delivery is an example of:",
+        "options": {
+            "A": "Pure electronic commerce",
+            "B": "Brick-and-mortar commerce",
+            "C": "Partial electronic commerce",
+            "D": "Mobile commerce"
+        },
+        "answer": "C",
+        "explanation": "الإجابة C صحيحة لأن الشراء يتم إلكترونيًا عبر الإنترنت، لكن تسليم المنتج يكون فعليًا (كتاب مادي)، مما يجعل العملية تجمع بين التجارة الإلكترونية والتجارة التقليدية، أي تجارة إلكترونية جزئية."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "7",
+        "question": "In Business-to-Consumer (B2C) e-commerce:",
+        "options": {
+            "A": "Both buyers and sellers are organizations",
+            "B": "Sellers are individuals",
+            "C": "Sellers are organizations and buyers are individuals",
+            "D": "Transactions are internal"
+        },
+        "answer": "C",
+        "explanation": "لأن في التجارة الإلكترونية بين الأعمال والمستهلكين (B2C)، تكون الشركات هي البائعين الذين يبيعون منتجاتهم أو خدماتهم مباشرة للأفراد المستهلكين، وليس العكس أو بين منظمات فقط."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Which type of e-commerce represents the largest volume of EC transactions?",
+        "options": {
+            "A": "B2C",
+            "B": "C2C",
+            "C": "B2B",
+            "D": "B2E"
+        },
+        "answer": "C",
+        "explanation": "النوع B2B (من شركة إلى شركة) يشمل معاملات ضخمة بين الشركات والمؤسسات، مما يؤدي إلى حجم معاملات أكبر بكثير من الأنواع الأخرى التي تركز على المستهلكين الأفراد. لذلك، يمثل B2B أكبر حجم من معاملات التجارة الإلكترونية."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Electronic catalogs are important in e-commerce because they:",
+        "options": {
+            "A": "Replace payment systems",
+            "B": "Are the backbone of most e-commerce sites",
+            "C": "Eliminate the need for databases",
+            "D": "Are used only in auctions"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن الكتالوجات الإلكترونية تحتوي على معلومات المنتجات والخدمات التي تُعرض للبيع، مما يجعلها الأساس الذي يعتمد عليه معظم مواقع التجارة الإلكترونية لتنظيم وعرض المحتوى بشكل فعّال."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "10",
+        "question": "An electronic marketplace is best described as:",
+        "options": {
+            "A": "A single online store",
+            "B": "A collection of B2C storefronts",
+            "C": "A virtual space where many buyers and sellers interact",
+            "D": "A physical shopping mall"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن السوق الإلكتروني هو مكان افتراضي يجمع بين العديد من البائعين والمشترين للتفاعل والتبادل، وليس مجرد متجر واحد أو مجموعة متاجر أو مكان مادي."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "11",
+        "question": "One major benefit of e-commerce to customers is:",
+        "options": {
+            "A": "Limited product availability",
+            "B": "Higher prices",
+            "C": "Access to products and services around the clock",
+            "D": "Reduced product choices"
+        },
+        "answer": "C",
+        "explanation": "الإجابة صحيحة لأن التجارة الإلكترونية تتيح للعملاء الوصول إلى المنتجات والخدمات في أي وقت دون التقيد بساعات عمل محددة، مما يوفر لهم راحة ومرونة أكبر في التسوق."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Cybersquatting refers to:",
+        "options": {
+            "A": "Online auction fraud",
+            "B": "Illegal online payment methods",
+            "C": "Registering domain names to profit from others’ trademarks",
+            "D": "Copying software for personal use"
+        },
+        "answer": "C",
+        "explanation": "Cybersquatting يعني تسجيل أسماء نطاقات إلكترونية بهدف الاستفادة المالية من علامات تجارية مسجلة تخص أشخاص أو شركات أخرى، وذلك عن طريق بيع هذه النطاقات لاحقًا بأسعار مرتفعة."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "TF",
+        "id": "2",
+        "question": "B2C e-commerce is less complex than B2B e-commerce.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "التجارة الإلكترونية بين الشركات تتطلب إدارة علاقات معقدة، مثل عقود متعددة، كميات كبيرة، وأنظمة دفع متقدمة، بينما التجارة مع المستهلكين تكون أبسط بسبب عمليات شراء فردية وشروط أقل تعقيدًا."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "TF",
+        "id": "3",
+        "question": "Electronic malls provide a one-stop shopping experience under a single Internet address.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "توفر المراكز التجارية الإلكترونية مجموعة متنوعة من المتاجر والخدمات في موقع إلكتروني واحد، مما يسهل على المستخدمين التسوق من أماكن متعددة دون الحاجة إلى زيارة مواقع مختلفة. هذا يجمع الخيارات في مكان واحد لتجربة تسوق مريحة وشاملة."
+    },
+    {
+        "lecture": "Lec04 - E",
+        "type": "TF",
+        "id": "4",
+        "question": "Internet fraud is a major legal issue associated with e-commerce.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "الاحتيال الإلكتروني يؤدي إلى خسائر مالية كبيرة ويستغل الثغرات الأمنية في المعاملات عبر الإنترنت، مما يجعل حماية المستهلك وتنظيم التجارة الرقمية من أولويات القانون."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "Cloud computing is best defined as:",
+        "options": {
+            "A": "Purchasing physical servers and software",
+            "B": "On-demand delivery of computing services over the Internet",
+            "C": "Local storage of data on personal devices",
+            "D": "Offline processing of information"
+        },
+        "answer": "B",
+        "explanation": "الحوسبة السحابية تعني توفير خدمات الحوسبة مثل الخوادم والتخزين والبرمجيات عند الطلب عبر الإنترنت، دون الحاجة لشراء معدات مادية. لذلك، الخيار B هو التعريف الأدق."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "One main feature of cloud computing is that customers can:",
+        "options": {
+            "A": "Use resources only for a fixed time",
+            "B": "Acquire and delete resources whenever needed",
+            "C": "Own the infrastructure permanently",
+            "D": "Avoid Internet connectivity"
+        },
+        "answer": "B",
+        "explanation": "الخاصية الأساسية للحوسبة السحابية هي المرونة في استخدام الموارد، حيث يمكن للعملاء الحصول على الموارد وحذفها حسب الحاجة دون التزام دائم."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Cloud computing services are mainly based on how many service models?",
+        "options": {
+            "A": "Two",
+            "B": "Four",
+            "C": "Three",
+            "D": "Five"
+        },
+        "answer": "C",
+        "explanation": "خدمات الحوسبة السحابية تعتمد أساسًا على ثلاثة نماذج رئيسية للخدمة هي: البنية التحتية كخدمة (IaaS)، والمنصة كخدمة (PaaS)، والبرمجيات كخدمة (SaaS)، ولذلك الإجابة الصحيحة هي C."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "In the Infrastructure-as-a-Service (IaaS) model, users are responsible for:",
+        "options": {
+            "A": "Maintaining only hardware",
+            "B": "Maintaining operating systems and applications",
+            "C": "Managing network infrastructure",
+            "D": "Managing virtualization only"
+        },
+        "answer": "B",
+        "explanation": "في نموذج IaaS، المزود يتولى توفير وصيانة الأجهزة والبنية التحتية، أما المستخدم فهو مسؤول عن إدارة وتشغيل أنظمة التشغيل والتطبيقات التي يثبتها ويستخدمها. لذلك، تكون مسؤولية صيانة أنظمة التشغيل والتطبيقات على عاتق المستخدم."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "Which cloud service model is the most widely used?",
+        "options": {
+            "A": "IaaS",
+            "B": "PaaS",
+            "C": "SaaS",
+            "D": "Hybrid"
+        },
+        "answer": "C",
+        "explanation": "خدمات SaaS هي الأكثر استخدامًا لأنها توفر تطبيقات جاهزة للاستخدام عبر الإنترنت دون الحاجة لإدارة البنية التحتية أو المنصات، مما يسهل على المستخدمين الوصول إليها بسرعة وبتكلفة منخفضة."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "Software-as-a-Service (SaaS) applications are characterized by:",
+        "options": {
+            "A": "Installation on users’ local hard drives",
+            "B": "Full control by customers over infrastructure",
+            "C": "Subscription-based pricing",
+            "D": "Requirement to manage operating systems"
+        },
+        "answer": "C",
+        "explanation": "تطبيقات SaaS تُقدم عادةً عبر الإنترنت وتُستخدم دون الحاجة للتثبيت المحلي، وتُدار من قبل المزود، لذلك يتم الدفع لها بنظام الاشتراك الشهري أو السنوي."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "In cloud service models, as users move from IaaS to SaaS:",
+        "options": {
+            "A": "Customer management responsibilities increase",
+            "B": "Vendor management responsibilities decrease",
+            "C": "Vendor manages more of the service",
+            "D": "Customers gain more control over infrastructure"
+        },
+        "answer": "C",
+        "explanation": "عند الانتقال من IaaS إلى SaaS، يتحمل المزود مسؤولية إدارة جزء أكبر من الخدمة، حيث يقدم التطبيق كاملاً جاهزاً للاستخدام، مما يقلل من مهام العميل في الإدارة التقنية. لذا، يدير المزود المزيد من الخدمة."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Which of the following is NOT a key characteristic of cloud computing?",
+        "options": {
+            "A": "On-demand self-service",
+            "B": "Resource pooling",
+            "C": "Manual provisioning",
+            "D": "Measured service"
+        },
+        "answer": "C",
+        "explanation": "الإجابة C غير صحيحة لأنها تعني \"التزويد اليدوي\"، بينما الحوسبة السحابية تعتمد على التزويد التلقائي أو الآلي للموارد لتسهيل الاستخدام وتقليل التدخل البشري."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "A public cloud is best described as a cloud that:",
+        "options": {
+            "A": "Is exclusive to one organization",
+            "B": "Is shared among multiple organizations",
+            "C": "Operates without Internet access",
+            "D": "Is located behind a corporate firewall"
+        },
+        "answer": "B",
+        "explanation": "السحابة العامة (Public Cloud) تُستخدم من قبل عدة مؤسسات في نفس الوقت، حيث يتم مشاركة الموارد والخدمات عبر الإنترنت. لذلك، الخيار الذي يصفها بأنها مشتركة بين عدة مؤسسات هو الصحيح."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "A hybrid cloud combines:",
+        "options": {
+            "A": "Two public clouds",
+            "B": "Two private clouds",
+            "C": "Public and private clouds",
+            "D": "SaaS and PaaS only"
+        },
+        "answer": "C",
+        "explanation": "الجواب C صحيح لأن السحابة الهجينة تجمع بين السحابة العامة والخاصة لتوفير مرونة أكبر وأمان محسن حسب الحاجة. هذا يتيح استخدام موارد متعددة تناسب متطلبات العمل المختلفة."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "One important benefit of cloud computing is that it:",
+        "options": {
+            "A": "Increases capital expenses",
+            "B": "Eliminates collaboration",
+            "C": "Reduces upfront IT costs",
+            "D": "Requires advanced local hardware"
+        },
+        "answer": "C",
+        "explanation": "الحوسبة السحابية تقلل الحاجة إلى شراء معدات وبرمجيات مكلفة مقدمًا، مما يخفض التكاليف الأولية لتكنولوجيا المعلومات. هذا يجعل الإنفاق أكثر مرونة ويحول النفقات الرأسمالية إلى نفقات تشغيلية."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Vendor lock-in refers to:",
+        "options": {
+            "A": "Increased data security",
+            "B": "Easy migration between providers",
+            "C": "Difficulties in moving data between cloud providers",
+            "D": "Reduced operational costs"
+        },
+        "answer": "C",
+        "explanation": "Vendor lock-in يعني صعوبة نقل البيانات أو الخدمات من مزود سحابي إلى آخر بسبب الاعتماد الكبير على تقنية أو واجهات معينة خاصة بذلك المزود. لذلك، الخيار C هو الصحيح لأنه يعبر عن هذه الصعوبة."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Cloud computing follows a pay-as-you-go pricing model.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تعتمد الحوسبة السحابية على دفع المستخدم فقط مقابل الموارد والخدمات التي يستخدمها فعلياً، مما يتيح تحكمًا مرنًا في التكلفة دون الحاجة للاستثمار المسبق في البنية التحتية."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "In the PaaS model, customers must manage the underlying hardware.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "في نموذج PaaS، يتحمل مزود الخدمة مسؤولية إدارة البنية التحتية والأجهزة، بينما يركز العميل فقط على تطوير وإدارة التطبيقات. لذلك، العميل لا يحتاج إلى إدارة الأجهزة الأساسية."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "Resource pooling means cloud providers share physical resources among multiple customers.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن مزودي الخدمات السحابية يدمجون مواردهم المادية مثل الخوادم والتخزين لتقديمها لعدة مستخدمين في نفس الوقت، مما يزيد من كفاءة الاستخدام ويخفض التكلفة."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Private clouds offer more control and security than public clouds.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "توفر السحابات الخاصة بيئة مخصصة للمؤسسة فقط، مما يسمح لها بإدارة الموارد والسياسات الأمنية بشكل مباشر، وبالتالي تعزيز التحكم والحماية مقارنة بالسحابات العامة التي تشترك فيها عدة مستخدمين."
+    },
+    {
+        "lecture": "Lec03 - Cloud Computing\nFirst",
+        "type": "TF",
+        "id": "5",
+        "question": "Security and privacy are among the major risks of cloud computing.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن البيانات المخزنة على السحابة تكون عرضة للاختراق أو الوصول غير المصرح به، مما قد يؤدي إلى فقدان المعلومات الحساسة أو انتهاك الخصوصية. كما يعتمد المستخدمون على مزودي الخدمة في حماية بياناتهم، مما يزيد من احتمالية حدوث ثغرات أمنية."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "1",
+        "question": "An information system (IS) is primarily used to:",
+        "options": {
+            "A": "Store data only",
+            "B": "Collect, process, store, analyze, and disseminate information for a purpose",
+            "C": "Manage hardware resources",
+            "D": "Design software applications"
+        },
+        "answer": "B",
+        "explanation": "الإجابة B صحيحة لأن نظام المعلومات يهدف إلى جمع ومعالجة وتخزين وتحليل ونشر المعلومات لتحقيق هدف معين، وليس مجرد تخزين البيانات فقط أو إدارة الأجهزة أو تصميم البرمجيات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "2",
+        "question": "The core component of any information system is:",
+        "options": {
+            "A": "Hardware",
+            "B": "Software",
+            "C": "Data",
+            "D": "Networks"
+        },
+        "answer": "C",
+        "explanation": "البيانات هي جوهر أي نظام معلومات لأنها تمثل المادة الخام التي يتم معالجتها وتحليلها للحصول على معلومات قيمة تساعد في اتخاذ القرارات. بدون البيانات، لا يمكن لأي مكونات أخرى مثل الأجهزة أو البرامج أن تؤدي وظيفتها."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Which of the following is the smallest unit in the data hierarchy?",
+        "options": {
+            "A": "Byte",
+            "B": "Field",
+            "C": "Bit",
+            "D": "Record"
+        },
+        "answer": "C",
+        "explanation": "البت (Bit) هو أصغر وحدة في هرم البيانات، حيث يمثل حالة واحدة فقط (0 أو 1)، بينما الوحدات الأخرى تتكون من مجموعات من البتات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "4",
+        "question": "A logical grouping of related fields is called a:",
+        "options": {
+            "A": "File",
+            "B": "Record",
+            "C": "Database",
+            "D": "Byte"
+        },
+        "answer": "B",
+        "explanation": "السجل (Record) هو مجموعة من الحقول المرتبطة التي تمثل وحدة بيانات واحدة متكاملة، بينما الملف يحتوي على سجلات متعددة. لذلك، المصطلح الصحيح لمجموعة الحقول المرتبطة هو \"سجل\"."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "5",
+        "question": "Data quality means that data should be:",
+        "options": {
+            "A": "Large and complex",
+            "B": "Accurate, complete, timely, and consistent",
+            "C": "Stored only in databases",
+            "D": "Expensive to manage"
+        },
+        "answer": "B",
+        "explanation": "جودة البيانات تعني أن تكون البيانات صحيحة، كاملة، متاحة في الوقت المناسب، ومتسقة، لضمان موثوقيتها وفائدتها في اتخاذ القرارات. الخيارات الأخرى لا تعبر عن معايير جودة البيانات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "6",
+        "question": "Which of the following is a major difficulty in managing data?",
+        "options": {
+            "A": "Limited data sources",
+            "B": "Data increases exponentially over time",
+            "C": "Lack of storage devices",
+            "D": "Too few users"
+        },
+        "answer": "B",
+        "explanation": "البيانات تزداد بسرعة كبيرة وبشكل مستمر مما يجعل من الصعب إدارتها بشكل فعّال. هذا النمو السريع يتطلب تقنيات وأدوات متطورة للتخزين والمعالجة."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "7",
+        "question": "Data governance refers to:",
+        "options": {
+            "A": "Managing hardware infrastructure",
+            "B": "An approach to managing information across an organization",
+            "C": "Designing databases only",
+            "D": "Securing cloud services"
+        },
+        "answer": "B",
+        "explanation": "حوكمة البيانات تعني وضع السياسات والإجراءات لإدارة المعلومات بشكل شامل داخل المنظمة، مما يضمن جودتها وأمانها واستخدامها بشكل فعال، وهذا ما يعبر عنه الخيار B."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Transaction data are best described as data that:",
+        "options": {
+            "A": "Categorize other data",
+            "B": "Describe business activities and transactions",
+            "C": "Are rarely updated",
+            "D": "Span the entire organization"
+        },
+        "answer": "B",
+        "explanation": "بيانات المعاملات تمثل تسجيلًا مباشرًا للأنشطة والعمليات التي تحدث في الأعمال، مثل المبيعات أو عمليات الشراء، لذلك فهي تصف الأنشطة التجارية والمعاملات بشكل دقيق."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "9",
+        "question": "One major advantage of the database approach is that it:",
+        "options": {
+            "A": "Increases data redundancy",
+            "B": "Eliminates the need for security",
+            "C": "Reduces data inconsistency",
+            "D": "Requires more storage"
+        },
+        "answer": "C",
+        "explanation": "القاعدة البياناتية تنظم تخزين البيانات بشكل مركزي، مما يقلل التكرار والتعارض في المعلومات، وبالتالي يقلل من عدم التناسق بين البيانات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "10",
+        "question": "In the data hierarchy, a database is defined as:",
+        "options": {
+            "A": "A collection of related fields",
+            "B": "A collection of related records",
+            "C": "A collection of related files",
+            "D": "A collection of related bytes"
+        },
+        "answer": "C",
+        "explanation": "قاعدة البيانات تتكون من مجموعة من الملفات المرتبطة التي تحتوي بدورها على سجلات وحقول، لذا تُعرف بأنها مجموعة من الملفات ذات الصلة."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "11",
+        "question": "A primary key is a field that:",
+        "options": {
+            "A": "Describes an entity",
+            "B": "Uniquely identifies each record",
+            "C": "Stores multimedia data",
+            "D": "Is optional in a table"
+        },
+        "answer": "B",
+        "explanation": "المفتاح الأساسي يضمن تمييز كل سجل في الجدول بشكل فريد، فلا يمكن أن تتكرر قيمته بين السجلات. هذا يجعل الخيار B هو الصحيح."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "MCQ",
+        "id": "12",
+        "question": "A data warehouse is mainly used to:",
+        "options": {
+            "A": "Process daily transactions",
+            "B": "Store historical data to support decision making",
+            "C": "Replace operational databases",
+            "D": "Eliminate the need for SQL"
+        },
+        "answer": "B",
+        "explanation": "المخزن البياني يُستخدم لتجميع وتخزين البيانات التاريخية من مصادر متعددة بهدف تحليلها ودعم اتخاذ القرارات، وليس لمعالجة المعاملات اليومية أو استبدال قواعد البيانات التشغيلية."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "TF",
+        "id": "1",
+        "question": "Data in organizations come from internal, personal, and external sources.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تأتي البيانات في المؤسسات من مصادر متعددة تشمل المعلومات التي تنتج داخل المؤسسة، والبيانات الشخصية للأفراد، بالإضافة إلى المعلومات التي يتم الحصول عليها من خارج المنظمة مثل السوق والعملاء والمنافسين. هذا التنوع يتيح فهمًا شاملاً ودعمًا أفضل لاتخاذ القرارات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "TF",
+        "id": "2",
+        "question": "Data redundancy means storing the same data in multiple locations.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "تعني تكرار البيانات وجود نسخ متعددة لنفس المعلومات في أماكن مختلفة، مما يؤدي إلى زيادة في حجم التخزين واحتمالية حدوث تناقضات عند التحديث."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "TF",
+        "id": "3",
+        "question": "In the data hierarchy, a file is a collection of related records.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "الملف يتكون من مجموعة من السجلات التي ترتبط ببعضها لتخزين بيانات متكاملة ومنظمة. لذا، تُجمع السجلات المرتبطة داخل ملف واحد لتسهيل إدارة المعلومات."
+    },
+    {
+        "lecture": "Lec02 - Introduction to Information systems\nFirst",
+        "type": "TF",
+        "id": "4",
+        "question": "Data marts are larger and more expensive than data warehouses.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "العبارة غير صحيحة لأن مخازن البيانات الصغيرة (Data marts) تكون مخصصة لفريق أو قسم معين بحجم أصغر وتكلفة أقل، بينما مخازن البيانات الكبرى (Data warehouses) تغطي المؤسسة بأكملها وتكون أكبر وأغلى تكلفة."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "2",
+        "question": "The main aim of an information system is to:",
+        "options": {
+            "A": "Increase hardware performance",
+            "B": "Automate processes, reduce cost, and support decision making",
+            "C": "Replace human workers",
+            "D": "Store data without processing"
+        },
+        "answer": "B",
+        "explanation": "الهدف الرئيسي لنظام المعلومات هو تحسين كفاءة العمل من خلال أتمتة العمليات، تقليل التكاليف، ودعم اتخاذ القرارات، وهذا ما تعبر عنه الإجابة B بشكل دقيق. أما الخيارات الأخرى فهي إما جزئية أو غير صحيحة كليًا."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "3",
+        "question": "Which of the following is NOT one of the seven components of an information system?",
+        "options": {
+            "A": "Hardware",
+            "B": "Software",
+            "C": "Network",
+            "D": "Finance"
+        },
+        "answer": "D",
+        "explanation": "التمويل (Finance) ليس مكونًا من مكونات نظام المعلومات، بينما الأجهزة (Hardware)، البرمجيات (Software)، والشبكة (Network) هي من العناصر الأساسية التي تشكل نظام المعلومات."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "4",
+        "question": "The basic functions of an information system include:",
+        "options": {
+            "A": "Input, storage, output, and control",
+            "B": "Input, processing, output, and feedback",
+            "C": "Processing, storage, security, and networking",
+            "D": "Input, database, and reporting"
+        },
+        "answer": "B",
+        "explanation": "الوظائف الأساسية لنظام المعلومات تشمل إدخال البيانات (Input)، معالجتها (Processing)، عرض النتائج (Output)، وتغذية راجعة لتحسين الأداء (Feedback). وهذا يميز الخيار B كونه يغطي هذه العمليات بشكل كامل ودقيق."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "5",
+        "question": "Which component of an information system represents the physical devices?",
+        "options": {
+            "A": "Software",
+            "B": "Data",
+            "C": "Hardware",
+            "D": "Processes"
+        },
+        "answer": "C",
+        "explanation": "الأجهزة المادية التي تُستخدم في النظام المعلوماتي تُسمى \"المكونات الصلبة\" أو Hardware، وهي تشمل الحواسيب، الطابعات، والملحقات الأخرى. أما الخيارات الأخرى فتشير إلى البرامج، البيانات، أو الإجراءات، وليست مكونات مادية."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "6",
+        "question": "System software and application software are part of the:",
+        "options": {
+            "A": "Hardware component",
+            "B": "Data component",
+            "C": "Software component",
+            "D": "Network component"
+        },
+        "answer": "C",
+        "explanation": "النظام البرمجي (System software) والبرامج التطبيقية (Application software) هما نوعان من البرمجيات، لذلك ينتميان إلى مكون البرمجيات (Software component) وليس إلى مكونات الأجهزة أو البيانات أو الشبكات."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "7",
+        "question": "Data in an information system is defined as:",
+        "options": {
+            "A": "Processed facts with meaning",
+            "B": "Raw, unprocessed facts and figures",
+            "C": "Reports used by managers",
+            "D": "Knowledge derived from experience"
+        },
+        "answer": "B",
+        "explanation": "البيانات هي الحقائق والأرقام الأولية التي لم تتم معالجتها بعد، لذا تُعرّف بأنها معلومات خام وغير معالجة، وهذا يتوافق مع الخيار B."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Information differs from data because information:",
+        "options": {
+            "A": "Is always numerical",
+            "B": "Has been processed to provide meaning",
+            "C": "Is stored in databases",
+            "D": "Is more detailed than knowledge"
+        },
+        "answer": "B",
+        "explanation": "الإجابة صحيحة لأن المعلومات هي البيانات التي تم معالجتها وتنظيمها لتصبح ذات معنى وفهم، أما البيانات فهي مجرد حقائق خام وغير معالجة."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Knowledge can be best described as:",
+        "options": {
+            "A": "Raw facts without context",
+            "B": "Organized data",
+            "C": "Processed information combined with experience and insight",
+            "D": "Data stored in reports"
+        },
+        "answer": "C",
+        "explanation": "لأن المعرفة ليست مجرد بيانات أو معلومات منظمة، بل هي المعلومات التي تم معالجتها ودمجها مع الخبرة والفهم لتحقيق معنى أعمق وقابلية للتطبيق."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "10",
+        "question": "Which type of information system is mainly used to perform daily transactions?",
+        "options": {
+            "A": "Decision support system",
+            "B": "Learning management system",
+            "C": "Transaction processing system",
+            "D": "Hospital information system"
+        },
+        "answer": "C",
+        "explanation": "نظام معالجة المعاملات (Transaction processing system) مخصص لتنفيذ وتسجيل العمليات اليومية بشكل سريع ودقيق، مثل المبيعات والمدفوعات، مما يجعله الأنسب لهذا الغرض مقارنة بالأنظمة الأخرى."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "11",
+        "question": "A decision support system (DSS) is designed to:",
+        "options": {
+            "A": "Store large amounts of data",
+            "B": "Automate student procedures",
+            "C": "Facilitate decision making using accurate data",
+            "D": "Control hardware resources"
+        },
+        "answer": "C",
+        "explanation": "نظام دعم القرار (DSS) يهدف إلى مساعدة المستخدمين في اتخاذ قرارات مستنيرة من خلال توفير بيانات دقيقة وتحليلها، وليس مجرد تخزين البيانات أو التحكم في الأجهزة."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "MCQ",
+        "id": "12",
+        "question": "Which characteristic ensures that information is delivered when it is needed?",
+        "options": {
+            "A": "Accurate",
+            "B": "Secure",
+            "C": "Timely",
+            "D": "Verifiable"
+        },
+        "answer": "C",
+        "explanation": "الخاصية \"Timely\" تعني أن المعلومات تُقدم في الوقت المناسب، مما يضمن وصولها حين تكون مطلوبة لاتخاذ القرار أو الاستخدام، وهذا هو السبب في كونها الإجابة الصحيحة."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "TF",
+        "id": "1",
+        "question": "Information systems are used only in business organizations.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "False",
+        "explanation": "الأنظمة المعلوماتية تُستخدم في مجالات متعددة مثل التعليم، الصحة، والحكومات، وليس فقط في الأعمال التجارية. فهي تساعد في تحسين العمليات واتخاذ القرارات في جميع أنواع المؤسسات."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "TF",
+        "id": "2",
+        "question": "People are an essential component of information systems.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن الأشخاص هم من يطورون ويشغلون ويستخدمون أنظمة المعلومات، ويقومون باتخاذ القرارات بناءً على البيانات التي توفرها هذه الأنظمة. بدون مشاركة البشر، لا يمكن لنظام المعلومات أن يؤدي وظيفته بفعالية."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "TF",
+        "id": "3",
+        "question": "Data represents raw facts without context or meaning.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن البيانات هي معلومات أولية لم تُعالج أو تُفسر بعد، فلا تحمل تفسيراً أو أهمية محددة حتى يتم تحليلها أو وضعها في سياق معين."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "TF",
+        "id": "4",
+        "question": "Reliable information can always be trusted by users.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "المعلومات الموثوقة تعتمد على مصادر دقيقة ومثبتة، مما يجعلها صحيحة ويمكن الاعتماد عليها في اتخاذ القرارات. لذلك، يثق المستخدمون بها لأنها تقلل من احتمالية الخطأ أو التضليل."
+    },
+    {
+        "lecture": "Lec01 - Introduction to Information systems\nQ1",
+        "type": "TF",
+        "id": "5",
+        "question": "Valuable information should be accurate, relevant, and secure.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": "True",
+        "explanation": "لأن المعلومات التي تتميز بالدقة تضمن صحة البيانات، والملاءمة تجعلها مفيدة للقرار، والحماية تحافظ على سرّيتها وسلامتها من التلاعب أو الفقدان."
+    }
+]
