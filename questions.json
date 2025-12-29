@@ -3310,5 +3310,395 @@
         },
         "answer": "A",
         "explanation": "البيانات القيمة يجب أن تكون نظيفة (خالية من الأخطاء) ودقيقة ليمكن الاعتماد عليها."
-    }
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Through a hospital information system, one will not have problems with the following:",
+        "options": {
+            "A": "Paper work, missing values, and unorganized patient records",
+            "B": "Access levels of patient information data",
+            "C": "High data volume",
+            "D": "Live streaming data"
+        },
+        "answer": "A",
+        "explanation": "نظم معلومات المستشفيات (HIS) تحل مشاكل المعاملات الورقية (Paper work)، وفقدان البيانات، والسجلات غير المنظمة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Information accessibility is defined as:",
+        "options": {
+            "A": "Giving update authorization to users",
+            "B": "Giving various authorization to users according to their rank at the organization",
+            "C": "Giving delete authorization to users",
+            "D": "Giving query manipulation to all users"
+        },
+        "answer": "B",
+        "explanation": "إمكانية الوصول للمعلومات تعني منح صلاحيات مختلفة للمستخدمين بناءً على أدوارهم ومستوياتهم الوظيفية في المؤسسة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "10",
+        "question": "Customer personalization for m-commerce may depend on Recommender systems, specifically that use data mining techniques, to overcome any problems with customers feedback",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "نظم التوصية (Recommender Systems) تستخدم تقنيات التنقيب في البيانات لتحليل سلوك العملاء وتقديم تجربة مخصصة (Personalization) حتى في غياب التغذية الراجعة المباشرة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "11",
+        "question": "There is no difference between continuous improvement and business process reengineering",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "هناك فرق جوهري: التحسين المستمر (Continuous Improvement) هو تغيير تدريجي، بينما إعادة هندسة العمليات (BPR) هو تغيير جذري وشامل."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "12",
+        "question": "Continuous improvement is not for software development",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "التحسين المستمر مبدأ أساسي في تطوير البرمجيات (مثل منهجيات Agile و DevOps)."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Current information systems components must include:",
+        "options": {
+            "A": "Social Interaction",
+            "B": "Data and Hardware only",
+            "C": "Software",
+            "D": "Network, data, and hardware"
+        },
+        "answer": "D",
+        "explanation": "المكونات الأساسية لنظام المعلومات تشمل العتاد (Hardware)، البرمجيات (Software)، البيانات (Data)، الشبكات (Network)، والأفراد (People). الخيار D هو الأكثر شمولاً بين الخيارات."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "14",
+        "question": "Enterprise data modeling is an approach that starts by investigating the general data and information needs of the organization at the primitive level.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "نمذجة بيانات المؤسسة تبدأ بفهم الاحتياجات العامة (High-level) للبيانات لضمان تكاملها عبر المؤسسة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "15",
+        "question": "There is no difference between a relational model and a transactional database",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "النموذج العلائقي (Relational Model) هو طريقة لتنظيم البيانات (جداول وعلاقات)، بينما قاعدة البيانات التبادلية (Transactional Database) هي نظام مصمم لمعالجة المعاملات بسرعة وموثوقية (ACID properties). يمكن لقاعدة بيانات أن تكون علائقية وتبادلية في آن واحد، لكن المفهومين مختلفان."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "16",
+        "question": "In a transactional database does not necessarily have a transactional identifier",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "كل معاملة (Transaction) في قاعدة البيانات يجب أن يكون لها مُعرف فريد (Transaction ID) لتتبعها وضمان سلامتها (Commit/Rollback)."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "17",
+        "question": "A Knowledge Management System is an organized collection of people, procedures, software, databases, and devices used to create, store, and use the organization's knowledge and experience",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "هذا التعريف الصحيح لنظام إدارة المعرفة (KMS)."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "18",
+        "question": "Continuous improvement is based on:",
+        "options": {
+            "A": "Focus on a task in a given area",
+            "B": "Focus on the whole department",
+            "C": "Processes across department",
+            "D": "Strong action"
+        },
+        "answer": "A",
+        "explanation": "التحسين المستمر عادة ما يركز على تحسينات صغيرة ومتكررة في مهام أو مناطق محددة (Incremental changes)، عكس BPR الذي يركز على العمليات الشاملة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "19",
+        "question": "Data in a multidimensional cube can be:",
+        "options": {
+            "A": "Stored in flat files",
+            "B": "Generalized only",
+            "C": "Analyzed in details in multiple dimensions",
+            "D": "Stored in a graph database"
+        },
+        "answer": "C",
+        "explanation": "مكعبات البيانات (Data Cubes) في OLAP تسمح بتحليل البيانات بعمق ومن زوايا (أبعاد) متعددة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "20",
+        "question": "On-demand computing is defined as:",
+        "options": {
+            "A": "The same as outsourcing",
+            "B": "The same as buying a commercial-off-the-shelf software",
+            "C": "An extension of the outsourcing approach, and many companies offer it to business clients and customers.",
+            "D": "The threat of buying software from competitors"
+        },
+        "answer": "C",
+        "explanation": "الحوسبة عند الطلب (On-demand Computing) تعتبر تطوراً لمفهوم التعهيد (Outsourcing) حيث يتم توفير الموارد والخدمات للعملاء حسب حاجتهم الفعلية."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "21",
+        "question": "When you develop an information system, you must study your organizational structure first",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "فهم الهيكل التنظيمي ضروري جداً قبل تطوير أي نظام لضمان توافقه مع تدفق العمل والمسؤوليات داخل المؤسسة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "22",
+        "question": "A graph data example includes:",
+        "options": {
+            "A": "Social Media",
+            "B": "Customer data in a supermarket",
+            "C": "Categories of disease",
+            "D": "Complete blood picture"
+        },
+        "answer": "A",
+        "explanation": "شبكات التواصل الاجتماعي هي المثال الكلاسيكي للبيانات الممثلة بهيئة رسوم بيانية (Graph Data) للعلاقات بين المستخدمين."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "23",
+        "question": "Relevant information is not of a critical importance to the phase of analyzing the data",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "أهمية المعلومات وملاءمتها (Relevance) هي جوهر عملية التحليل؛ فالمعلومات غير ذات الصلة تشوش النتائج."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "24",
+        "question": "Reengineering is defined as:",
+        "options": {
+            "A": "The radical redesign of business processes and organizational structures to achieve a breakthrough in business results.",
+            "B": "The radical redesign of information systems, and values of the organization to achieve a breakthrough in business results.",
+            "C": "Redesign of business processes, organizational structures, and values of the organization to achieve a breakthrough in business results.",
+            "D": "The radical redesign of business processes, organizational structures, information systems, and values of the organization to achieve a breakthrough in business results."
+        },
+        "answer": "D",
+        "explanation": "إعادة الهندسة (BPR) عملية شاملة تشمل إعادة تصميم العمليات، الهياكل، الأنظمة، والقيم لتحقيق طفرة في الأداء."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "25",
+        "question": "A stakeholder of a system must be a direct user of the system",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "أصحاب المصلحة (Stakeholders) يشملون أي شخص يتأثر بالنظام، سواء كان مستخدماً مباشراً (User) أو مديراً، أو حتى عميلاً."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "26",
+        "question": "A Value Chain is defined as:",
+        "options": {
+            "A": "A series of activities that includes warehouse and storage, production, finished product storage, outbound logistics, marketing and sales, and customer service.",
+            "B": "A series (chain) of activities that includes inbound logistics, warehouse and storage, production, finished product storage, outbound logistics, marketing and sales, and customer service.",
+            "C": "A series (chain) of activities that includes inbound logistics, production, finished product storage, outbound logistics, marketing and sales, and customer service.",
+            "D": "A series (chain) of activities that includes inbound marketing and sales, and customer service."
+        },
+        "answer": "B",
+        "explanation": "سلسلة القيمة (Value Chain) تتضمن جميع الأنشطة من استلام المواد الخام (Inbound logistics) وحتى خدمة ما بعد البيع."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "27",
+        "question": "Technology acceptance model (TAM) is defined as:",
+        "options": {
+            "A": "Acceptance of technology",
+            "B": "A model that describes the factors leading to higher levels of acceptance and usage of technology.",
+            "C": "Unit testing",
+            "D": "Generating data"
+        },
+        "answer": "B",
+        "explanation": "نموذج TAM يشرح العوامل (مثل سهولة الاستخدام والفائدة المدركة) التي تؤدي لتقبل واستخدام التكنولوجيا."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "28",
+        "question": "Biometrics is defined as:",
+        "options": {
+            "A": "Biological measurements or physical characteristics that can be used to identify individuals.",
+            "B": "Phishing",
+            "C": "Identity theft",
+            "D": "Cybersecurity"
+        },
+        "answer": "A",
+        "explanation": "القياسات الحيوية (Biometrics) هي استخدام الخصائص البيولوجية (مثل البصمة، قزحية العين) للتعرف على الهوية."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "29",
+        "question": "Structured data means that the data is loose and stored in flat files",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "البيانات المهيكلة (Structured Data) تكون منظمة جداً في جداول وحقول محددة (مثل قواعد البيانات العلائقية)، وليست 'فضفاضة' (Loose)."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "30",
+        "question": "A replicated database holds a duplicate set of frequently used data.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "قواعد البيانات المنسوخة (Replicated) تحتفظ بنسخ متطابقة من البيانات لتحسين الأداء وتوافر البيانات."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "31",
+        "question": "An example of spatio-temporal data is:",
+        "options": {
+            "A": "Patient follow-up treatment of a specific medication through a specific duration in a certain location",
+            "B": "X,Y location",
+            "C": "Images",
+            "D": "A Complete blood picture of a patient"
+        },
+        "answer": "A",
+        "explanation": "البيانات المكانية-الزمانية (Spatio-temporal) تربط المعلومة بالمكان (Location) والزمان (Duration) معاً."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "32",
+        "question": "Technology diffusion is defined:",
+        "options": {
+            "A": "A measure",
+            "B": "In department information dissemination",
+            "C": "A measure of how widely technology is spread throughout an organization",
+            "D": "All of the above"
+        },
+        "answer": "C",
+        "explanation": "انتشار التكنولوجيا (Technology Diffusion) يقيس مدى تبني واستخدام التكنولوجيا عبر أقسام المؤسسة."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "33",
+        "question": "To provide the right information in the organization at the right time means that:",
+        "options": {
+            "A": "Your information must be updated according to the current situation",
+            "B": "Your information about the organization",
+            "C": "Your data are of very high volume",
+            "D": "Your data are of one specific format"
+        },
+        "answer": "A",
+        "explanation": "المعلومة في الوقت المناسب (Timeliness) تعني أنها محدثة وتعكس الوضع الحالي بدقة عند الحاجة إليها."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "34",
+        "question": "Stakeholders of HIS include doctors, patients, and nurses only.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "أصحاب المصلحة في نظام المستشفيات (HIS) يشملون أيضاً الإداريين، فنيي المختبرات، الصيادلة، وشركات التأمين، وليس فقط الأطباء والمرضى والممرضين."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "MCQ",
+        "id": "35",
+        "question": "Digital Right Management is defined as:",
+        "options": {
+            "A": "Logistics",
+            "B": "Management of Regulations",
+            "C": "Inbound logistics",
+            "D": "The use of any of several technologies to enforce policies for controlling access to digital media such as movies, music, and software."
+        },
+        "answer": "D",
+        "explanation": "إدارة الحقوق الرقمية (DRM) هي التقنيات المستخدمة لحماية حقوق النسخ والتحكم في الوصول للمحتوى الرقمي."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "36",
+        "question": "In temporal data of HIS, data used is heterogeneous",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "في النظم الصحية، البيانات الزمنية تكون غير متجانسة (Heterogeneous) لأنها تأتي من مصادر متنوعة (أجهزة قياس، تقارير، صور) وبصيغ مختلفة عبر الزمن."
+    },
+    {
+        "lecture": "Final2025 National uni2",
+        "type": "TF",
+        "id": "37",
+        "question": "An information system in an enterprise must contain SCM only",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "نظم المعلومات المؤسسية تتكامل فيها عدة أنظمة مثل ERP, CRM, SCM, HRM وليس SCM فقط."
+    }   
 ]
