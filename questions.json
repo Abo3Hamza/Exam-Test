@@ -3700,5 +3700,706 @@
         },
         "answer": "B",
         "explanation": "نظم المعلومات المؤسسية تتكامل فيها عدة أنظمة مثل ERP, CRM, SCM, HRM وليس SCM فقط."
-    }   
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "8",
+        "question": "Which characteristic is essential for valuable information?",
+        "options": {
+            "A": "Irrelevance",
+            "B": "Timeliness",
+            "C": "Inaccuracy",
+            "D": "Complexity"
+        },
+        "answer": "B",
+        "explanation": "المعلومات القيمة يجب أن تكون في الوقت المناسب (Timeliness) لتفيد في اتخاذ القرار."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "9",
+        "question": "Which of the following is a distributed file system?",
+        "options": {
+            "A": "SQL Server",
+            "B": "AWS Lambda",
+            "C": "HDFS",
+            "D": "MongoDB"
+        },
+        "answer": "C",
+        "explanation": "نظام HDFS (Hadoop Distributed File System) هو نظام الملفات الموزع الخاص بإطار عمل هادوب."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "10",
+        "question": "When using Hadoop's HDFS, what is the primary reason data is split into blocks and distributed across multiple nodes?",
+        "options": {
+            "A": "To reduce data redundancy",
+            "B": "To allow for quicker random access",
+            "C": "To improve data security",
+            "D": "To increase fault tolerance and parallel processing"
+        },
+        "answer": "D",
+        "explanation": "تقسيم البيانات وتوزيعها يزيد من تحمل الأخطاء (Fault Tolerance) ويسمح بالمعالجة المتوازية (Parallel Processing)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "11",
+        "question": "What is a major limitation of private clouds?",
+        "options": {
+            "A": "High operational and maintenance costs",
+            "B": "Lack of customization",
+            "C": "Dependency on public cloud providers",
+            "D": "Lack of data security"
+        },
+        "answer": "A",
+        "explanation": "السحابة الخاصة تتطلب تكاليف عالية لأن المؤسسة تتحمل شراء وصيانة الأجهزة والبنية التحتية بنفسها."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "12",
+        "question": "What can tracking cookies be used for?",
+        "options": {
+            "A": "Preventing malware attacks",
+            "B": "Encrypting communications",
+            "C": "Tracking browsing habits for marketing",
+            "D": "Generating spam emails"
+        },
+        "answer": "C",
+        "explanation": "ملفات تعريف الارتباط (Cookies) تُستخدم لتتبع عادات التصفح لاستهداف المستخدمين بالإعلانات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Which of the following scenarios best demonstrates the hybrid cloud model?",
+        "options": {
+            "A": "A company stores sensitive data on its private servers but runs customer applications on a public cloud.",
+            "B": "A company uses AWS for all its data storage.",
+            "C": "A startup uses only public cloud services for all its operations.",
+            "D": "A research team uses a community cloud to share data."
+        },
+        "answer": "A",
+        "explanation": "النموذج الهجين يجمع بين السحابة الخاصة (للبيانات الحساسة) والعامة (للتطبيقات والمرونة)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "14",
+        "question": "A new information system allows a company to reduce decision-making time from two weeks to three days. What is the key benefit demonstrated here?",
+        "options": {
+            "A": "Improved accuracy",
+            "B": "Enhanced efficiency",
+            "C": "Strategic advantage",
+            "D": "Enhanced security"
+        },
+        "answer": "B",
+        "explanation": "تقليل الوقت اللازم لإنجاز المهمة أو القرار يعبر عن زيادة الكفاءة (Efficiency)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "15",
+        "question": "Which is an example of a nominal attribute?",
+        "options": {
+            "A": "Weight",
+            "B": "Gender",
+            "C": "Time spent",
+            "D": "Height"
+        },
+        "answer": "B",
+        "explanation": "البيانات الاسمية (Nominal) هي تصنيفات ليس لها ترتيب كمي، مثل النوع (ذكر/أنثى)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "16",
+        "question": "Which scenario best illustrates \"spear phishing\"?",
+        "options": {
+            "A": "Receiving an email seemingly from your CEO asking for sensitive data",
+            "B": "Receiving an email from a friend",
+            "C": "A hacker using brute force to crack a password",
+            "D": "A virus infecting multiple devices"
+        },
+        "answer": "A",
+        "explanation": "التصيد الرمحي (Spear Phishing) هو هجوم موجه ينتحل صفة شخص موثوق (مثل المدير التنفيذي) لسرقة البيانات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "17",
+        "question": "What is the purpose of encryption?",
+        "options": {
+            "A": "Convert messages into unreadable forms",
+            "B": "Detect malware",
+            "C": "Restrict access",
+            "D": "Store passwords"
+        },
+        "answer": "A",
+        "explanation": "التشفير يحول الرسائل والبيانات إلى صيغة غير مقروءة لحمايتها من الاطلاع غير المصرح به."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "18",
+        "question": "What is a Database Management System (DBMS)?",
+        "options": {
+            "A": "A hardware device for data storage",
+            "B": "A program used to physically store data",
+            "C": "A single-user tool for organizing files",
+            "D": "A system that manipulates data and interacts with users and applications"
+        },
+        "answer": "D",
+        "explanation": "نظام إدارة قواعد البيانات هو البرنامج الذي يدير البيانات ويتفاعل مع المستخدمين والتطبيقات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "19",
+        "question": "What is a major threat to information systems?",
+        "options": {
+            "A": "Security breaches",
+            "B": "Increased effectiveness",
+            "C": "User training",
+            "D": "Innovation"
+        },
+        "answer": "A",
+        "explanation": "الاختراقات الأمنية (Security breaches) هي تهديد رئيسي، بينما الخيارات الأخرى تعتبر إيجابيات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "20",
+        "question": "What is the primary function of a backup?",
+        "options": {
+            "A": "Encrypt sensitive data",
+            "B": "Monitor network activity",
+            "C": "Ensure data is recoverable in case of loss",
+            "D": "Prevent malware infections"
+        },
+        "answer": "C",
+        "explanation": "الهدف الأساسي للنسخ الاحتياطي هو استعادة البيانات في حالة فقدانها."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "21",
+        "question": "Which of the following is NOT a characteristic of a data warehouse?",
+        "options": {
+            "A": "Integrated",
+            "B": "Time-variant",
+            "C": "Subject-oriented",
+            "D": "Volatile"
+        },
+        "answer": "D",
+        "explanation": "مستودع البيانات يتميز بأنه غير متطاير (Non-volatile)، أي أن البيانات فيه مستقرة ولا تتغير بشكل لحظي."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "22",
+        "question": "What is the purpose of data synchronization in replicated databases?",
+        "options": {
+            "A": "Automating data cleanup processes",
+            "B": "Ensuring replicated databases are consistent and up to date",
+            "C": "Encrypting sensitive information",
+            "D": "Reducing data storage costs"
+        },
+        "answer": "B",
+        "explanation": "المزامنة تضمن أن جميع النسخ المكررة من قاعدة البيانات متطابقة ومحدثة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "23",
+        "question": "What is a major limitation of traditional commerce compared to e-commerce?",
+        "options": {
+            "A": "Excessive use of technology",
+            "B": "Limited geographical reach",
+            "C": "Lack of customer interaction",
+            "D": "Reliance on mobile platforms"
+        },
+        "answer": "B",
+        "explanation": "التجارة التقليدية محدودة بالموقع الجغرافي للمتجر الفعلي."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "24",
+        "question": "Which of the following is not a type of cloud?",
+        "options": {
+            "A": "Public",
+            "B": "Hybrid",
+            "C": "Static",
+            "D": "Private"
+        },
+        "answer": "C",
+        "explanation": "أنواع السحابة هي العامة والخاصة والهجينة والمجتمعية، ولا يوجد نوع يسمى Static."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "25",
+        "question": "Which is NOT a biometric authentication method?",
+        "options": {
+            "A": "Retina scans",
+            "B": "Passwords",
+            "C": "Facial recognition",
+            "D": "Fingerprint scans"
+        },
+        "answer": "B",
+        "explanation": "كلمات المرور ليست قياسات حيوية (بيومترية) بل هي وسيلة تحقق معرفية."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "26",
+        "question": "What is \"two-step authentication\"?",
+        "options": {
+            "A": "A form of biometric authentication",
+            "B": "A security process requiring two methods of verification",
+            "C": "An additional step in password recovery",
+            "D": "Encrypting passwords before storing them"
+        },
+        "answer": "B",
+        "explanation": "المصادقة بخطوتين تتطلب وسيلتين مختلفتين للتحقق من الهوية."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "27",
+        "question": "In Big Data, data integrity refers to:",
+        "options": {
+            "A": "Making sure the data is accurate and consistent",
+            "B": "Ensuring data is stored on commodity hardware",
+            "C": "Ensuring data is replicated multiple times",
+            "D": "Ensuring data is compressed"
+        },
+        "answer": "A",
+        "explanation": "نزاهة البيانات تعني دقتها واتساقها وعدم تعرضها للتغيير غير المصرح به."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "28",
+        "question": "In the IaaS model, who is responsible for managing the operating system?",
+        "options": {
+            "A": "Operating system manufacturer",
+            "B": "Customer",
+            "C": "Cloud provider",
+            "D": "Both provider and customer"
+        },
+        "answer": "B",
+        "explanation": "في نموذج IaaS، المزود يوفر العتاد فقط، بينما العميل هو المسؤول عن نظام التشغيل والتطبيقات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "29",
+        "question": "What is a common challenge in Big Data security?",
+        "options": {
+            "A": "Data compression",
+            "B": "Data visualization",
+            "C": "Data structure",
+            "D": "Data access and privacy"
+        },
+        "answer": "D",
+        "explanation": "حماية خصوصية البيانات والتحكم في الوصول إليها هو التحدي الأمني الأكبر في البيانات الضخمة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "30",
+        "question": "Which of the following is not a benefit of cloud computing?",
+        "options": {
+            "A": "Flexibility",
+            "B": "Scalability",
+            "C": "Reduced operational costs",
+            "D": "Complex hardware setup"
+        },
+        "answer": "D",
+        "explanation": "الحوسبة السحابية تلغي الحاجة لإعدادات الأجهزة المعقدة (Complex hardware setup)، لذا هذا الخيار ليس من فوائدها بل عكس ذلك."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "31",
+        "question": "What does the term \"multi-tenancy\" refer to in the context of cloud computing?",
+        "options": {
+            "A": "A single server dedicated to one customer",
+            "B": "Multiple customers sharing the same computing resources",
+            "C": "Exclusive hosting for premium users",
+            "D": "Cloud resources restricted to a single region"
+        },
+        "answer": "B",
+        "explanation": "تعدد المستأجرين يعني مشاركة الموارد الحاسوبية بين عدة عملاء مختلفين."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "32",
+        "question": "In HDFS, data is processed near its storage to reduce data transmission. This concept is known as:",
+        "options": {
+            "A": "Data locality",
+            "B": "Data normalization",
+            "C": "Data compression",
+            "D": "Data replication"
+        },
+        "answer": "A",
+        "explanation": "مبدأ Data Locality يعني تقريب المعالجة من مكان تخزين البيانات لتقليل نقل البيانات عبر الشبكة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "33",
+        "question": "What type of malware replicates itself without requiring another program?",
+        "options": {
+            "A": "Virus",
+            "B": "Trojan horse",
+            "C": "Worm",
+            "D": "Adware"
+        },
+        "answer": "C",
+        "explanation": "الديدان (Worms) هي برمجيات خبيثة تنسخ نفسها وتنتشر عبر الشبكات ذاتياً دون الحاجة لملف مضيف."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "34",
+        "question": "What is a primary source of unintentional threats to information security?",
+        "options": {
+            "A": "Cyberattacks",
+            "B": "Human error",
+            "C": "Network failure",
+            "D": "Malware"
+        },
+        "answer": "B",
+        "explanation": "الأخطاء البشرية (مثل الحذف الخطأ أو ضعف كلمات المرور) هي تهديدات غير مقصودة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "35",
+        "question": "What is data security in the context of databases?",
+        "options": {
+            "A": "Encrypting all user passwords",
+            "B": "Backing up databases only once a year",
+            "C": "Deleting redundant tables",
+            "D": "Protecting data from unauthorized access"
+        },
+        "answer": "D",
+        "explanation": "أمن البيانات يعني حمايتها من الوصول أو التعديل غير المصرح به."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "36",
+        "question": "Which cloud service model allows developers to build, test, and deploy applications?",
+        "options": {
+            "A": "DaaS",
+            "B": "IaaS",
+            "C": "SaaS",
+            "D": "PaaS"
+        },
+        "answer": "D",
+        "explanation": "منصة كخدمة (PaaS) توفر الأدوات والبيئة اللازمة للمطورين لبناء ونشر التطبيقات."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "37",
+        "question": "What is business intelligence (BI)?",
+        "options": {
+            "A": "A process to generate complex financial reports",
+            "B": "Software for managing employee schedules",
+            "C": "A marketing tool for promoting products",
+            "D": "Technologies and strategies for analyzing business data"
+        },
+        "answer": "D",
+        "explanation": "ذكاء الأعمال هو استخدام التقنيات والاستراتيجيات لتحليل البيانات واستخراج رؤى لدعم القرار."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "38",
+        "question": "What is the main characteristic of multiuser databases?",
+        "options": {
+            "A": "They allow concurrent access by multiple users over a network",
+            "B": "They lack integration capabilities",
+            "C": "They cannot handle large datasets",
+            "D": "They are restricted to one user at a time"
+        },
+        "answer": "A",
+        "explanation": "قواعد البيانات متعددة المستخدمين تسمح بالوصول المتزامن (Concurrent access) لعدة أشخاص عبر الشبكة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "39",
+        "question": "What does \"scalability\" in cloud computing refer to?",
+        "options": {
+            "A": "Increasing storage capacity on local servers",
+            "B": "Adjusting computational resources to meet demand",
+            "C": "Reducing operational costs",
+            "D": "Developing new software tools"
+        },
+        "answer": "B",
+        "explanation": "القابلية للتوسع تعني تعديل حجم الموارد الحاسوبية (زيادة أو نقصان) بناءً على الطلب."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "40",
+        "question": "What is a primary characteristic of spyware?",
+        "options": {
+            "A": "Overloads network traffic",
+            "B": "Encrypts files",
+            "C": "Locks users out of their devices",
+            "D": "Monitors user activity without consent"
+        },
+        "answer": "D",
+        "explanation": "برامج التجسس تراقب نشاط المستخدم وتجمع المعلومات عنه دون علمه."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "41",
+        "question": "Which of the following is an example of unstructured data?",
+        "options": {
+            "A": "Images and text Files",
+            "B": "XML files",
+            "C": "JSON files",
+            "D": "Relational database tables"
+        },
+        "answer": "A",
+        "explanation": "الصور والملفات النصية تعتبر بيانات غير مهيكلة لأنها لا تتبع نموذجاً منظماً كالجداول."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "42",
+        "question": "What is a key advantage of m-commerce?",
+        "options": {
+            "A": "Limited accessibility",
+            "B": "Fixed user locations",
+            "C": "Reduced hardware costs",
+            "D": "Personalized services via mobile devices"
+        },
+        "answer": "D",
+        "explanation": "التجارة عبر الهاتف المحمول تمكن من تقديم خدمات مخصصة بناءً على موقع وسلوك المستخدم."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "43",
+        "question": "What is Hadoop?",
+        "options": {
+            "A": "A distributed data processing framework",
+            "B": "An OLAP system",
+            "C": "A cloud storage service",
+            "D": "A file system for structured data"
+        },
+        "answer": "A",
+        "explanation": "هادوب هو إطار عمل مفتوح المصدر للمعالجة الموزعة للبيانات الضخمة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "44",
+        "question": "What is a key characteristic of SaaS?",
+        "options": {
+            "A": "Applications are accessed via the cloud and managed by the vendor",
+            "B": "Requires users to manage the application's infrastructure",
+            "C": "Customers own the underlying infrastructure",
+            "D": "Provides only physical hardware"
+        },
+        "answer": "A",
+        "explanation": "البرمجيات كخدمة (SaaS) تتيح الوصول للتطبيقات عبر الإنترنت حيث يدير المزود كل شيء."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "45",
+        "question": "What kind of password is \"12345\"?",
+        "options": {
+            "A": "Weak",
+            "B": "Biometric",
+            "C": "Secure",
+            "D": "Multifactor authentication"
+        },
+        "answer": "A",
+        "explanation": "كلمة المرور هذه ضعيفة جداً وسهلة التخمين."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "46",
+        "question": "What role do cloud providers play in IaaS?",
+        "options": {
+            "A": "Maintaining and providing virtualized hardware resources",
+            "B": "Offering on-premises solutions",
+            "C": "Managing application-level software",
+            "D": "Directly training customers on usage"
+        },
+        "answer": "A",
+        "explanation": "في IaaS، دور المزود هو صيانة وتوفير الموارد الافتراضية (سيرفرات، شبكات)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "47",
+        "question": "What does business process reengineering focus on?",
+        "options": {
+            "A": "Gradual improvement of processes",
+            "B": "Radical redesign of business processes",
+            "C": "Marketing campaigns",
+            "D": "Removing all IT systems"
+        },
+        "answer": "B",
+        "explanation": "إعادة هندسة العمليات تركز على إعادة التصميم الجذري والشامل للعمليات لتحسين الأداء."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "48",
+        "question": "What is intellectual property piracy?",
+        "options": {
+            "A": "Unauthorized database access",
+            "B": "Unauthorized software copying",
+            "C": "Hardware theft",
+            "D": "File encryption"
+        },
+        "answer": "B",
+        "explanation": "القرصنة تعني النسخ والاستخدام غير المصرح به للبرمجيات المحمية بحقوق النشر."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "49",
+        "question": "What are the 5Vs of Big Data?",
+        "options": {
+            "A": "Value, Volume, Veracity, Visualization, Verification",
+            "B": "Volume, Velocity, Variety, Veracity, Value",
+            "C": "Value, Velocity, Verification, Visualization, Volume",
+            "D": "Volume, Visualization, Velocity, Veracity, Value"
+        },
+        "answer": "B",
+        "explanation": "الخصائص الخمسة للبيانات الضخمة هي: الحجم، السرعة، التنوع، المصداقية، والقيمة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "50",
+        "question": "What is an untrusted network?",
+        "options": {
+            "A": "A network external to the organization",
+            "B": "An organization's local network",
+            "C": "A password-protected network",
+            "D": "A Wi-Fi network"
+        },
+        "answer": "A",
+        "explanation": "أي شبكة خارج سيطرة المؤسسة (مثل الإنترنت) تعتبر غير موثوقة أمنياً."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "51",
+        "question": "Which of the following is true about HDFS's file system?",
+        "options": {
+            "A": "Files are not replicated",
+            "B": "HDFS is designed for transactional systems",
+            "C": "Files are stored on a single server",
+            "D": "Files are split into blocks and distributed across nodes"
+        },
+        "answer": "D",
+        "explanation": "في HDFS، يتم تقسيم الملفات الكبيرة إلى كتل (Blocks) وتوزيعها على خوادم متعددة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "52",
+        "question": "Which type of files are suitable for HDFS?",
+        "options": {
+            "A": "Files requiring random access",
+            "B": "Small files with frequent updates",
+            "C": "Highly transactional files",
+            "D": "Large files with streaming access patterns"
+        },
+        "answer": "D",
+        "explanation": "HDFS مصمم للتعامل بكفاءة مع الملفات الضخمة التي يتم قراءتها بشكل متسلسل (Streaming access)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "53",
+        "question": "Which of the following is an example of Government-to-Consumer (G2C) services?",
+        "options": {
+            "A": "Procurement systems for vendors",
+            "B": "Inter-governmental data sharing",
+            "C": "Business licensing portals",
+            "D": "Tax filing websites"
+        },
+        "answer": "D",
+        "explanation": "مواقع تقديم الإقرارات الضريبية هي خدمة تقدمها الحكومة للأفراد (المستهلكين) مباشرة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "54",
+        "question": "Which of the following is NOT a characteristic of Hadoop?",
+        "options": {
+            "A": "Data locality",
+            "B": "Fault tolerance",
+            "C": "Real-time data processing",
+            "D": "Parallel processing"
+        },
+        "answer": "C",
+        "explanation": "هادوب الأصلي يعتمد على MapReduce وهو مخصص للمعالجة بالدفعات (Batch) وليس للمعالجة الفورية (Real-time)."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "55",
+        "question": "What does \"pay-as-you-go\" mean in cloud computing?",
+        "options": {
+            "A": "Pay annually for the subscription",
+            "B": "Pay upfront for fixed services",
+            "C": "Pay based on usage",
+            "D": "Pay after using the services"
+        },
+        "answer": "C",
+        "explanation": "نموذج الدفع حسب الاستخدام يعني أنك تدفع فقط مقابل الموارد التي استهلكتها فعلياً."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "56",
+        "question": "What is personalization in e-commerce?",
+        "options": {
+            "A": "Automating website maintenance",
+            "B": "Tracking consumer complaints",
+            "C": "Tailoring web pages to individual consumers",
+            "D": "Creating unique customer accounts"
+        },
+        "answer": "C",
+        "explanation": "التخصيص يعني تعديل محتوى الموقع والعروض ليتناسب مع اهتمامات كل مستخدم على حدة."
+    },
+    {
+        "lecture": "Final2025 National Uni",
+        "type": "MCQ",
+        "id": "57",
+        "question": "What is one of the biggest risks of cloud computing?",
+        "options": {
+            "A": "Increased costs",
+            "B": "Slow service scalability",
+            "C": "Limited data storage",
+            "D": "Privacy and security issues"
+        },
+        "answer": "D",
+        "explanation": "قضايا الخصوصية والأمان تظل الهاجس الأكبر عند الاعتماد على طرف ثالث لتخزين البيانات."
+    }
+ 
 ]
