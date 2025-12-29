@@ -2670,5 +2670,645 @@
         ],
         "answer": "True",
         "explanation": "لأن المعلومات التي تتميز بالدقة تضمن صحة البيانات، والملاءمة تجعلها مفيدة للقرار، والحماية تحافظ على سرّيتها وسلامتها من التلاعب أو الفقدان."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "8",
+        "question": "A Database Administrator (DBA) is:",
+        "options": {
+            "A": "A database developer",
+            "B": "A skilled and trained IS professional who directs all activities related to an organization's database, including providing security from intruders.",
+            "C": "A person who secures a database",
+            "D": "A programmer"
+        },
+        "answer": "B",
+        "explanation": "مدير قاعدة البيانات (DBA) هو المسؤول عن إدارة وتأمين وصيانة قاعدة البيانات وتوجيه الأنشطة المتعلقة بها."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "9",
+        "question": "An example of transaction data is:",
+        "options": {
+            "A": "Students records in a university database",
+            "B": "Employee database",
+            "C": "Customers buying items in a supermarket",
+            "D": "Patient database in a hospital"
+        },
+        "answer": "C",
+        "explanation": "بيانات المعاملات (Transaction Data) تنتج عن أحداث يومية مثل عمليات الشراء والبيع، بينما السجلات الأخرى تعتبر بيانات رئيسية (Master Data)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "10",
+        "question": "Supply chain management (SCM) determines:",
+        "options": {
+            "A": "What are required for the value of the customer",
+            "B": "What quantities are needed to meet customer demand",
+            "C": "How the project is managed",
+            "D": "How the project is planned"
+        },
+        "answer": "B",
+        "explanation": "إدارة سلسلة التوريد (SCM) تهتم بتخطيط وتحديد الكميات اللازمة لتلبية طلب العملاء وضمان تدفق المنتجات."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "11",
+        "question": "Fundamental roles of information systems are to:",
+        "options": {
+            "A": "Support of business operations",
+            "B": "Support of University databases",
+            "C": "Support of Company databases",
+            "D": "Support of Accounting databases"
+        },
+        "answer": "A",
+        "explanation": "الدور الأساسي والأشمل لنظم المعلومات هو دعم عمليات الأعمال (Business Operations) واتخاذ القرار والميزة التنافسية."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "12",
+        "question": "A primary key is:",
+        "options": {
+            "A": "A unique identifier",
+            "B": "A key that can be repeated",
+            "C": "A relational table",
+            "D": "A foreign key"
+        },
+        "answer": "A",
+        "explanation": "المفتاح الأساسي (Primary Key) هو حقل يُستخدم لتعريف كل سجل بشكل فريد ولا يمكن تكراره."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "13",
+        "question": "Through a hospital information system, one will not have problems with the following:",
+        "options": {
+            "A": "Paper loss, missing values, and unorganized patient records",
+            "B": "Smart gates",
+            "C": "High data volume",
+            "D": "Live streaming data"
+        },
+        "answer": "A",
+        "explanation": "نظم المعلومات في المستشفيات تحل المشاكل التقليدية مثل ضياع الأوراق وعدم تنظيم السجلات الطبية."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "14",
+        "question": "Data in a multidimensional cube can be:",
+        "options": {
+            "A": "Stored in flat files",
+            "B": "Analyzed across various dimensions",
+            "C": "Analyzed in details",
+            "D": "Stored in a graph database"
+        },
+        "answer": "B",
+        "explanation": "المكعب متعدد الأبعاد (Multidimensional Cube) يُستخدم في الـ OLAP لتحليل البيانات من عدة زوايا أو أبعاد مختلفة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "15",
+        "question": "The value of information is directly linked to how it helps decision makers achieve their organization's goals",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "قيمة المعلومات تقاس بمدى فائدتها ومساعدتها في اتخاذ القرارات وتحقيق أهداف المؤسسة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "16",
+        "question": "Nominal data are categories of data",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "البيانات الاسمية (Nominal) هي بيانات وصفية تصنف العناصر في فئات بدون ترتيب معين (مثل الألوان أو الجنس)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "17",
+        "question": "Enterprise data modeling is an approach that starts by investigating the general data and information needs of the organization at each department",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "نمذجة بيانات المؤسسة تبدأ بفهم الاحتياجات العامة للبيانات عبر جميع أقسام المؤسسة لبناء نموذج شامل."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "18",
+        "question": "A Chatterbot is a program that attempts to simulate typed conversation, with the aim of at least temporarily fooling a human into thinking they were talking to another person",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "برامج الدردشة الآلية (Chatterbots) تصمم لمحاكاة المحادثة البشرية وقد تهدف لاجتياز اختبار تورينج."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "19",
+        "question": "Business Process Reengineering is:",
+        "options": {
+            "A": "Bottom-up change by workers",
+            "B": "Top-down change driven by senior executives",
+            "C": "Work Done by data analysts",
+            "D": "Data analyzed by data scientists"
+        },
+        "answer": "B",
+        "explanation": "إعادة هندسة العمليات (Reengineering) هي تغيير جذري وعادة ما يكون توجيهاً من الإدارة العليا (Top-down)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "20",
+        "question": "Database as a Service is defined as:",
+        "options": {
+            "A": "A cloud computing service",
+            "B": "The same as a Hardware as a service",
+            "C": "The same as an Infrastructure as a service",
+            "D": "A cloud computing service that lets users access and use a cloud database system without purchasing and setting up their own hardware"
+        },
+        "answer": "D",
+        "explanation": "قاعدة البيانات كخدمة (DBaaS) هي خدمة سحابية تتيح استخدام قواعد البيانات دون الحاجة لإدارة البنية التحتية المادية. (الإجابة A صحيحة كتعميم، لكن D أدق)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "21",
+        "question": "Relevant information is not of a critical importance to the phase of analyzing the data",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "المعلومات ذات الصلة (Relevant) ضرورية وحاسمة جداً في مرحلة تحليل البيانات."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "22",
+        "question": "The types of information systems used in business information systems are hospital and clinical information systems",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "نظم المعلومات الطبية خاصة بالقطاع الصحي، بينما نظم معلومات الأعمال (Business IS) تشمل ERP, CRM, SCM وغيرها."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "23",
+        "question": "A system is a set of elements or components that interact to accomplish goals",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "هذا هو التعريف العام للنظام: مجموعة مكونات تتفاعل لتحقيق هدف."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "24",
+        "question": "Standardization of data access is one main advantage of:",
+        "options": {
+            "A": "A database management system",
+            "B": "A database approach",
+            "C": "An information system",
+            "D": "A business information system"
+        },
+        "answer": "A",
+        "explanation": "نظم إدارة قواعد البيانات (DBMS) توفر طرقاً قياسية وموحدة للوصول للبيانات (مثل SQL)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "25",
+        "question": "Organizational change defines how for-profit and nonprofit organizations plan for, implement, and handle change",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "التغيير التنظيمي يتعلق بكيفية إدارة التغييرات داخل المؤسسات بأنواعها."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "26",
+        "question": "Temporal data is any data that depends on time interval",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "البيانات الزمنية (Temporal Data) هي التي ترتبط بفترة زمنية أو تتغير بمرور الوقت."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "27",
+        "question": "A Strong AI is artificial intelligence that matches or exceeds human intelligence - the intelligence of a machine that can successfully perform any intellectual task that a human being can",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "الذكاء الاصطناعي القوي (Strong AI) يهدف لمحاكاة الذكاء البشري بالكامل والقدرة على تنفيذ أي مهمة ذهنية."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "28",
+        "question": "Raw data contains:",
+        "options": {
+            "A": "Original data before it is automated",
+            "B": "Secure data",
+            "C": "Accessible data",
+            "D": "High data volume"
+        },
+        "answer": "A",
+        "explanation": "البيانات الخام (Raw Data) هي البيانات في صورتها الأولية قبل المعالجة أو التحويل."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "29",
+        "question": "A data definition language is used to define and describe data and relationships in a specific databases",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "لغة تعريف البيانات (DDL) تُستخدم لإنشاء وتعديل هياكل قاعدة البيانات وجداولها وعلاقاتها."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "30",
+        "question": "Artificial Intelligence provide systems that behave like humans",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "على الرغم من أن بعض فروع الذكاء الاصطناعي تحاكي البشر، إلا أن التعريف الأدق والأشمل هو أنظمة تتصرف بـ 'عقلانية' (Rationally) وليس بالضرورة كالبشر، وقد تم اعتبارها خطأ في سياق الامتحان لتمييزها عن الأنظمة العقلانية."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "31",
+        "question": "An Entity Relationship Diagram is a physical data model",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "مخطط ERD هو نموذج مفاهيمي (Conceptual) وليس نموذجاً مادياً (Physical)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "32",
+        "question": "Continuous improvement constantly seeking ways to improve business processes to add value to products and services",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "التحسين المستمر عملية دائمة لزيادة الكفاءة والجودة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "33",
+        "question": "Reengineering can :",
+        "options": {
+            "A": "Reduce delivery time",
+            "B": "Decrease product and service quality",
+            "C": "Produce customer satisfaction",
+            "D": "Decrease revenues and profitability"
+        },
+        "answer": "C",
+        "explanation": "إعادة الهندسة تهدف لتحسين الأداء بشكل جذري مما يؤدي لزيادة رضا العملاء (الخيار A ممكن أيضاً ولكن C نتيجة أشمل)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "34",
+        "question": "A business requires a multi-user for the database in order to have each user's database on his machine",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "قواعد البيانات متعددة المستخدمين تعني وجود قاعدة بيانات مركزية يتشاركها الجميع، وليس نسخاً منفصلة لكل مستخدم."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "35",
+        "question": "Characteristics of Valuable Information Systems include:",
+        "options": {
+            "A": "Accessible",
+            "B": "Secure",
+            "C": "Accessible, accurate, complete, and flexible",
+            "D": "Open for multiple users"
+        },
+        "answer": "C",
+        "explanation": "المعلومات القيمة يجب أن تتسم بالدقة، والشمولية، والمرونة، وسهولة الوصول."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "36",
+        "question": "A data object represents a variable",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "في نمذجة البيانات والبرمجة، كائنات البيانات تمثل متغيرات أو كيانات تحمل قيماً."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "37",
+        "question": "An example of temporal data is:",
+        "options": {
+            "A": "Patient follow-up treatment of a specific medication through a specific duration",
+            "B": "X,Y location",
+            "C": "Images",
+            "D": "A Complete blood picture of a patient"
+        },
+        "answer": "A",
+        "explanation": "متابعة المريض عبر فترة زمنية محددة هو مثال واضح للبيانات المرتبطة بالزمن (Temporal Data)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "38",
+        "question": "An Organization is a formal collection of people and other resources established to accomplish a set of goals",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "تعريف المؤسسة هو تجمع رسمي للأفراد والموارد لتحقيق أهداف محددة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "39",
+        "question": "SCM can help a company collect customer data, contact customers, educate them about new products, and actively sell products to existing and new customers",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "هذه وظائف إدارة علاقات العملاء (CRM) وليس إدارة سلسلة التوريد (SCM)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "40",
+        "question": "Organizational structure refers to organizational subunits and the way they relate to the overall organization",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "الهيكل التنظيمي يحدد الوحدات الفرعية والعلاقات بينها داخل المؤسسة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "41",
+        "question": "A data mart has no relation with a data warehouse",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "مجرى البيانات (Data Mart) غالباً ما يكون جزءاً أو نسخة مصغرة من مستودع البيانات (Data Warehouse) موجهة لقسم معين."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "42",
+        "question": "A Query-by-Example database is:",
+        "options": {
+            "A": "A data dictionary",
+            "B": "A data warehouse",
+            "C": "A visual approach to developing database queries or requests",
+            "D": "A database schema"
+        },
+        "answer": "C",
+        "explanation": "الاستعلام بالمثال (QBE) هو طريقة مرئية لإنشاء الاستعلامات بدلاً من كتابة الأكواد."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "43",
+        "question": "A graph database can be a set of small graph as in transactional databases",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "قواعد البيانات الرسومية يمكن أن تتعامل مع هياكل بيانات مترابطة ومعقدة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "44",
+        "question": "A graph data example includes:",
+        "options": {
+            "A": "Social Media",
+            "B": "Images",
+            "C": "Categories of disease",
+            "D": "Complete blood picture"
+        },
+        "answer": "A",
+        "explanation": "وسائل التواصل الاجتماعي هي المثال الأشهـر لقواعد البيانات الرسومية حيث يتم تمثيل الأشخاص كـ Nodes والعلاقات بينهم كـ Edges. (ملاحظة: الطالب اختار C في الملف ولكن A هي الإجابة النموذجية)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "45",
+        "question": "A data manipulation language processes queries in a database",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "لغة معالجة البيانات (DML) تُستخدم للاستعلام عن البيانات وتحديثها وحذفها."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "46",
+        "question": "Artificial Intelligence is defined as the art of creating machines that perform functions that require intelligence when performed by people",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "هذا تعريف كلاسيكي للذكاء الاصطناعي (أداء مهام تتطلب ذكاء بشرياً)."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "47",
+        "question": "Value Chain is a series of activities that includes inbound logistics, warehouse and storage, production, finished product storage, outbound logistics, marketing and sales, and customer service",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "سلسلة القيمة (Value Chain) تتضمن كل هذه الأنشطة التي تضيف قيمة للمنتج."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "48",
+        "question": "A Weak AI is an artificial intelligence system which is not intended to match or exceed the capabilities of human beings",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "الذكاء الاصطناعي الضعيف (Weak AI) يركز على أداء مهام محددة ولا يسعى لمحاكاة الوعي البشري الكامل."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "49",
+        "question": "A Knowledge Management System is an organized collection of people, procedures, software, databases, and devices used to create, store, and use the organization's knowledge and experience",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "نظام إدارة المعرفة (KMS) يهدف لجمع وتنظيم واستخدام المعرفة والخبرات داخل المؤسسة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "50",
+        "question": "Technology acceptance model (TAM) is defined as:",
+        "options": {
+            "A": "A model for data design",
+            "B": "A model that describes the factors leading to higher levels of acceptance and usage of technology",
+            "C": "A conceptual data model",
+            "D": "A model for supply chain management"
+        },
+        "answer": "B",
+        "explanation": "نموذج تقبل التكنولوجيا (TAM) يفسر العوامل التي تجعل المستخدمين يتقبلون ويستخدمون التكنولوجيا الجديدة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "51",
+        "question": "Selecting a Database Management System depends on:",
+        "options": {
+            "A": "Data Volume, Performance, concurrent users, and velocity",
+            "B": "Data Volume",
+            "C": "Performance",
+            "D": "Variety of the data"
+        },
+        "answer": "A",
+        "explanation": "اختيار DBMS يعتمد على عوامل متعددة مجتمعة مثل حجم البيانات، الأداء المطلوب، عدد المستخدمين المتزامنين، والسرعة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "52",
+        "question": "Knowledge Workers are:",
+        "options": {
+            "A": "Database developers",
+            "B": "Database analysts",
+            "C": "People who create, use, and disseminate knowledge, and are usually professionals in science, engineering, business, and other areas",
+            "D": "Database administrators"
+        },
+        "answer": "C",
+        "explanation": "عمال المعرفة هم المحترفون الذين يعتمد عملهم بشكل أساسي على إنشاء واستخدام المعلومات والمعرفة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "53",
+        "question": "A replicated database holds a duplicate set of frequently used data",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "قاعدة البيانات المنسوخة (Replicated) تحتوي على نسخ متكررة من البيانات لتحسين الأداء والإتاحة."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "MCQ",
+        "id": "54",
+        "question": "Customer relationship management (CRM) programs help a company manage all aspects of customer encounters, including:",
+        "options": {
+            "A": "Marketing, advertising, and sales",
+            "B": "Customer service after the sale",
+            "C": "Programs to retain loyal customers",
+            "D": "All of the above"
+        },
+        "answer": "D",
+        "explanation": "أنظمة CRM شاملة وتغطي التسويق، المبيعات، خدمة ما بعد البيع، والحفاظ على العملاء."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "55",
+        "question": "Team organizational structure is a structure centered on major products or services",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "B",
+        "explanation": "الهيكل الذي يتمحور حول المنتجات يسمى هيكل الأقسام (Divisional) أو القائم على المنتج، بينما هيكل الفريق يتمحور حول فرق العمل."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "56",
+        "question": "The time horizon for the data warehouse is significantly longer than that of operational systems",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "مستودعات البيانات تخزن بيانات تاريخية لسنوات طويلة للتحليل، بينما الأنظمة التشغيلية تركز على البيانات الحالية."
+    },
+    {
+        "lecture": "Final 2023 - Dr. Taysir - Information System",
+        "type": "True/False",
+        "id": "57",
+        "question": "Valuable data means that data is clean and accurate",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": "A",
+        "explanation": "البيانات القيمة يجب أن تكون نظيفة (خالية من الأخطاء) ودقيقة ليمكن الاعتماد عليها."
     }
 ]
