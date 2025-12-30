@@ -6,23 +6,32 @@
             {
                 "type": "choice",
                 "question": "What is 1 + 2?",
+                "question_ar": "ما هو ناتج 1 + 2؟",
                 "options": ["1", "2", "3", "4"],
+                "options_ar": ["1", "2", "3", "4"],
                 "correct_answer": 2,
-                "explanation": "الجمع البسيط لـ 1 و 2 يعطي 3."
+                "explanation": "Simple addition of 1 and 2 gives 3.",
+                "explanation_ar": "الجمع البسيط لـ 1 و 2 يعطي 3."
             },
             {
                 "type": "true_false",
                 "question": "Is 5 - 3 = 2?",
+                "question_ar": "هل 5 - 3 = 2؟",
                 "options": ["True", "False"],
+                "options_ar": ["صحيح", "خطأ"],
                 "correct_answer": 0,
-                "explanation": "نعم، طرح 3 من 5 يساوي 2."
+                "explanation": "Yes, subtracting 3 from 5 equals 2.",
+                "explanation_ar": "نعم، طرح 3 من 5 يساوي 2."
             },
             {
                 "type": "multiple_choice",
                 "question": "What are the square roots of 4?",
+                "question_ar": "ما هي الجذور التربيعية للعدد 4؟",
                 "options": ["2", "-2", "4", "0"],
+                "options_ar": ["2", "-2", "4", "0"],
                 "correct_answers": [0, 1],
-                "explanation": "جذر 4 هو 2 و -2 لأن (2)^2 = 4 و (-2)^2 = 4."
+                "explanation": "The square root of 4 is 2 and -2 because (2)^2 = 4 and (-2)^2 = 4.",
+                "explanation_ar": "جذر 4 هو 2 و -2 لأن (2)^2 = 4 و (-2)^2 = 4."
             }
         ]
     },
@@ -33,23 +42,32 @@
             {
                 "type": "choice",
                 "question": "What is 5 * 5?",
+                "question_ar": "ما هو ناتج 5 * 5؟",
                 "options": ["10", "20", "25", "30"],
+                "options_ar": ["10", "20", "25", "30"],
                 "correct_answer": 2,
-                "explanation": "حاصل ضرب 5 في 5 هو 25."
+                "explanation": "5 multiplied by 5 is 25.",
+                "explanation_ar": "حاصل ضرب 5 في 5 هو 25."
             },
             {
                 "type": "true_false",
                 "question": "Is 10 / 2 = 4?",
+                "question_ar": "هل 10 / 2 = 4؟",
                 "options": ["True", "False"],
+                "options_ar": ["صحيح", "خطأ"],
                 "correct_answer": 1,
-                "explanation": "خطأ، 10 تقسيم 2 يساوي 5."
+                "explanation": "No, 10 divided by 2 equals 5.",
+                "explanation_ar": "خطأ، 10 تقسيم 2 يساوي 5."
             },
             {
                 "type": "multiple_choice",
                 "question": "Which of these are prime numbers?",
+                "question_ar": "أي من هذه الأعداد هي أعداد أولية؟",
                 "options": ["2", "3", "4", "5"],
+                "options_ar": ["2", "3", "4", "5"],
                 "correct_answers": [0, 1, 3],
-                "explanation": "الأعداد الأولية هي 2 و 3 و 5 لأنها تقبل القسمة على نفسها وعلى 1 فقط."
+                "explanation": "Prime numbers are 2, 3, and 5 because they are only divisible by themselves and 1.",
+                "explanation_ar": "الأعداد الأولية هي 2 و 3 و 5 لأنها تقبل القسمة على نفسها وعلى 1 فقط."
             }
         ]
     },
@@ -60,23 +78,32 @@
             {
                 "type": "choice",
                 "question": "How many sides does a triangle have?",
+                "question_ar": "كم عدد أضلاع المثلث؟",
                 "options": ["2", "3", "4", "5"],
+                "options_ar": ["2", "3", "4", "5"],
                 "correct_answer": 1,
-                "explanation": "المثلث يتكون من 3 أضلاع."
+                "explanation": "A triangle has 3 sides.",
+                "explanation_ar": "المثلث يتكون من 3 أضلاع."
             },
             {
                 "type": "true_false",
                 "question": "Does a square have 4 equal sides?",
+                "question_ar": "هل للمربع 4 أضلاع متساوية؟",
                 "options": ["True", "False"],
+                "options_ar": ["صحيح", "خطأ"],
                 "correct_answer": 0,
-                "explanation": "نعم، المربع يتميز بأن جميع أضلاعه متساوية."
+                "explanation": "Yes, a square is characterized by having all sides equal.",
+                "explanation_ar": "نعم، المربع يتميز بأن جميع أضلاعه متساوية."
             },
             {
                 "type": "multiple_choice",
                 "question": "Which of these are quadrilaterals?",
+                "question_ar": "أي من هذه الأشكال هي أشكال رباعية؟",
                 "options": ["Square", "Rectangle", "Triangle", "Circle"],
+                "options_ar": ["مربع", "مستطيل", "مثلث", "دائرة"],
                 "correct_answers": [0, 1],
-                "explanation": "المربع والمستطيل هما أشكال رباعية الأضلاع."
+                "explanation": "Square and rectangle are quadrilaterals.",
+                "explanation_ar": "المربع والمستطيل هما أشكال رباعية الأضلاع."
             }
         ]
     },
@@ -87,23 +114,32 @@
             {
                 "type": "choice",
                 "question": "What is 100 + 200?",
+                "question_ar": "ما هو ناتج 100 + 200؟",
                 "options": ["100", "200", "300", "400"],
+                "options_ar": ["100", "200", "300", "400"],
                 "correct_answer": 2,
-                "explanation": "مجموع 100 و 200 هو 300."
+                "explanation": "The sum of 100 and 200 is 300.",
+                "explanation_ar": "مجموع 100 و 200 هو 300."
             },
             {
                 "type": "true_false",
                 "question": "Is 1000 > 500?",
+                "question_ar": "هل 1000 أكبر من 500؟",
                 "options": ["True", "False"],
+                "options_ar": ["صحيح", "خطأ"],
                 "correct_answer": 0,
-                "explanation": "نعم، 1000 أكبر من 500."
+                "explanation": "Yes, 1000 is greater than 500.",
+                "explanation_ar": "نعم، 1000 أكبر من 500."
             },
             {
                 "type": "multiple_choice",
                 "question": "Which of these are multiples of 10?",
+                "question_ar": "أي من هذه الأعداد هي مضاعفات للعدد 10؟",
                 "options": ["10", "25", "50", "100"],
+                "options_ar": ["10", "25", "50", "100"],
                 "correct_answers": [0, 2, 3],
-                "explanation": "مضاعفات 10 هي الأعداد التي تنتهي بصفر."
+                "explanation": "Multiples of 10 are numbers that end in zero.",
+                "explanation_ar": "مضاعفات 10 هي الأعداد التي تنتهي بصفر."
             }
         ]
     },
@@ -114,23 +150,32 @@
             {
                 "type": "choice",
                 "question": "What is 0 * 100?",
+                "question_ar": "ما هو ناتج 0 * 100؟",
                 "options": ["0", "1", "100", "undefined"],
+                "options_ar": ["0", "1", "100", "غير معرف"],
                 "correct_answer": 0,
-                "explanation": "أي رقم يضرب في صفر تكون النتيجة صفراً."
+                "explanation": "Any number multiplied by zero results in zero.",
+                "explanation_ar": "أي رقم يضرب في صفر تكون النتيجة صفراً."
             },
             {
                 "type": "true_false",
                 "question": "Is 1 a prime number?",
+                "question_ar": "هل العدد 1 عدد أولي؟",
                 "options": ["True", "False"],
+                "options_ar": ["صحيح", "خطأ"],
                 "correct_answer": 1,
-                "explanation": "خطأ، العدد 1 ليس أولياً."
+                "explanation": "No, the number 1 is not prime.",
+                "explanation_ar": "خطأ، العدد 1 ليس أولياً."
             },
             {
                 "type": "multiple_choice",
                 "question": "Which of these are even numbers?",
+                "question_ar": "أي من هذه الأعداد هي أعداد زوجية؟",
                 "options": ["2", "4", "7", "10"],
+                "options_ar": ["2", "4", "7", "10"],
                 "correct_answers": [0, 1, 3],
-                "explanation": "الأعداد الزوجية هي التي تقبل القسمة على 2."
+                "explanation": "Even numbers are those divisible by 2.",
+                "explanation_ar": "الأعداد الزوجية هي التي تقبل القسمة على 2."
             }
         ]
     }
