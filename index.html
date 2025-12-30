@@ -171,6 +171,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            margin-bottom: 10px;
         }
 
         .timer-option input[type="radio"] {
@@ -187,6 +188,7 @@
             padding: 10px;
             border-radius: 8px;
             margin-top: 10px;
+            margin-left: 25px;
             display: none;
         }
 
@@ -261,6 +263,10 @@
             font-size: 1.2em;
         }
 
+        .timer.hidden {
+            display: none;
+        }
+
         .question-container {
             background: var(--bg);
             border-radius: 15px;
@@ -276,6 +282,8 @@
             margin-bottom: 25px;
             padding-bottom: 15px;
             border-bottom: 2px solid var(--border);
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .question-number {
@@ -637,6 +645,11 @@
             .theme-options {
                 grid-template-columns: repeat(3, 1fr);
             }
+
+            .question-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
 
         .empty-state {
@@ -721,6 +734,7 @@
                 <button class="btn-back" onclick="goHome()">← العودة</button>
                 <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>← السابق</button>
                 <button class="btn-primary" id="submitBtn" onclick="submitAnswer()" style="display: none;">✓ تأكيد</button>
+                <button class="btn-secondary" id="skipBtn" onclick="skipQuestion()">تخطي ⊘</button>
                 <button class="btn-secondary" id="nextBtn" onclick="nextQuestion()">التالي →</button>
             </div>
         </div>
@@ -803,8 +817,7 @@
         let startTime = null;
         let timerInterval = null;
         let isTranslated = false;
-        let translatedQuestions = {};
-        let timerMode = 'none'; // 'none', 'ascending', 'descending'
+        let timerMode = 'none';
         let timerDuration = 0;
         let timerStartTime = null;
 
@@ -861,7 +874,6 @@
                 container.appendChild(wrapper);
             });
 
-            // تحديد الثيم المحفوظ
             const savedTheme = localStorage.getItem('selectedTheme') || '0';
             document.getElementById(`theme_${savedTheme}`).checked = true;
             applyTheme(parseInt(savedTheme));
@@ -946,9 +958,7 @@
             incorrectCount = 0;
             skippedCount = 0;
             isTranslated = false;
-            translatedQuestions = {};
 
-            // تحديد نمط المؤقت
             const timerRadios = document.getElementsByName(`timer_${index}`);
             timerMode = 'none';
             timerRadios.forEach(radio => {
@@ -972,7 +982,15 @@
             document.getElementById('quizTitle').textContent = currentQuiz.name;
             document.getElementById('totalQuestions').textContent = currentQuiz.questions.length;
 
-            startTimer();
+            // إخفاء المؤقت إذا كان بدون وقت
+            const timerElement = document.getElementById('timer');
+            if (timerMode === 'none') {
+                timerElement.classList.add('hidden');
+            } else {
+                timerElement.classList.remove('hidden');
+                startTimer();
+            }
+
             displayQuestion();
         }
 
@@ -1002,11 +1020,6 @@
                     const minutes = Math.floor(remaining / 60);
                     const seconds = remaining % 60;
                     display = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                } else {
-                    const elapsed = Math.floor((Date.now() - startTime) / 1000);
-                    const minutes = Math.floor(elapsed / 60);
-                    const seconds = elapsed % 60;
-                    display = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
                 }
 
                 document.getElementById('timer').textContent = display;
@@ -1028,16 +1041,14 @@
             document.getElementById('questionType').textContent = typeText;
 
             // عرض السؤال
-            let questionText = question.question;
-            if (isTranslated && translatedQuestions[currentQuestionIndex]) {
-                questionText = translatedQuestions[currentQuestionIndex].question;
-            }
+            let questionText = isTranslated && question.question_ar ? question.question_ar : question.question;
             document.getElementById('questionText').textContent = questionText;
 
             // إظهار/إخفاء زر التأكيد
             const submitBtn = document.getElementById('submitBtn');
             if (question.type === 'multiple_choice') {
                 submitBtn.style.display = 'inline-block';
+                submitBtn.disabled = false;
             } else {
                 submitBtn.style.display = 'none';
             }
@@ -1047,11 +1058,7 @@
             optionsContainer.innerHTML = '';
 
             const groupName = `question_${currentQuestionIndex}`;
-            let options = question.options;
-
-            if (isTranslated && translatedQuestions[currentQuestionIndex]) {
-                options = translatedQuestions[currentQuestionIndex].options;
-            }
+            let options = isTranslated && question.options_ar ? question.options_ar : question.options;
 
             options.forEach((option, idx) => {
                 const div = document.createElement('div');
@@ -1082,6 +1089,7 @@
                         const checkboxes = document.querySelectorAll(`input[name="${groupName}"]:checked`);
                         answers[currentQuestionIndex] = Array.from(checkboxes).map(cb => parseInt(cb.value));
                         updateOptionSelection(groupName);
+                        updateSubmitButton();
                     } else {
                         document.querySelectorAll(`input[name="${groupName}"]`).forEach(inp => {
                             inp.parentElement.classList.remove('selected');
@@ -1089,9 +1097,9 @@
                         div.classList.add('selected');
                         answers[currentQuestionIndex] = idx;
                         
-                        // تصحيح فوري للأنواع الأخرى
                         if (question.type !== 'multiple_choice') {
                             submitted[currentQuestionIndex] = true;
+                            delete skipped[currentQuestionIndex];
                             showFeedback();
                         }
                     }
@@ -1106,10 +1114,7 @@
                 optionsContainer.appendChild(div);
             });
 
-            // إخفاء الملاحظات
             document.getElementById('feedback').classList.remove('show');
-
-            // تحديث حالة الأزرار
             updateButtonStates();
         }
 
@@ -1119,62 +1124,21 @@
             });
         }
 
-        // ===== الترجمة الفورية =====
-        async function toggleTranslate() {
+        function updateSubmitButton() {
+            const submitBtn = document.getElementById('submitBtn');
             const question = currentQuiz.questions[currentQuestionIndex];
-
-            if (!isTranslated) {
-                if (!translatedQuestions[currentQuestionIndex]) {
-                    try {
-                        const translated = await translateQuestion(question);
-                        translatedQuestions[currentQuestionIndex] = translated;
-                    } catch (error) {
-                        alert('خطأ في الترجمة. تأكد من اتصالك بالإنترنت.');
-                        return;
-                    }
-                }
-                isTranslated = true;
-            } else {
-                isTranslated = false;
+            
+            if (question.type === 'multiple_choice') {
+                const hasAnswer = answers[currentQuestionIndex] && answers[currentQuestionIndex].length > 0;
+                const isSubmitted = submitted[currentQuestionIndex];
+                submitBtn.disabled = !hasAnswer || isSubmitted;
             }
-
-            displayQuestion();
         }
 
-        async function translateQuestion(question) {
-            // محاكاة الترجمة (يمكن استبدالها بـ API حقيقي)
-            const apiKey = 'AIzaSyDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // ضع مفتاح API الخاص بك
-            
-            try {
-                const textToTranslate = question.question + ' ' + question.options.join(' ');
-                
-                const response = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        q: textToTranslate,
-                        target: 'ar',
-                        source: 'en'
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-
-                const data = await response.json();
-                const translatedText = data.data.translations[0].translatedText;
-
-                // تقسيم النص المترجم (تقريبي)
-                const parts = translatedText.split(' ');
-                const translated = {
-                    question: parts.slice(0, Math.floor(parts.length / 2)).join(' '),
-                    options: [parts.slice(Math.floor(parts.length / 2)).join(' ')]
-                };
-
-                return translated;
-            } catch (error) {
-                console.error('خطأ في الترجمة:', error);
-                throw error;
-            }
+        // ===== الترجمة =====
+        function toggleTranslate() {
+            isTranslated = !isTranslated;
+            displayQuestion();
         }
 
         // ===== عرض الملاحظات =====
@@ -1195,33 +1159,36 @@
             if (isCorrect) {
                 correctCount++;
                 feedback.className = 'feedback show correct';
+                const explanation = isTranslated && question.explanation_ar ? question.explanation_ar : question.explanation;
                 feedback.innerHTML = `
                     <div class="feedback-title">✓ إجابة صحيحة!</div>
-                    <div class="feedback-text">${question.explanation}</div>
+                    <div class="feedback-text">${explanation}</div>
                 `;
             } else {
                 incorrectCount++;
                 let correctAnswerText = '';
 
                 if (question.type === 'multiple_choice') {
-                    correctAnswerText = question.correct_answers.map(idx => question.options[idx]).join(' و ');
+                    const correctOptions = isTranslated && question.options_ar ? question.options_ar : question.options;
+                    correctAnswerText = question.correct_answers.map(idx => correctOptions[idx]).join(' و ');
                 } else {
+                    const correctOptions = isTranslated && question.options_ar ? question.options_ar : question.options;
                     correctAnswerText = question.type === 'true_false' 
                         ? (question.correct_answer === 0 ? 'صحيح' : 'خطأ')
-                        : question.options[question.correct_answer];
+                        : correctOptions[question.correct_answer];
                 }
 
                 feedback.className = 'feedback show incorrect';
+                const explanation = isTranslated && question.explanation_ar ? question.explanation_ar : question.explanation;
                 feedback.innerHTML = `
                     <div class="feedback-title">✗ إجابة خاطئة</div>
                     <div class="feedback-text">
                         <strong>الإجابة الصحيحة:</strong> ${correctAnswerText}<br>
-                        <strong>الشرح:</strong> ${question.explanation}
+                        <strong>الشرح:</strong> ${explanation}
                     </div>
                 `;
             }
 
-            delete skipped[currentQuestionIndex];
             document.getElementById('correctCount').textContent = correctCount;
             document.getElementById('incorrectCount').textContent = incorrectCount;
             document.getElementById('skippedCount').textContent = skippedCount;
@@ -1240,7 +1207,23 @@
             }
 
             submitted[currentQuestionIndex] = true;
+            delete skipped[currentQuestionIndex];
             showFeedback();
+        }
+
+        // ===== تخطي السؤال =====
+        function skipQuestion() {
+            skipped[currentQuestionIndex] = true;
+            submitted[currentQuestionIndex] = true;
+            delete answers[currentQuestionIndex];
+            skippedCount++;
+
+            document.getElementById('feedback').classList.remove('show');
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('incorrectCount').textContent = incorrectCount;
+            document.getElementById('skippedCount').textContent = skippedCount;
+
+            updateButtonStates();
         }
 
         // ===== التنقل بين الأسئلة =====
@@ -1263,13 +1246,6 @@
         function updateButtonStates() {
             document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
             document.getElementById('nextBtn').disabled = false;
-
-            const submitBtn = document.getElementById('submitBtn');
-            if (currentQuiz.questions[currentQuestionIndex].type === 'multiple_choice') {
-                const hasAnswer = answers[currentQuestionIndex] && answers[currentQuestionIndex].length > 0;
-                const isSubmitted = submitted[currentQuestionIndex];
-                submitBtn.disabled = !hasAnswer || isSubmitted;
-            }
         }
 
         // ===== عرض النتائج =====
@@ -1405,4 +1381,3 @@
     </script>
 </body>
 </html>
-
