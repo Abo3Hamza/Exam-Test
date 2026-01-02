@@ -64,58 +64,88 @@
             opacity: 0.9;
         }
 
-        .theme-selector {
+        .theme-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .theme-menu {
+            position: fixed;
+            top: 80px;
+            right: 20px;
             background: var(--bg);
+            border-radius: 15px;
             padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 600px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: none;
+            max-height: 80vh;
+            overflow-y: auto;
+            min-width: 250px;
         }
 
-        .theme-selector label {
+        .theme-menu.show {
             display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .theme-menu h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .theme-item {
+            padding: 12px;
             margin-bottom: 10px;
-            color: var(--text);
-            font-weight: bold;
-        }
-
-        .theme-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 10px;
-        }
-
-        .theme-option {
-            padding: 10px;
-            border: 2px solid var(--border);
             border-radius: 8px;
             cursor: pointer;
-            text-align: center;
-            transition: all 0.3s ease;
             background: var(--bg-secondary);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
         }
 
-        .theme-option:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .theme-option input[type="radio"] {
-            display: none;
-        }
-
-        .theme-option input[type="radio"]:checked + label {
-            border-color: var(--primary);
+        .theme-item:hover {
             background: var(--primary);
             color: white;
+            transform: translateX(-5px);
         }
 
-        .theme-option label {
-            margin: 0;
-            cursor: pointer;
-            font-size: 0.9em;
+        .theme-item.active {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
         }
 
         .quizzes-grid {
@@ -344,9 +374,14 @@
             background: var(--bg-secondary);
         }
 
-        .option:hover {
+        .option:hover:not(.disabled) {
             border-color: var(--primary);
             background: var(--bg);
+        }
+
+        .option.disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
         }
 
         .option input[type="radio"],
@@ -358,10 +393,18 @@
             accent-color: var(--primary);
         }
 
+        .option.disabled input {
+            cursor: not-allowed;
+        }
+
         .option label {
             flex: 1;
             cursor: pointer;
             font-size: 1.1em;
+        }
+
+        .option.disabled label {
+            cursor: not-allowed;
         }
 
         .option.selected {
@@ -433,6 +476,11 @@
             min-width: 120px;
         }
 
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
         .btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -441,11 +489,6 @@
         .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-primary:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
         }
 
         .btn-secondary {
@@ -457,11 +500,6 @@
         .btn-secondary:hover:not(:disabled) {
             background: var(--primary);
             color: white;
-        }
-
-        .btn-secondary:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
         }
 
         .btn-back {
@@ -642,13 +680,15 @@
                 flex-wrap: wrap;
             }
 
-            .theme-options {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
             .question-header {
                 flex-direction: column;
                 align-items: flex-start;
+            }
+
+            .theme-menu {
+                right: 10px;
+                top: 70px;
+                min-width: 200px;
             }
         }
 
@@ -670,6 +710,15 @@
     </style>
 </head>
 <body>
+    <!-- زر تبديل الثيمات -->
+    <button class="theme-toggle-btn" onclick="toggleThemeMenu()">🎨</button>
+    
+    <!-- قائمة الثيمات العائمة -->
+    <div class="theme-menu" id="themeMenu">
+        <h3>اختر الثيم</h3>
+        <div id="themeList"></div>
+    </div>
+
     <!-- الصفحة الرئيسية -->
     <div id="homePage" class="home-page">
         <div class="home-header">
@@ -678,12 +727,6 @@
         </div>
 
         <div class="container">
-            <!-- منتقي الثيمات -->
-            <div class="theme-selector">
-                <label>🎨 اختر الثيم المفضل لديك:</label>
-                <div class="theme-options" id="themeOptions"></div>
-            </div>
-
             <!-- شبكة الكويزات -->
             <div class="quizzes-grid" id="quizzesGrid"></div>
             <div id="emptyState" class="empty-state" style="display: none;">
@@ -711,10 +754,6 @@
                         <label>✗ خطأ</label>
                         <div class="value" id="incorrectCount">0</div>
                     </div>
-                    <div class="stat">
-                        <label>⊘ متخطى</label>
-                        <div class="value" id="skippedCount">0</div>
-                    </div>
                 </div>
                 <div class="timer" id="timer">00:00</div>
             </div>
@@ -734,7 +773,6 @@
                 <button class="btn-back" onclick="goHome()">← العودة</button>
                 <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>← السابق</button>
                 <button class="btn-primary" id="submitBtn" onclick="submitAnswer()" style="display: none;">✓ تأكيد</button>
-                <button class="btn-secondary" id="skipBtn" onclick="skipQuestion()">تخطي ⊘</button>
                 <button class="btn-secondary" id="nextBtn" onclick="nextQuestion()">التالي →</button>
             </div>
         </div>
@@ -765,7 +803,7 @@
                     </div>
                 </div>
 
-                <div style="background: var(--bg-secondary); padding: 20px; border-radius: 10px; margin: 30px 0;">
+                <div style="background: var(--bg-secondary); padding: 20px; border-radius: 10px; margin: 30px 0;" id="timeContainer">
                     <strong>⏱️ الوقت المستغرق:</strong> <span id="totalTime">00:00</span>
                 </div>
 
@@ -790,18 +828,21 @@
     <script>
         // ===== الثيمات المتاحة =====
         const themes = [
-            { name: 'أزرق بنفسجي', primary: '#667eea', secondary: '#764ba2' },
-            { name: 'أحمر برتقالي', primary: '#f44336', secondary: '#ff9800' },
-            { name: 'أخضر سماوي', primary: '#4caf50', secondary: '#00bcd4' },
-            { name: 'وردي بنفسجي', primary: '#e91e63', secondary: '#9c27b0' },
-            { name: 'أزرق سماوي', primary: '#2196f3', secondary: '#00bcd4' },
-            { name: 'برتقالي أحمر', primary: '#ff6f00', secondary: '#d32f2f' },
-            { name: 'أخضر داكن', primary: '#1b5e20', secondary: '#388e3c' },
-            { name: 'بنفسجي فاتح', primary: '#7b1fa2', secondary: '#c2185b' },
-            { name: 'أزرق داكن', primary: '#0d47a1', secondary: '#1565c0' },
-            { name: 'تركواز', primary: '#00796b', secondary: '#00897b' },
-            { name: 'ذهبي', primary: '#f57f17', secondary: '#ff6f00' },
-            { name: 'رمادي أزرق', primary: '#455a64', secondary: '#546e7a' }
+            { name: '🔵 أزرق بنفسجي', primary: '#667eea', secondary: '#764ba2' },
+            { name: '🔴 أحمر برتقالي', primary: '#f44336', secondary: '#ff9800' },
+            { name: '🟢 أخضر سماوي', primary: '#4caf50', secondary: '#00bcd4' },
+            { name: '💗 وردي بنفسجي', primary: '#e91e63', secondary: '#9c27b0' },
+            { name: '🔷 أزرق سماوي', primary: '#2196f3', secondary: '#00bcd4' },
+            { name: '🟠 برتقالي أحمر', primary: '#ff6f00', secondary: '#d32f2f' },
+            { name: '🌲 أخضر داكن', primary: '#1b5e20', secondary: '#388e3c' },
+            { name: '💜 بنفسجي فاتح', primary: '#7b1fa2', secondary: '#c2185b' },
+            { name: '🌊 أزرق داكن', primary: '#0d47a1', secondary: '#1565c0' },
+            { name: '🏝️ تركواز', primary: '#00796b', secondary: '#00897b' },
+            { name: '✨ ذهبي', primary: '#f57f17', secondary: '#ff6f00' },
+            { name: '🌙 رمادي أزرق', primary: '#455a64', secondary: '#546e7a' },
+            { name: '🖤 Dark - أسود', primary: '#1a1a1a', secondary: '#2d2d2d' },
+            { name: '🌑 Dark - رمادي', primary: '#2c3e50', secondary: '#34495e' },
+            { name: '🌃 Dark - أزرق داكن', primary: '#1e3a5f', secondary: '#2c5aa0' }
         ];
 
         // ===== المتغيرات الرئيسية =====
@@ -810,16 +851,16 @@
         let currentQuestionIndex = 0;
         let answers = {};
         let submitted = {};
-        let skipped = {};
+        let skipped = new Set();
         let correctCount = 0;
         let incorrectCount = 0;
-        let skippedCount = 0;
         let startTime = null;
         let timerInterval = null;
         let isTranslated = false;
         let timerMode = 'none';
         let timerDuration = 0;
         let timerStartTime = null;
+        let timeExpired = false;
 
         // ===== تحميل البيانات =====
         async function loadQuizzes() {
@@ -840,50 +881,52 @@
             displayQuizzes();
         }
 
-        // ===== عرض خيارات الثيمات =====
+        // ===== نظام الثيمات =====
         function displayThemeOptions() {
-            const container = document.getElementById('themeOptions');
+            const container = document.getElementById('themeList');
             container.innerHTML = '';
 
             themes.forEach((theme, index) => {
                 const div = document.createElement('div');
-                div.style.display = 'flex';
-                div.style.alignItems = 'center';
-                div.style.gap = '5px';
+                div.className = 'theme-item';
+                div.textContent = theme.name;
+                div.onclick = () => {
+                    applyTheme(index);
+                    closeThemeMenu();
+                };
 
-                const input = document.createElement('input');
-                input.type = 'radio';
-                input.name = 'theme';
-                input.value = index;
-                input.id = `theme_${index}`;
+                const savedTheme = localStorage.getItem('selectedTheme') || '0';
+                if (parseInt(savedTheme) === index) {
+                    div.classList.add('active');
+                }
 
-                const label = document.createElement('label');
-                label.htmlFor = `theme_${index}`;
-                label.textContent = theme.name;
-                label.style.cursor = 'pointer';
-                label.style.margin = '0';
-
-                input.onchange = () => applyTheme(index);
-
-                div.appendChild(input);
-                div.appendChild(label);
-
-                const wrapper = document.createElement('div');
-                wrapper.className = 'theme-option';
-                wrapper.appendChild(div);
-                container.appendChild(wrapper);
+                container.appendChild(div);
             });
-
-            const savedTheme = localStorage.getItem('selectedTheme') || '0';
-            document.getElementById(`theme_${savedTheme}`).checked = true;
-            applyTheme(parseInt(savedTheme));
         }
+
+        function toggleThemeMenu() {
+            const menu = document.getElementById('themeMenu');
+            menu.classList.toggle('show');
+        }
+
+        function closeThemeMenu() {
+            document.getElementById('themeMenu').classList.remove('show');
+        }
+
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById('themeMenu');
+            const btn = document.querySelector('.theme-toggle-btn');
+            if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                closeThemeMenu();
+            }
+        });
 
         function applyTheme(index) {
             const theme = themes[index];
             document.documentElement.style.setProperty('--primary', theme.primary);
             document.documentElement.style.setProperty('--secondary', theme.secondary);
             localStorage.setItem('selectedTheme', index);
+            displayThemeOptions();
         }
 
         function loadTheme() {
@@ -937,8 +980,19 @@
                     <button class="btn-primary" style="width: 100%;" onclick="startQuiz(${index})">ابدأ الكويز</button>
                 `;
 
+                const noneRadio = card.querySelector(`#timer_none_${index}`);
+                const ascRadio = card.querySelector(`#timer_asc_${index}`);
                 const descRadio = card.querySelector(`#timer_desc_${index}`);
                 const config = card.querySelector(`#timer_config_${index}`);
+
+                noneRadio.addEventListener('change', () => {
+                    config.classList.remove('show');
+                });
+
+                ascRadio.addEventListener('change', () => {
+                    config.classList.remove('show');
+                });
+
                 descRadio.addEventListener('change', () => {
                     config.classList.toggle('show');
                 });
@@ -953,11 +1007,11 @@
             currentQuestionIndex = 0;
             answers = {};
             submitted = {};
-            skipped = {};
+            skipped = new Set();
             correctCount = 0;
             incorrectCount = 0;
-            skippedCount = 0;
             isTranslated = false;
+            timeExpired = false;
 
             const timerRadios = document.getElementsByName(`timer_${index}`);
             timerMode = 'none';
@@ -1012,7 +1066,8 @@
 
                     if (remaining <= 0) {
                         clearInterval(timerInterval);
-                        alert('انتهى الوقت!');
+                        timeExpired = true;
+                        markRemainingAsSkipped();
                         showResults();
                         return;
                     }
@@ -1024,6 +1079,15 @@
 
                 document.getElementById('timer').textContent = display;
             }, 1000);
+        }
+
+        function markRemainingAsSkipped() {
+            for (let i = currentQuestionIndex; i < currentQuiz.questions.length; i++) {
+                if (!submitted[i]) {
+                    skipped.add(i);
+                    submitted[i] = true;
+                }
+            }
         }
 
         // ===== عرض السؤال =====
@@ -1048,9 +1112,18 @@
             const submitBtn = document.getElementById('submitBtn');
             if (question.type === 'multiple_choice') {
                 submitBtn.style.display = 'inline-block';
-                submitBtn.disabled = false;
+                submitBtn.disabled = true;
             } else {
                 submitBtn.style.display = 'none';
+            }
+
+            // إخفاء الملاحظات إذا لم يكن السؤال محلول
+            const feedbackElement = document.getElementById('feedback');
+            const isAnswered = submitted[currentQuestionIndex];
+            
+            if (!isAnswered) {
+                feedbackElement.innerHTML = '';
+                feedbackElement.classList.remove('show', 'correct', 'incorrect');
             }
 
             // عرض الخيارات
@@ -1060,9 +1133,15 @@
             const groupName = `question_${currentQuestionIndex}`;
             let options = isTranslated && question.options_ar ? question.options_ar : question.options;
 
+            const isSkippedQuestion = skipped.has(currentQuestionIndex);
+
             options.forEach((option, idx) => {
                 const div = document.createElement('div');
                 div.className = 'option';
+
+                if (isAnswered && !isSkippedQuestion) {
+                    div.classList.add('disabled');
+                }
 
                 const id = `option_${currentQuestionIndex}_${idx}`;
                 const inputType = question.type === 'multiple_choice' ? 'checkbox' : 'radio';
@@ -1071,6 +1150,7 @@
                 input.name = groupName;
                 input.value = idx;
                 input.id = id;
+                input.disabled = isAnswered && !isSkippedQuestion;
 
                 if (question.type === 'multiple_choice') {
                     if (answers[currentQuestionIndex] && answers[currentQuestionIndex].includes(idx)) {
@@ -1084,7 +1164,19 @@
                     }
                 }
 
+                // تطبيق ألوان التصحيح إذا تم الإجابة
+                if (isAnswered && !isSkippedQuestion) {
+                    const isCorrect = checkIfCorrect(idx);
+                    if (isCorrect) {
+                        div.classList.add('correct');
+                    } else if (answers[currentQuestionIndex] === idx || (Array.isArray(answers[currentQuestionIndex]) && answers[currentQuestionIndex].includes(idx))) {
+                        div.classList.add('incorrect');
+                    }
+                }
+
                 input.onchange = () => {
+                    if (isAnswered && !isSkippedQuestion) return;
+
                     if (question.type === 'multiple_choice') {
                         const checkboxes = document.querySelectorAll(`input[name="${groupName}"]:checked`);
                         answers[currentQuestionIndex] = Array.from(checkboxes).map(cb => parseInt(cb.value));
@@ -1099,7 +1191,9 @@
                         
                         if (question.type !== 'multiple_choice') {
                             submitted[currentQuestionIndex] = true;
-                            delete skipped[currentQuestionIndex];
+                            skipped.delete(currentQuestionIndex);
+                            // تجميد فوري
+                            freezeQuestion();
                             showFeedback();
                         }
                     }
@@ -1114,8 +1208,30 @@
                 optionsContainer.appendChild(div);
             });
 
-            document.getElementById('feedback').classList.remove('show');
+            // إظهار الملاحظات إذا كان السؤال محلول
+            if (isAnswered && !isSkippedQuestion) {
+                feedbackElement.classList.add('show');
+            }
+
             updateButtonStates();
+        }
+
+        function freezeQuestion() {
+            const groupName = `question_${currentQuestionIndex}`;
+            const inputs = document.querySelectorAll(`input[name="${groupName}"]`);
+            inputs.forEach(input => {
+                input.disabled = true;
+                input.parentElement.classList.add('disabled');
+            });
+        }
+
+        function checkIfCorrect(optionIdx) {
+            const question = currentQuiz.questions[currentQuestionIndex];
+            if (question.type === 'multiple_choice') {
+                return question.correct_answers.includes(optionIdx);
+            } else {
+                return question.correct_answer === optionIdx;
+            }
         }
 
         function updateOptionSelection(groupName) {
@@ -1191,7 +1307,6 @@
 
             document.getElementById('correctCount').textContent = correctCount;
             document.getElementById('incorrectCount').textContent = incorrectCount;
-            document.getElementById('skippedCount').textContent = skippedCount;
 
             updateButtonStates();
         }
@@ -1207,27 +1322,23 @@
             }
 
             submitted[currentQuestionIndex] = true;
-            delete skipped[currentQuestionIndex];
+            skipped.delete(currentQuestionIndex);
+            // تجميد فوري
+            freezeQuestion();
             showFeedback();
-        }
-
-        // ===== تخطي السؤال =====
-        function skipQuestion() {
-            skipped[currentQuestionIndex] = true;
-            submitted[currentQuestionIndex] = true;
-            delete answers[currentQuestionIndex];
-            skippedCount++;
-
-            document.getElementById('feedback').classList.remove('show');
-            document.getElementById('correctCount').textContent = correctCount;
-            document.getElementById('incorrectCount').textContent = incorrectCount;
-            document.getElementById('skippedCount').textContent = skippedCount;
-
-            updateButtonStates();
         }
 
         // ===== التنقل بين الأسئلة =====
         function nextQuestion() {
+            const question = currentQuiz.questions[currentQuestionIndex];
+
+            // التحقق من وجود إجابة
+            if (!submitted[currentQuestionIndex]) {
+                // إذا لم يكن هناك إجابة، اعتبره متخطى
+                skipped.add(currentQuestionIndex);
+                submitted[currentQuestionIndex] = true;
+            }
+
             if (currentQuestionIndex < currentQuiz.questions.length - 1) {
                 currentQuestionIndex++;
                 displayQuestion();
@@ -1253,6 +1364,7 @@
             clearInterval(timerInterval);
 
             const totalQuestions = currentQuiz.questions.length;
+            const skippedCount = skipped.size;
             const percentage = Math.round((correctCount / totalQuestions) * 100);
 
             const elapsed = Math.floor((Date.now() - startTime) / 1000);
@@ -1267,8 +1379,16 @@
             document.getElementById('finalCorrect').textContent = correctCount;
             document.getElementById('finalIncorrect').textContent = incorrectCount;
             document.getElementById('finalSkipped').textContent = skippedCount;
-            document.getElementById('totalTime').textContent = 
-                `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            // إظهار/إخفاء الوقت حسب نوع المؤقت
+            const timeContainer = document.getElementById('timeContainer');
+            if (timerMode === 'none') {
+                timeContainer.style.display = 'none';
+            } else {
+                timeContainer.style.display = 'block';
+                document.getElementById('totalTime').textContent = 
+                    `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            }
 
             // الأسئلة الخاطئة
             const wrongAnswers = [];
@@ -1321,10 +1441,13 @@
                     list.appendChild(div);
                 });
             }
+            else {
+                document.getElementById('wrongAnswersContainer').style.display = 'none';
+            }
 
             // الأسئلة المتخطاة
             const skippedAnswers = [];
-            Object.keys(skipped).forEach(index => {
+            skipped.forEach(index => {
                 const question = currentQuiz.questions[index];
                 let correctAnswerText = '';
 
@@ -1358,6 +1481,9 @@
                     `;
                     list.appendChild(div);
                 });
+            }
+            else {
+                document.getElementById('skippedAnswersContainer').style.display = 'none';
             }
         }
 
