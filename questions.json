@@ -1,181 +1,607 @@
 [
     {
-        "name": "كويز الرياضيات البسيط",
-        "description": "اختبار لمهارات الجمع والطرح الأساسية",
+        "name": "Proof Methods",
+        "description": "A comprehensive quiz covering various mathematical proof techniques including direct proof, contraposition, contradiction, and induction.",
         "questions": [
             {
                 "type": "choice",
-                "question": "What is 1 + 2?",
-                "question_ar": "ما هو ناتج 1 + 2؟",
-                "options": ["1", "2", "3", "4"],
-                "options_ar": ["1", "2", "3", "4"],
-                "correct_answer": 2,
-                "explanation": "Simple addition of 1 and 2 gives 3.",
-                "explanation_ar": "الجمع البسيط لـ 1 و 2 يعطي 3."
-            },
-            {
-                "type": "true_false",
-                "question": "Is 5 - 3 = 2?",
-                "question_ar": "هل 5 - 3 = 2؟",
-                "options": ["True", "False"],
-                "options_ar": ["صحيح", "خطأ"],
-                "correct_answer": 0,
-                "explanation": "Yes, subtracting 3 from 5 equals 2.",
-                "explanation_ar": "نعم، طرح 3 من 5 يساوي 2."
-            },
-            {
-                "type": "multiple_choice",
-                "question": "What are the square roots of 4?",
-                "question_ar": "ما هي الجذور التربيعية للعدد 4؟",
-                "options": ["2", "-2", "4", "0"],
-                "options_ar": ["2", "-2", "4", "0"],
-                "correct_answers": [0, 1],
-                "explanation": "The square root of 4 is 2 and -2 because (2)^2 = 4 and (-2)^2 = 4.",
-                "explanation_ar": "جذر 4 هو 2 و -2 لأن (2)^2 = 4 و (-2)^2 = 4."
-            }
-        ]
-    },
-    {
-        "name": "كويز الضرب والقسمة",
-        "description": "اختبار لمهارات الضرب والقسمة",
-        "questions": [
-            {
-                "type": "choice",
-                "question": "What is 5 * 5?",
-                "question_ar": "ما هو ناتج 5 * 5؟",
-                "options": ["10", "20", "25", "30"],
-                "options_ar": ["10", "20", "25", "30"],
-                "correct_answer": 2,
-                "explanation": "5 multiplied by 5 is 25.",
-                "explanation_ar": "حاصل ضرب 5 في 5 هو 25."
-            },
-            {
-                "type": "true_false",
-                "question": "Is 10 / 2 = 4?",
-                "question_ar": "هل 10 / 2 = 4؟",
-                "options": ["True", "False"],
-                "options_ar": ["صحيح", "خطأ"],
+                "question": "To prove the statement “If n is an even integer, then n^2 is even,” we assume n is even and write n = 2k, then show n^2 = 2(2k^2). This is an example of:",
+                "question_ar": "لإثبات العبارة 'إذا كان n عدداً صحيحاً زوجياً، فإن n^2 زوجي'، نفترض أن n زوجي ونكتب n = 2k، ثم نبين أن n^2 = 2(2k^2). هذا مثال على:",
+                "options": [
+                    "Proof by contraposition",
+                    "Direct proof",
+                    "Proof by contradiction",
+                    "Exhaustive proof"
+                ],
+                "options_ar": [
+                    "البرهان بالمعاكس الإيجابي",
+                    "البرهان المباشر",
+                    "البرهان بالتناقض",
+                    "البرهان الشامل"
+                ],
                 "correct_answer": 1,
-                "explanation": "No, 10 divided by 2 equals 5.",
-                "explanation_ar": "خطأ، 10 تقسيم 2 يساوي 5."
+                "explanation": "This is a direct proof where we assume the hypothesis (p) is true and deductively show the conclusion (q) is true.",
+                "explanation_ar": "هذا برهان مباشر حيث نفترض صحة الفرضية ونستخدم المنطق للوصول مباشرة إلى النتيجة."
             },
             {
-                "type": "multiple_choice",
-                "question": "Which of these are prime numbers?",
-                "question_ar": "أي من هذه الأعداد هي أعداد أولية؟",
-                "options": ["2", "3", "4", "5"],
-                "options_ar": ["2", "3", "4", "5"],
-                "correct_answers": [0, 1, 3],
-                "explanation": "Prime numbers are 2, 3, and 5 because they are only divisible by themselves and 1.",
-                "explanation_ar": "الأعداد الأولية هي 2 و 3 و 5 لأنها تقبل القسمة على نفسها وعلى 1 فقط."
-            }
-        ]
-    },
-    {
-        "name": "كويز الأشكال الهندسية",
-        "description": "اختبار معلوماتك عن الأشكال الهندسية",
-        "questions": [
-            {
                 "type": "choice",
-                "question": "How many sides does a triangle have?",
-                "question_ar": "كم عدد أضلاع المثلث؟",
-                "options": ["2", "3", "4", "5"],
-                "options_ar": ["2", "3", "4", "5"],
+                "question": "In a proof by contraposition of p → q, we start by assuming:",
+                "question_ar": "في البرهان بالمعاكس الإيجابي للعبارة الشرطية p ← q، نبدأ بافتراض:",
+                "options": [
+                    "p is true",
+                    "q is false",
+                    "p is false",
+                    "q is true"
+                ],
+                "options_ar": [
+                    "p صحيحة",
+                    "q خاطئة",
+                    "p خاطئة",
+                    "q صحيحة"
+                ],
                 "correct_answer": 1,
-                "explanation": "A triangle has 3 sides.",
-                "explanation_ar": "المثلث يتكون من 3 أضلاع."
+                "explanation": "In contraposition, we prove ¬q → ¬p, so we start by assuming q is false (¬q).",
+                "explanation_ar": "في المعاكس الإيجابي، نثبت ¬q ← ¬p، لذا نبدأ بافتراض أن النتيجة q خاطئة."
             },
-            {
-                "type": "true_false",
-                "question": "Does a square have 4 equal sides?",
-                "question_ar": "هل للمربع 4 أضلاع متساوية؟",
-                "options": ["True", "False"],
-                "options_ar": ["صحيح", "خطأ"],
-                "correct_answer": 0,
-                "explanation": "Yes, a square is characterized by having all sides equal.",
-                "explanation_ar": "نعم، المربع يتميز بأن جميع أضلاعه متساوية."
-            },
-            {
-                "type": "multiple_choice",
-                "question": "Which of these are quadrilaterals?",
-                "question_ar": "أي من هذه الأشكال هي أشكال رباعية؟",
-                "options": ["Square", "Rectangle", "Triangle", "Circle"],
-                "options_ar": ["مربع", "مستطيل", "مثلث", "دائرة"],
-                "correct_answers": [0, 1],
-                "explanation": "Square and rectangle are quadrilaterals.",
-                "explanation_ar": "المربع والمستطيل هما أشكال رباعية الأضلاع."
-            }
-        ]
-    },
-    {
-        "name": "كويز الأرقام الكبيرة",
-        "description": "اختبار التعامل مع الأرقام الكبيرة",
-        "questions": [
             {
                 "type": "choice",
-                "question": "What is 100 + 200?",
-                "question_ar": "ما هو ناتج 100 + 200؟",
-                "options": ["100", "200", "300", "400"],
-                "options_ar": ["100", "200", "300", "400"],
+                "question": "To prove “If 3n + 2 is odd, then n is odd” by contraposition, we assume:",
+                "question_ar": "لإثبات 'إذا كان 3n + 2 فردياً، فإن n فردي' باستخدام المعاكس الإيجابي، نفترض:",
+                "options": [
+                    "3n + 2 is even",
+                    "n is even",
+                    "n is odd",
+                    "3n + 2 is odd"
+                ],
+                "options_ar": [
+                    "3n + 2 زوجي",
+                    "n زوجي",
+                    "n فردي",
+                    "3n + 2 فردي"
+                ],
+                "correct_answer": 1,
+                "explanation": "We negate the conclusion 'n is odd', so we assume 'n is even'.",
+                "explanation_ar": "نقوم بنفي النتيجة 'n فردي'، لذا نفترض أن 'n زوجي'."
+            },
+            {
+                "type": "choice",
+                "question": "In a proof by contradiction that √2 is irrational, we start by assuming:",
+                "question_ar": "في البرهان بالتناقض لإثبات أن 2√ عدد غير نسبي، نبدأ بافتراض:",
+                "options": [
+                    "√2 is rational",
+                    "√2 is irrational",
+                    "√2 is an integer",
+                    "√2 is not a real number"
+                ],
+                "options_ar": [
+                    "2√ عدد نسبي",
+                    "2√ عدد غير نسبي",
+                    "2√ عدد صحيح",
+                    "2√ ليس عدداً حقيقياً"
+                ],
+                "correct_answer": 0,
+                "explanation": "Proof by contradiction starts by assuming the negation of what we want to prove.",
+                "explanation_ar": "البرهان بالتناقض يبدأ بافتراض عكس ما نريد إثباته (أنه نسبي)."
+            },
+            {
+                "type": "choice",
+                "question": "In the proof that √2 is irrational, we reach a contradiction because:",
+                "question_ar": "في إثبات أن 2√ غير نسبي، نصل إلى تناقض بسبب:",
+                "options": [
+                    "a and b are both odd",
+                    "a and b have no common factors and yet both are even",
+                    "a^2 is odd but b^2 is even",
+                    "a/b is not in lowest terms initially"
+                ],
+                "options_ar": [
+                    "كلاً من a و b فرديان",
+                    "لا توجد عوامل مشتركة بين a و b ومع ذلك كلاهما زوجي",
+                    "a^2 فردي لكن b^2 زوجي",
+                    "a/b ليس في أبسط صورة في البداية"
+                ],
+                "correct_answer": 1,
+                "explanation": "The contradiction arises when we deduce that both numerator and denominator must be even, violating the assumption that the fraction is in simplest form.",
+                "explanation_ar": "يحدث التناقض عندما نستنتج أن البسط والمقام كلاهما زوجي، مما يخالف فرضية أن الكسر في أبسط صورة."
+            },
+            {
+                "type": "choice",
+                "question": "To prove p ↔ q, we must prove:",
+                "question_ar": "لإثبات التكافؤ p ↔ q، يجب أن نثبت:",
+                "options": [
+                    "p → q",
+                    "q → p",
+                    "p → q and q → p",
+                    "p ∨ q"
+                ],
+                "options_ar": [
+                    "p ← q",
+                    "q ← p",
+                    "p ← q و q ← p",
+                    "p ∨ q"
+                ],
                 "correct_answer": 2,
-                "explanation": "The sum of 100 and 200 is 300.",
-                "explanation_ar": "مجموع 100 و 200 هو 300."
+                "explanation": "Biconditional statements require proving the implication in both directions.",
+                "explanation_ar": "العبارات ثنائية الشرط تتطلب إثبات الاستلزام في كلا الاتجاهين."
             },
-            {
-                "type": "true_false",
-                "question": "Is 1000 > 500?",
-                "question_ar": "هل 1000 أكبر من 500؟",
-                "options": ["True", "False"],
-                "options_ar": ["صحيح", "خطأ"],
-                "correct_answer": 0,
-                "explanation": "Yes, 1000 is greater than 500.",
-                "explanation_ar": "نعم، 1000 أكبر من 500."
-            },
-            {
-                "type": "multiple_choice",
-                "question": "Which of these are multiples of 10?",
-                "question_ar": "أي من هذه الأعداد هي مضاعفات للعدد 10؟",
-                "options": ["10", "25", "50", "100"],
-                "options_ar": ["10", "25", "50", "100"],
-                "correct_answers": [0, 2, 3],
-                "explanation": "Multiples of 10 are numbers that end in zero.",
-                "explanation_ar": "مضاعفات 10 هي الأعداد التي تنتهي بصفر."
-            }
-        ]
-    },
-    {
-        "name": "كويز التحدي النهائي",
-        "description": "اختبار متنوع وشامل",
-        "questions": [
             {
                 "type": "choice",
-                "question": "What is 0 * 100?",
-                "question_ar": "ما هو ناتج 0 * 100؟",
-                "options": ["0", "1", "100", "undefined"],
-                "options_ar": ["0", "1", "100", "غير معرف"],
-                "correct_answer": 0,
-                "explanation": "Any number multiplied by zero results in zero.",
-                "explanation_ar": "أي رقم يضرب في صفر تكون النتيجة صفراً."
+                "question": "In a proof by cases of (p1 ∨ p2 ∨ ... ∨ pn) → q, we prove:",
+                "question_ar": "في البرهان بالحالات للصيغة (p1 ∨ p2 ∨ ... ∨ pn) ← q، نثبت:",
+                "options": [
+                    "p1 → q only",
+                    "pn → q only",
+                    "pi → q for each i",
+                    "q → pi for each i"
+                ],
+                "options_ar": [
+                    "p1 ← q فقط",
+                    "pn ← q فقط",
+                    "pi ← q لكل حالة i",
+                    "q ← pi لكل حالة i"
+                ],
+                "correct_answer": 2,
+                "explanation": "We must show that every possible case (pi) implies the conclusion q.",
+                "explanation_ar": "يجب التأكد من أن كل حالة محتملة (pi) تؤدي بمفردها إلى النتيجة q."
             },
             {
-                "type": "true_false",
-                "question": "Is 1 a prime number?",
-                "question_ar": "هل العدد 1 عدد أولي؟",
-                "options": ["True", "False"],
-                "options_ar": ["صحيح", "خطأ"],
+                "type": "choice",
+                "question": "An exhaustive proof is used when:",
+                "question_ar": "يستخدم البرهان الشامل عندما:",
+                "options": [
+                    "The domain is infinite",
+                    "There are too many cases to check",
+                    "The domain is small and finite",
+                    "We want to prove by contradiction"
+                ],
+                "options_ar": [
+                    "المجال لا نهائي",
+                    "هناك حالات كثيرة جداً للتحقق منها",
+                    "المجال صغير ومحدود",
+                    "نريد البرهان بالتناقض"
+                ],
+                "correct_answer": 2,
+                "explanation": "Exhaustive proof checks every single element in the domain, which is only feasible if the domain is small.",
+                "explanation_ar": "البرهان الشامل يتحقق من كل عنصر في المجال، وهو ممكن فقط إذا كان المجال صغيراً ومحدوداً."
+            },
+            {
+                "type": "choice",
+                "question": "To disprove a statement of the form ∀x P(x), we use:",
+                "question_ar": "لنفي عبارة من الشكل ∀x P(x) (لكل x)، نستخدم:",
+                "options": [
+                    "Direct proof",
+                    "Proof by contraposition",
+                    "Proof by counterexample",
+                    "Proof by cases"
+                ],
+                "options_ar": [
+                    "البرهان المباشر",
+                    "البرهان بالمعاكس الإيجابي",
+                    "البرهان بمثال مضاد",
+                    "البرهان بالحالات"
+                ],
+                "correct_answer": 2,
+                "explanation": "A single counterexample where P(x) is false is sufficient to disprove a universal quantification.",
+                "explanation_ar": "يكفي إيجاد حالة واحدة (مثال مضاد) لا تنطبق عليها القاعدة لنفي التعميم."
+            },
+            {
+                "type": "choice",
+                "question": "In the incorrect proof that 1 = 2, the error occurs when:",
+                "question_ar": "في البرهان الخاطئ بأن 1 = 2، يحدث الخطأ عندما:",
+                "options": [
+                    "We factor a^2 - b^2",
+                    "We divide by a - b (which is 0)",
+                    "We set a = b",
+                    "We multiply both sides by a"
+                ],
+                "options_ar": [
+                    "نحلل a^2 - b^2",
+                    "نقسم على a - b (الذي يساوي 0)",
+                    "نضع a = b",
+                    "نضرب كلا الطرفين في a"
+                ],
                 "correct_answer": 1,
-                "explanation": "No, the number 1 is not prime.",
-                "explanation_ar": "خطأ، العدد 1 ليس أولياً."
+                "explanation": "Division by zero is undefined and is the source of the fallacy.",
+                "explanation_ar": "القسمة على (a - b) تعني القسمة على صفر وهي عملية غير معرفة ومصدر الخطأ."
             },
             {
-                "type": "multiple_choice",
-                "question": "Which of these are even numbers?",
-                "question_ar": "أي من هذه الأعداد هي أعداد زوجية؟",
-                "options": ["2", "4", "7", "10"],
-                "options_ar": ["2", "4", "7", "10"],
-                "correct_answers": [0, 1, 3],
-                "explanation": "Even numbers are those divisible by 2.",
-                "explanation_ar": "الأعداد الزوجية هي التي تقبل القسمة على 2."
+                "type": "choice",
+                "question": "To prove “If n is odd, then n^2 is odd,” we write n = 2k+1 and square it. This method is:",
+                "question_ar": "لإثبات 'إذا كان n فردياً، فإن n^2 فردي'، نكتب n = 2k+1 ونقوم بتربيعه. هذه الطريقة هي:",
+                "options": [
+                    "Proof by contradiction",
+                    "Proof by contraposition",
+                    "Direct proof",
+                    "Exhaustive proof"
+                ],
+                "options_ar": [
+                    "البرهان بالتناقض",
+                    "البرهان بالمعاكس الإيجابي",
+                    "البرهان المباشر",
+                    "البرهان الشامل"
+                ],
+                "correct_answer": 2,
+                "explanation": "We are starting with the hypothesis and directly deriving the conclusion using algebra.",
+                "explanation_ar": "هذا تطبيق مباشر حيث نبدأ بالفرضية ونستنتج النتيجة جبرياً."
+            },
+            {
+                "type": "choice",
+                "question": "To prove “If n^2 is odd, then n is odd” by contraposition, we assume:",
+                "question_ar": "لإثبات 'إذا كان n^2 فردياً، فإن n فردي' بالمعاكس الإيجابي، نفترض:",
+                "options": [
+                    "n^2 is even",
+                    "n is even",
+                    "n is odd",
+                    "n^2 is odd"
+                ],
+                "options_ar": [
+                    "n^2 زوجي",
+                    "n زوجي",
+                    "n فردي",
+                    "n^2 فردي"
+                ],
+                "correct_answer": 1,
+                "explanation": "The negation of the conclusion 'n is odd' is 'n is even'.",
+                "explanation_ar": "نفي النتيجة 'n فردي' هو 'n زوجي'."
+            },
+            {
+                "type": "choice",
+                "question": "In a proof by contradiction for p → q, we start by assuming:",
+                "question_ar": "في البرهان بالتناقض للعبارة p ← q، نبدأ بافتراض:",
+                "options": [
+                    "p is true",
+                    "q is false",
+                    "p is true and q is false",
+                    "p is false and q is true"
+                ],
+                "options_ar": [
+                    "p صحيحة",
+                    "q خاطئة",
+                    "p صحيحة و q خاطئة",
+                    "p خاطئة و q صحيحة"
+                ],
+                "correct_answer": 2,
+                "explanation": "To contradict a conditional statement, we assume the condition is met but the result is not.",
+                "explanation_ar": "لإثبات التناقض في جملة شرطية، نفترض تحقق الشرط (p) وعدم تحقق النتيجة (q)."
+            },
+            {
+                "type": "choice",
+                "question": "If we prove “If n is even, then n-1 is odd” and “If n-1 is odd, then n^2 is even” and “If n^2 is even, then n is even,” we are showing:",
+                "question_ar": "إذا أثبتنا سلسلة العبارات: (n زوجي ← n-1 فردي) و (n-1 فردي ← n^2 زوجي) و (n^2 زوجي ← n زوجي)، فإننا نبين:",
+                "options": [
+                    "A direct proof",
+                    "These three statements are equivalent",
+                    "A proof by cases",
+                    "A proof by contradiction"
+                ],
+                "options_ar": [
+                    "برهاناً مباشراً",
+                    "أن هذه العبارات الثلاث متكافئة",
+                    "برهاناً بالحالات",
+                    "برهاناً بالتناقض"
+                ],
+                "correct_answer": 1,
+                "explanation": "Circular implication (p → q → r → p) proves equivalence between all statements.",
+                "explanation_ar": "سلسلة الاستنتاجات الدائرية تثبت أن جميع الجمل متكافئة."
+            },
+            {
+                "type": "choice",
+                "question": "To prove max(x,y) + min(x,y) = x + y, we consider cases x ≥ y and x < y. This is:",
+                "question_ar": "لإثبات max(x,y) + min(x,y) = x + y، نعتبر الحالتين x ≥ y و x < y. هذا هو:",
+                "options": [
+                    "Exhaustive proof",
+                    "Proof by cases",
+                    "Direct proof",
+                    "Proof by contradiction"
+                ],
+                "options_ar": [
+                    "البرهان الشامل",
+                    "البرهان بالحالات",
+                    "البرهان المباشر",
+                    "البرهان بالتناقض"
+                ],
+                "correct_answer": 1,
+                "explanation": "Dividing the problem into mutually exclusive scenarios covers all possibilities.",
+                "explanation_ar": "تقسيم المسألة إلى احتمالات تغطي جميع المواقف الممكنة هو برهان بالحالات."
+            },
+            {
+                "type": "choice",
+                "question": "In an exhaustive proof that (n+1)^3 ≥ 3^n for n ≤ 4, we check:",
+                "question_ar": "في برهان شامل للمتباينة (n+1)^3 ≥ 3^n حيث n ≤ 4، نتحقق من:",
+                "options": [
+                    "n = 1, 2, 3, 4",
+                    "All integers",
+                    "n = 0, 1, 2, 3, 4",
+                    "Only n = 4"
+                ],
+                "options_ar": [
+                    "n = 1, 2, 3, 4",
+                    "كل الأعداد الصحيحة",
+                    "n = 0, 1, 2, 3, 4",
+                    "فقط n = 4"
+                ],
+                "correct_answer": 0,
+                "explanation": "Assuming the domain is positive integers, we check each value up to 4.",
+                "explanation_ar": "في البرهان الشامل لمجال محدد، نتحقق من كل القيم المذكورة."
+            },
+            {
+                "type": "choice",
+                "question": "To show “Every positive integer is a perfect square” is false, we provide:",
+                "question_ar": "لإظهار خطأ العبارة 'كل عدد صحيح موجب هو مربع كامل'، نقدم:",
+                "options": [
+                    "A direct proof",
+                    "A counterexample (e.g., 3)",
+                    "A proof by cases",
+                    "A proof by contradiction"
+                ],
+                "options_ar": [
+                    "برهاناً مباشراً",
+                    "مثالاً مضاداً (مثل 3)",
+                    "برهاناً بالحالات",
+                    "برهاناً بالتناقض"
+                ],
+                "correct_answer": 1,
+                "explanation": "A single example that fails the condition (Counterexample) is enough to disprove 'Every'.",
+                "explanation_ar": "لإثبات خطأ جملة عامة، يكفي تقديم مثال واحد يثبت العكس."
+            },
+            {
+                "type": "choice",
+                "question": "In proving “If n = ab with a,b > 0, then a ≤ √n or b ≤ √n” by contraposition, we assume:",
+                "question_ar": "عند إثبات 'إذا كان n = ab حيث a,b > 0، فإن a ≤ √n أو b ≤ √n' بالمعاكس الإيجابي، نفترض:",
+                "options": [
+                    "a > √n and b > √n",
+                    "a ≤ √n or b ≤ √n",
+                    "a ≤ √n and b ≤ √n",
+                    "n is prime"
+                ],
+                "options_ar": [
+                    "a > √n و b > √n",
+                    "a ≤ √n أو b ≤ √n",
+                    "a ≤ √n و b ≤ √n",
+                    "n عدد أولي"
+                ],
+                "correct_answer": 0,
+                "explanation": "By De Morgan's laws, the negation of (A or B) is (Not A and Not B).",
+                "explanation_ar": "نفي العبارة (أو) هو (و) مع عكس الإشارات."
+            },
+            {
+                "type": "choice",
+                "question": "If a proof examines every possible instance in a finite domain, it is:",
+                "question_ar": "إذا فحص البرهان كل حالة ممكنة في مجال محدود، فهو:",
+                "options": [
+                    "Proof by cases",
+                    "Exhaustive proof",
+                    "Direct proof",
+                    "Proof by induction"
+                ],
+                "options_ar": [
+                    "البرهان بالحالات",
+                    "البرهان الشامل",
+                    "البرهان المباشر",
+                    "البرهان بالاستقراء"
+                ],
+                "correct_answer": 1,
+                "explanation": "Checking all instances one by one exhaustively proves the statement for that domain.",
+                "explanation_ar": "البرهان الشامل هو الذي يغطي كل حالة فردية في مجال محدود."
+            },
+            {
+                "type": "choice",
+                "question": "To prove “If x and y are integers, then x^2 + 3y^2 ≠ 8” we check all possible x^2 ∈ {0,1,4} and 3y^2 ∈ {0,3}. This is:",
+                "question_ar": "لإثبات 'إذا كان x و y أعداداً صحيحة، فإن x^2 + 3y^2 ≠ 8'، نتحقق من كل القيم الممكنة للمربعات. هذا هو:",
+                "options": [
+                    "Direct proof",
+                    "Proof by contradiction",
+                    "Exhaustive proof",
+                    "Proof by contraposition"
+                ],
+                "options_ar": [
+                    "البرهان المباشر",
+                    "البرهان بالتناقض",
+                    "البرهان الشامل",
+                    "البرهان بالمعاكس الإيجابي"
+                ],
+                "correct_answer": 2,
+                "explanation": "Testing all possible combinations of values within the limit constitutes an exhaustive proof.",
+                "explanation_ar": "تجربة كل الاحتمالات الممكنة للمجاميع يعتبر برهاناً شاملاً."
+            },
+            {
+                "type": "choice",
+                "question": "In a proof of equivalence for three statements p1, p2, p3, we prove:",
+                "question_ar": "في إثبات تكافؤ ثلاث عبارات p1, p2, p3، نثبت:",
+                "options": [
+                    "p1 → p2, p2 → p3, p3 → p1",
+                    "p1 → p2 only",
+                    "p1 ↔ p2 and p2 ↔ p3",
+                    "p1 ∧ p2 ∧ p3"
+                ],
+                "options_ar": [
+                    "p1 ← p2, p2 ← p3, p3 ← p1",
+                    "p1 ← p2 فقط",
+                    "p1 ↔ p2 و p2 ↔ p3",
+                    "p1 ∧ p2 ∧ p3"
+                ],
+                "correct_answer": 0,
+                "explanation": "Establishing a cycle of implications is the standard efficient method.",
+                "explanation_ar": "أكثر الطرق كفاءة هي إثبات سلسلة دائرية من الاشتراطات."
+            },
+            {
+                "type": "choice",
+                "question": "A lemma is:",
+                "question_ar": "اللِمّة (Lemma) هي:",
+                "options": [
+                    "The main theorem",
+                    "A less important theorem used to prove other results",
+                    "A counterexample",
+                    "A type of contradiction"
+                ],
+                "options_ar": [
+                    "النظرية الأساسية",
+                    "نظرية مساعدة تستخدم لإثبات نتائج أخرى",
+                    "مثال مضاد",
+                    "نوع من التناقض"
+                ],
+                "correct_answer": 1,
+                "explanation": "A lemma is a helping theorem used as a stepping stone.",
+                "explanation_ar": "اللِمة (Lemma) هي نظرية مساعدة أو تمهيدية تستخدم لإثبات نظريات أكبر وأهم."
+            },
+            {
+                "type": "choice",
+                "question": "In the proof that “If n is integer, then n^2 ≥ n” by cases, the cases are:",
+                "question_ar": "في إثبات 'إذا كان n عدداً صحيحاً، فإن n^2 ≥ n' بالحالات، الحالات هي:",
+                "options": [
+                    "n = 0, n ≥ 1, n ≤ -1",
+                    "n even, n odd",
+                    "n positive, n negative",
+                    "n rational, n irrational"
+                ],
+                "options_ar": [
+                    "n = 0, n ≥ 1, n ≤ -1",
+                    "n زوجي، n فردي",
+                    "n موجب، n سالب",
+                    "n نسبي، n غير نسبي"
+                ],
+                "correct_answer": 0,
+                "explanation": "Splitting integers into zero, positive, and negative covers the entire set effectively for inequalities.",
+                "explanation_ar": "لتغطية كل الأعداد الصحيحة بالنسبة لهذه المتباينة، أفضل تقسيم هو: الصفر، الأعداد الموجبة، والأعداد السالبة."
+            },
+            {
+                "type": "choice",
+                "question": "The statement “If n is odd then 5n+6 is odd” is proven by:",
+                "question_ar": "العبارة 'إذا كان n فردياً فإن 5n+6 فردي' يتم إثباتها بـ:",
+                "options": [
+                    "Direct proof (n = 2k+1)",
+                    "Contraposition",
+                    "Contradiction",
+                    "Exhaustive proof"
+                ],
+                "options_ar": [
+                    "البرهان المباشر (n = 2k+1)",
+                    "المعاكس الإيجابي",
+                    "التناقض",
+                    "البرهان الشامل"
+                ],
+                "correct_answer": 0,
+                "explanation": "Direct substitution of the definition of an odd number works best here.",
+                "explanation_ar": "يمكن إثباتها بسهولة بالتعويض المباشر عن n بـ 2k+1."
+            },
+            {
+                "type": "choice",
+                "question": "To prove two statements p and q are equivalent, we show:",
+                "question_ar": "لإثبات أن العبارتين p و q متكافئتان، نبين:",
+                "options": [
+                    "p → q",
+                    "q → p",
+                    "p → q and q → p",
+                    "p ∧ q"
+                ],
+                "options_ar": [
+                    "p ← q",
+                    "q ← p",
+                    "p ← q و q ← p",
+                    "p ∧ q"
+                ],
+                "correct_answer": 2,
+                "explanation": "Equivalence (iff) requires implications in both directions.",
+                "explanation_ar": "التكافؤ يعني أن p تؤدي لـ q، و q تؤدي لـ p."
+            },
+            {
+                "type": "choice",
+                "question": "In the proof by contradiction of “If 3n+2 is odd, then n is odd,” the contradiction is between:",
+                "question_ar": "في البرهان بالتناقض لـ 'إذا كان 3n+2 فردياً، فإن n فردي'، يقع التناقض بين:",
+                "options": [
+                    "n even and n odd",
+                    "3n+2 odd and 3n+2 even",
+                    "n positive and n negative",
+                    "n integer and n not integer"
+                ],
+                "options_ar": [
+                    "n زوجي و n فردي",
+                    "3n+2 فردي و 3n+2 زوجي",
+                    "n موجب و n سالب",
+                    "n صحيح و n غير صحيح"
+                ],
+                "correct_answer": 1,
+                "explanation": "We assumed 3n+2 is odd, but assuming n is even implies 3n+2 is even.",
+                "explanation_ar": "التناقض يحدث لأننا بدأنا بفرض أن (3n+2 فردي)، ولكن الخطوات أدت لنتيجة أن (3n+2 زوجي)."
+            },
+            {
+                "type": "choice",
+                "question": "An informal proof:",
+                "question_ar": "البرهان غير الرسمي:",
+                "options": [
+                    "States every rule of inference explicitly",
+                    "Skips steps and uses intuitive reasoning",
+                    "Must be done by computer",
+                    "Is invalid"
+                ],
+                "options_ar": [
+                    "يذكر كل قاعدة استنتاج بالتفصيل",
+                    "يتخطى بعض الخطوات ويستخدم الاستدلال البديهي",
+                    "يجب أن يتم بواسطة الحاسوب",
+                    "هو برهان غير صالح"
+                ],
+                "correct_answer": 1,
+                "explanation": "Informal proofs focus on the logic flow rather than rigorous step-by-step citation of rules.",
+                "explanation_ar": "البرهان غير الرسمي يركز على الفكرة والمنطق دون سرد كل قاعدة استنتاج بالتفصيل."
+            },
+            {
+                "type": "choice",
+                "question": "In proof by cases for “If n is integer, then n^2 ≥ n,” case n ≤ -1 works because:",
+                "question_ar": "في البرهان بالحالات لـ 'إذا كان n صحيحاً، فإن n^2 ≥ n'، الحالة n ≤ -1 تنجح لأن:",
+                "options": [
+                    "n^2 is positive and n is negative",
+                    "n^2 = n",
+                    "n^2 < n",
+                    "n is odd"
+                ],
+                "options_ar": [
+                    "n^2 موجب و n سالب",
+                    "n^2 = n",
+                    "n^2 < n",
+                    "n فردي"
+                ],
+                "correct_answer": 0,
+                "explanation": "A square of a negative number is positive, which is always greater than a negative number.",
+                "explanation_ar": "تربيع أي عدد سالب يعطي عدداً موجباً، والعدد الموجب دائماً أكبر من العدد السالب."
+            },
+            {
+                "type": "choice",
+                "question": "To prove “There are no integers x, y with x^2 + 3y^2 = 8”, we check combinations of x^2 ∈ {0,1,4} and 3y^2 ∈ {0,3}. This method is:",
+                "question_ar": "لإثبات 'لا توجد أعداد صحيحة x, y بحيث x^2 + 3y^2 = 8'، نتحقق من تجميعات القيم الممكنة. هذه الطريقة هي:",
+                "options": [
+                    "Proof by contradiction",
+                    "Exhaustive proof",
+                    "Direct proof",
+                    "Proof by contraposition"
+                ],
+                "options_ar": [
+                    "البرهان بالتناقض",
+                    "البرهان الشامل",
+                    "البرهان المباشر",
+                    "البرهان بالمعاكس الإيجابي"
+                ],
+                "correct_answer": 1,
+                "explanation": "Checking all possible finite combinations constitutes an exhaustive proof.",
+                "explanation_ar": "تجربة كل الاحتمالات الممكنة للمجاميع يعتبر برهاناً شاملاً."
+            },
+            {
+                "type": "choice",
+                "question": "In the proof that consecutive perfect powers ≤ 100 are only 8 and 9, we list squares, cubes, etc. This is:",
+                "question_ar": "في إثبات أن القوى الكاملة المتتالية ≤ 100 هي فقط 8 و 9، نسرد المربعات والمكعبات. هذا هو:",
+                "options": [
+                    "Proof by contradiction",
+                    "Exhaustive proof",
+                    "Proof by cases",
+                    "Direct proof"
+                ],
+                "options_ar": [
+                    "البرهان بالتناقض",
+                    "البرهان الشامل",
+                    "البرهان بالحالات",
+                    "البرهان المباشر"
+                ],
+                "correct_answer": 1,
+                "explanation": "We list and check every perfect power within the limit.",
+                "explanation_ar": "لأننا قمنا بسرد وحصر جميع القوى الكاملة تحت الـ 100 وفحصها يدوياً."
             }
         ]
     }
