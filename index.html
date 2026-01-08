@@ -1192,6 +1192,20 @@
                         if (question.type !== 'multiple_choice') {
                             submitted[currentQuestionIndex] = true;
                             skipped.delete(currentQuestionIndex);
+                            // طبق اللون الصحيح فوراً
+                            const isCorrect = checkIfCorrect(idx);
+                            if (isCorrect) {
+                                div.classList.add('correct');
+                            } else {
+                                div.classList.add('incorrect');
+                                // تمييز الإجابة الصحيحة
+                                const correctIdx = question.correct_answer;
+                                const correctOption = document.getElementById(`option_${currentQuestionIndex}_${correctIdx}`);
+                                if (correctOption) {
+                                    correctOption.parentElement.classList.add('correct');
+                                }
+
+                            }
                             // تجميد فوري
                             freezeQuestion();
                             showFeedback();
@@ -1211,6 +1225,9 @@
             // إظهار الملاحظات إذا كان السؤال محلول
             if (isAnswered && !isSkippedQuestion) {
                 feedbackElement.classList.add('show');
+            }
+            else {
+                feedbackElement.classList.remove('show');
             }
 
             updateButtonStates();
@@ -1260,6 +1277,8 @@
 
         // ===== عرض الملاحظات =====
         function showFeedback() {
+            if (answers[currentQuestionIndex] === undefined) return;
+            
             const question = currentQuiz.questions[currentQuestionIndex];
             const feedback = document.getElementById('feedback');
             const userAnswer = answers[currentQuestionIndex];
